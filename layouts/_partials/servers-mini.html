@@ -1,0 +1,24 @@
+{{- /* Compact server status for the sidebar: the Classic community servers. */ -}}
+{{- $status := index hugo.Data "server-status" }}
+{{- with where hugo.Data.servers "group" "classic-community" }}
+<div class="servers-mini">
+  <h3>Servers</h3>
+  <ul>
+    {{- range sort . "name" }}
+      {{- $id := .id }}
+      {{- $r := dict }}
+      {{- with $status }}{{ with index .servers $id }}{{ $r = . }}{{ end }}{{ end }}
+      {{- $state := "unknown" }}{{ $label := "Not checked yet" }}
+      {{- if $r.online }}{{ $state = "online" }}{{ $label = "Online" }}{{ else if $r }}{{ $state = "offline" }}{{ $label = "Offline" }}{{ end }}
+    <li class="srv-{{ $state }}">
+      <span class="srv-dot" role="img" aria-label="{{ $label }}" title="{{ $label }}"></span>
+      <span class="srv-text">
+        <span class="srv-name">{{ .name }}</span>
+        <span class="srv-addr">{{ .address }}:{{ .port }}</span>
+      </span>
+    </li>
+    {{- end }}
+  </ul>
+  <p class="srv-more"><a href="/servers/">All servers</a></p>
+</div>
+{{- end }}

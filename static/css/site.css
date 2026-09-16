@@ -100,3 +100,15 @@ h1.title .message-id { padding: 0; font-size: .75em; color: #00c0ff; background:
 .status-skip { color: #888888; font-weight: normal; }
 #content table.servers td:nth-child(2) { min-width: 12em; }
 .jump { line-height: 1.9; }
+
+/* Compact server status in the sidebar */
+.servers-mini ul { padding: 8px 10px; }
+.servers-mini li { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; }
+#sidebar .servers-mini li a:before { content: none; }
+.srv-dot { flex: none; width: 10px; height: 10px; margin-top: 3px; border-radius: 50%; background: #666666; }
+.srv-online .srv-dot { background: #4cd964; box-shadow: 0 0 6px rgba(76, 217, 100, .7); }
+.srv-offline .srv-dot { background: #ff5c5c; }
+.srv-text { display: block; min-width: 0; }
+.srv-name { display: block; color: #ffffff; font-weight: bold; line-height: 1.3; }
+.srv-addr { display: block; font-size: 10px; color: #8a8a9a; font-family: Consolas, Menlo, monospace; word-break: break-all; }
+.srv-more { margin: -8px 0 15px; text-align: right; font-size: 11px; }
