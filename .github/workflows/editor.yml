@@ -1,0 +1,39 @@
+name: Deploy editor
+
+on:
+  push:
+    branches: [main]
+    paths: ["editor/**", ".github/workflows/editor.yml"]
+  workflow_dispatch:
+
+concurrency:
+  group: editor
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The Discord editor (PHP) runs at edit.bnet.cc on DreamHost. Its secrets live on the
+      # server in ~/editor-config/edit.bnet.cc.php, outside the uploaded folder.
+      - name: Upload to edit.bnet.cc
+        env:
+          SSH_KEY: ${{ secrets.EDITOR_SSH_KEY }}
+          SSH_HOST: ${{ secrets.EDITOR_HOST }}
+          SSH_USER: ${{ secrets.EDITOR_USER }}
+          DEPLOY_PATH: ${{ secrets.EDITOR_PATH }}
+        run: |
+          if [ -z "$SSH_KEY" ] || [ -z "$SSH_HOST" ] || [ -z "$SSH_USER" ] || [ -z "$DEPLOY_PATH" ]; then
+            echo "Editor deploy secrets are not all set yet; skipping."
+            exit 0
+          fi
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
+          rsync -rlvz --delete --chmod=D755,F644 \
+            --exclude /.well-known/ --exclude /.dh-diag \
+            -e "ssh -i $HOME/.ssh/deploy_key" \
+            editor/ "$SSH_USER@$SSH_HOST:$DEPLOY_PATH/"
