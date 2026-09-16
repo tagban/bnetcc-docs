@@ -16,7 +16,7 @@ s2c:
   values:
     - name: "Results"
       items:
-        - { value: "0x00", meaning: "Account not created.", confidence: verified }
+        - { value: "0x00", meaning: "**Unresolved.** BNETDocs and the Atlas server say this means the account wasn't created. But an account created through Invigoration got `0x00` back with no problem. See the remarks.", confidence: unknown }
         - { value: "0x01", meaning: "Account created.", confidence: verified }
 bnetdocs_documents: [10]
 sources:
@@ -27,6 +27,11 @@ sources:
 
 **The result is reversed compared to `SID_CREATEACCOUNT2`.** Here `0x01` means created. In `SID_CREATEACCOUNT2`, `0x00` does.
 
-**Many clients ignore the result.** Bots such as Invigoration treat any reply as "account created", disconnect and log on with the new account. Whether creation really worked only shows at that logon. A server that sends `0x00` for success still works with these clients, but a client that reads the value, as BNETDocs and Atlas describe it, would report a failure.
+**What `0x00` means is unresolved.** BNETDocs and the Atlas server both describe `0x00` as failure. In practice, a `0x00` reply hasn't caused problems: accounts created through Invigoration, a bot that also works on official Battle.net, got `0x00` back and logged on normally.
+
+Invigoration, like many bots, doesn't read the value. It treats any reply as "account created", disconnects and logs on. So the safest reading today:
+
+- **Clients** should treat either value as "account created", then confirm by logging on.
+- **Servers** should send `0x01` for success, which every source agrees on.
 
 A client that wants a reason for the failure can use `SID_CREATEACCOUNT2`, which any product may send.
