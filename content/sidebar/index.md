@@ -13,9 +13,16 @@ build:
 - [Connection sequences](/classic/sequences/)
 - [Chat gateway (telnet)](/classic/chat-gateway/)
 
+### Battle.net 2.0
+
+- [Overview](/bnet2/)
+- [StarCraft II: signing in](/bnet2/sequences/starcraft-ii-logon/)
+- [Front RPC](/bnet2/front/)
+- [Front messages](/bnet2/front-messages/)
+- [Sunken records](/bnet2/sunken/)
+
 ### Coming soon
 
-- Battle.net 2.0
 - Battle.net App
 - History and bots
 

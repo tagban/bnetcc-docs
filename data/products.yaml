@@ -12,3 +12,4 @@ D2XP: { name: "Diablo II: Lord of Destruction", era: classic, icon: "https://bne
 WAR3: { name: "Warcraft III: Reign of Chaos", era: classic, icon: "https://bnet.cc/icons/WAR3.png" }
 W3XP: { name: "Warcraft III: The Frozen Throne", era: classic, icon: "https://bnet.cc/icons/W3XP.png" }
 CHAT: { name: "Chat gateway (telnet)", era: classic, icon: "https://bnet.cc/icons/CHAT.png" }
+S2: { name: "StarCraft II", era: bnet2 }

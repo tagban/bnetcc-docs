@@ -1,0 +1,19 @@
+{{- /* A table of message pages. "only": limit the icons shown to these product codes. */ -}}
+<div class="table-wrap">
+<table class="wikitable packet-index">
+  <thead><tr><th>ID</th><th>Name</th><th>Direction</th><th>Used by</th><th>Summary</th></tr></thead>
+  <tbody>
+  {{- range .pages }}
+    {{- $products := .Params.products }}
+    {{- with $.only }}{{ $products = intersect $products . }}{{ end }}
+    <tr>
+      <td><code>{{ .Params.message_id }}</code></td>
+      <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+      <td class="nowrap">{{ with .Params.c2s }}C → S{{ end }}{{ if and .Params.c2s .Params.s2c }}<br>{{ end }}{{ with .Params.s2c }}S → C{{ end }}</td>
+      <td>{{ partial "products.html" $products }}</td>
+      <td>{{ .Params.summary | markdownify }}</td>
+    </tr>
+  {{- end }}
+  </tbody>
+</table>
+</div>

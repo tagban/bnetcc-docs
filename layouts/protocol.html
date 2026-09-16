@@ -1,31 +1,38 @@
 {{ define "main" }}
+{{- $packets := sort (where .RegularPages "Layout" "packet") "Params.message_id" }}
+{{- $sequences := where site.RegularPages "Layout" "sequence" }}
 <div data-pagefind-body>
 <h1 class="title">{{ .Title }}</h1>
 {{ .Content }}
 
-<h2 id="messages">Messages</h2>
-<div class="table-wrap">
-<table class="wikitable packet-index">
-  <thead><tr><th>ID</th><th>Name</th><th>Direction</th><th>Used by</th><th>Summary</th></tr></thead>
-  <tbody>
-  {{- range sort (where .RegularPages "Layout" "packet") "Params.message_id" }}
-    <tr>
-      <td><code>{{ .Params.message_id }}</code></td>
-      <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-      <td class="nowrap">{{ with .Params.c2s }}C → S{{ end }}{{ if and .Params.c2s .Params.s2c }}<br>{{ end }}{{ with .Params.s2c }}S → C{{ end }}</td>
-      <td>{{ partial "products.html" .Params.products }}</td>
-      <td>{{ .Params.summary | markdownify }}</td>
-    </tr>
+<p class="jump">Jump to: <a href="#all">All messages</a>
+{{- range hugo.Data.games }} · <a href="#{{ .key }}">{{ .name }}</a>{{ end }}</p>
+
+<h2 id="all">All messages</h2>
+{{ partial "message-table.html" (dict "pages" $packets "products" true) }}
+
+{{- range hugo.Data.games }}
+  {{- $game := . }}
+  {{- $mine := slice }}
+  {{- range $packets }}{{ if intersect .Params.products $game.products }}{{ $mine = $mine | append . }}{{ end }}{{ end }}
+<h2 id="{{ .key }}">{{ partial "products.html" .products }} {{ .name }}</h2>
+  {{- $seqs := slice }}
+  {{- range $sequences }}{{ if intersect .Params.products $game.products }}{{ $seqs = $seqs | append . }}{{ end }}{{ end }}
+  {{- with $seqs }}
+<p>Logon sequence: {{ range $i, $s := . }}{{ if $i }} · {{ end }}<a href="{{ $s.RelPermalink }}">{{ $s.Title }}</a>{{ end }}</p>
   {{- end }}
-  </tbody>
-</table>
-</div>
+  {{- with $mine }}
+{{ partial "message-table.html" (dict "pages" . "products" true "only" $game.products) }}
+  {{- else }}
+<p class="note">No messages documented for this game yet.</p>
+  {{- end }}
+{{- end }}
 </div>
 
 {{- /* Messages BNETDocs covers that this site doesn't yet: links only, to show what's left. */}}
 {{- with .Params.bnetdocs_prefix }}
   {{- $prefix := . }}
-  {{- $have := slice }}{{ range where $.RegularPages "Layout" "packet" }}{{ $have = $have | append .Title }}{{ end }}
+  {{- $have := slice }}{{ range $packets }}{{ $have = $have | append .Title }}{{ end }}
   {{- $missing := slice }}
   {{- range $name, $dirs := hugo.Data.bnetdocs.packets }}{{ if and (hasPrefix $name $prefix) (not (in $have $name)) }}{{ $missing = $missing | append $name }}{{ end }}{{ end }}
   {{- with $missing }}

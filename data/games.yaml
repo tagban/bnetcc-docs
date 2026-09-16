@@ -1,0 +1,6 @@
+# Game families, used to group messages and sequences by game.
+- { key: "starcraft", name: "StarCraft", products: [STAR, SEXP, JSTR, SSHR] }
+- { key: "diablo", name: "Diablo", products: [DRTL, DSHR] }
+- { key: "warcraft-ii", name: "Warcraft II: Battle.net Edition", products: [W2BN] }
+- { key: "diablo-ii", name: "Diablo II", products: [D2DV, D2XP] }
+- { key: "warcraft-iii", name: "Warcraft III", products: [WAR3, W3XP] }

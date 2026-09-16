@@ -85,7 +85,7 @@ h1.title .message-id { padding: 0; font-size: .75em; color: #00c0ff; background:
 }
 
 #content table.sequence { width: 100%; }
-#content table.sequence td.seq-client, #content table.sequence td.seq-server { white-space: nowrap; }
+#content table.sequence td.seq-client, #content table.sequence td.seq-server { max-width: 16em; }
 #content table.sequence td:nth-child(5) { min-width: 14em; }
 #content table.packet-index td:nth-child(4) { min-width: 190px; }
 #content table.packet-index td:nth-child(5) { min-width: 14em; }
@@ -99,3 +99,4 @@ h1.title .message-id { padding: 0; font-size: .75em; color: #00c0ff; background:
 .status-offline { color: #ff6b6b; }
 .status-skip { color: #888888; font-weight: normal; }
 #content table.servers td:nth-child(2) { min-width: 12em; }
+.jump { line-height: 1.9; }

@@ -7,7 +7,7 @@ How Battle.net works on the wire: how game clients connect, what each message co
 | | |
 |---|---|
 | **[Classic Battle.net (1.0)](/classic/)** | *Diablo*, *StarCraft*, *Warcraft II*, *Diablo II* and *Warcraft III*: BNCS, BNFTP, realms, game joining, matchmaking, version checking, and the historical chat gateway. |
-| **Battle.net 2.0** *(coming)* | The modern-era service used by *StarCraft II*, *Diablo III* and later games. |
+| **[Battle.net 2.0](/bnet2/)** | The modern-era service. Currently covers *StarCraft II*: signing in through Front, then its native Sunken services. |
 | **Battle.net App** *(coming)* | The desktop app framework: sign-in, the local agent, and how games launch through it. |
 
 New here? Read [How to read these pages](/how-to-read/).
