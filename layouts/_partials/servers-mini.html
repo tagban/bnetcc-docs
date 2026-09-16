@@ -2,7 +2,7 @@
 {{- $status := index hugo.Data "server-status" }}
 {{- with where hugo.Data.servers "group" "classic-community" }}
 <div class="servers-mini">
-  <h3>Servers</h3>
+  <h3>Community Servers</h3>
   <ul>
     {{- range sort . "name" }}
       {{- $id := .id }}
