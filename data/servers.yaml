@@ -11,6 +11,13 @@
   website: "http://us.bnet.cc:6116/"
   added_by: "BNET.cc"
 
+- id: "war2-ru"
+  name: "War2.ru"
+  address: "server.war2.ru"
+  port: 6112
+  group: "classic-community"
+  website: "http://war2.ru/"
+
 - id: "war-pianka-io"
   name: "War Net Server"
   address: "war.pianka.io"
