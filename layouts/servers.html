@@ -24,7 +24,7 @@
 <h2>{{ $label }}</h2>
 <div class="table-wrap">
 <table class="wikitable servers">
-  <thead><tr><th>Status</th><th>Server</th><th>Address</th><th>Last seen online</th><th>Listed by</th></tr></thead>
+  <thead><tr><th>Status</th><th>Server</th><th>Address</th><th>Last seen online</th></tr></thead>
   <tbody>
     {{- range sort . "name" }}
       {{- $id := .id }}
@@ -40,7 +40,6 @@
       <td>{{ with .website }}<a href="{{ . }}">{{ end }}{{ .name }}{{ with .website }}</a>{{ end }}</td>
       <td class="nowrap"><code>{{ .address }}:{{ .port }}</code></td>
       <td class="nowrap">{{ with $r.last_online }}{{ (time .).Format "Jan 2, 2006" }}{{ else }}<span class="note">—</span>{{ end }}</td>
-      <td>{{ with .bnetdocs }}<a href="{{ . }}">BNETDocs</a>{{ end }}{{ with .added_by }}<br><span class="note">added by {{ . }}</span>{{ end }}</td>
     </tr>
     {{- end }}
   </tbody>

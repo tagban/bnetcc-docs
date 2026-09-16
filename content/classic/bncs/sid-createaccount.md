@@ -27,4 +27,6 @@ sources:
 
 **The result is reversed compared to `SID_CREATEACCOUNT2`.** Here `0x01` means created. In `SID_CREATEACCOUNT2`, `0x00` does.
 
+**Many clients ignore the result.** Bots such as Invigoration treat any reply as "account created", disconnect and log on with the new account. Whether creation really worked only shows at that logon. A server that sends `0x00` for success still works with these clients, but a client that reads the value, as BNETDocs and Atlas describe it, would report a failure.
+
 A client that wants a reason for the failure can use `SID_CREATEACCOUNT2`, which any product may send.

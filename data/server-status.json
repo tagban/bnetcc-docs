@@ -1,0 +1,233 @@
+{
+ "checked": "2026-09-16T20:58:42+00:00",
+ "servers": {
+  "bnet-cc-us": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 117,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-0": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 87,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-1": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 134,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-100": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 847,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-101": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 371,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-102": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 322,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-103": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 270,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-105": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 117,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-106": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 79,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-107": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 83,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-109": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 97,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-110": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 85,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-111": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 179,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-112": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 835,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-124": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 629,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-126": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 438,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-127": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 428,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-128": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 763,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-129": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 244,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-130": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 277,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-131": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 124,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-19": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 125,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-2": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 152,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-3": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 209,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-4": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 260,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-40": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 62,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-59": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 143,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-61": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 151,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-63": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 244,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-65": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 92,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-74": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 277,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-75": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 99,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-77": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 199,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-78": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 193,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-79": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 91,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-97": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 92,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-98": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 1990,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-99": {
+   "last_online": "2026-09-16T20:58:42+00:00",
+   "latency_ms": 690,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  }
+ }
+}
