@@ -10,6 +10,12 @@
   website: "https://bnet.cc"
   added_by: "BNET.cc"
 
+- id: "war-pianka-io"
+  name: "War Net Server"
+  address: "war.pianka.io"
+  port: 6112
+  group: "classic-community"
+
 - id: "bnetdocs-4"
   name: "Asia / Kalimdor (DNS) (Old)"
   address: "asia.battle.net"
