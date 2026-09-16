@@ -68,7 +68,7 @@
   name: "Good Old Games (DNS)"
   address: "connect-forever.classic.blizzard.com"
   port: 6112
-  group: "classic-community"
+  group: "classic-blizzard"
   kind: "Battle.net v1 Game Client Service (BNCS) / Partnered Communities"
   bnetdocs: "https://bnetdocs.org/server/97/good-old-games-dns"
 
