@@ -44,3 +44,48 @@ table.wikitable { background: #161616; border-color: #575757; }
   --pagefind-ui-border: #333333;
   --pagefind-ui-tag: #1c1c1c;
 }
+
+/* --- Protocol reference components --- */
+.lead { font-size: 1.1em; color: #dddddd; }
+.note { color: #888888; font-size: 90%; }
+.nowrap { white-space: nowrap; }
+h1.title .message-id { padding: 0; font-size: .75em; color: #00c0ff; background: none; }
+
+.products img { margin: 0 3px 2px 0; vertical-align: middle; image-rendering: pixelated; }
+.product-code { display: inline-block; margin: 0 3px 2px 0; padding: 0 3px; font: bold 10px Consolas, Menlo, monospace; color: #cccccc; border: 1px solid #555555; vertical-align: middle; }
+
+.conf { white-space: nowrap; }
+.conf-label { font-size: 90%; }
+.conf-verified .conf-label { color: #6fcf73; }
+.conf-single .conf-label { color: #ffac04; }
+.conf-unknown .conf-label { color: #ff6b6b; }
+
+#content table.packet-facts { margin: 0 0 1em; border: 0; }
+#content table.packet-facts th, #content table.packet-facts td { padding: 2px 12px 2px 0; background: none; border: 0; }
+#content table.packet-facts th { color: #888888; font-weight: normal; }
+
+#content table.fields tr.repeat td { color: #ffffff; background: #1a1d2b; }
+#content table.fields tr.depth-1 td:nth-child(2) { padding-left: 1.6em; }
+#content table.fields tr.depth-2 td:nth-child(2) { padding-left: 3em; }
+
+#content table.sequence td { vertical-align: middle; }
+#content table.sequence .seq-n { color: #888888; text-align: right; }
+#content table.sequence .seq-arrow { font-size: 1.3em; color: #00c0ff; text-align: center; }
+#content table.sequence td.seq-server { text-align: right; }
+#content table.sequence tr.seq-section td { color: #ffffff; font-weight: bold; background: #1a1d2b; }
+#content table.sequence tr.seq-optional td { font-style: italic; }
+.transport { display: inline-block; padding: 0 3px; font-size: 9px; font-style: normal; color: #00c0ff; border: 1px solid #00c0ff; vertical-align: middle; }
+
+.todo-list { font-size: 90%; line-height: 1.9; }
+.credits { columns: 3; }
+.sources li { margin-bottom: .3em; }
+
+@media (max-width: 760px) {
+  .credits { columns: 1; }
+}
+
+#content table.sequence { width: 100%; }
+#content table.sequence td.seq-client, #content table.sequence td.seq-server { white-space: nowrap; }
+#content table.sequence td:nth-child(5) { min-width: 14em; }
+#content table.packet-index td:nth-child(4) { min-width: 190px; }
+#content table.packet-index td:nth-child(5) { min-width: 14em; }

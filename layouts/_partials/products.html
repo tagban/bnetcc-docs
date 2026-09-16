@@ -1,0 +1,11 @@
+{{- /* Product icons for a list of product codes, e.g. (slice "STAR" "SEXP"). */ -}}
+{{- $products := hugo.Data.products -}}
+<span class="products">
+{{- range . }}
+  {{- $code := . }}
+  {{- with index $products $code }}
+    {{- if .icon }}<img src="{{ .icon }}" width="28" height="14" alt="{{ $code }}" title="{{ .name }} ({{ $code }})">
+    {{- else }}<span class="product-code" title="{{ .name }}">{{ $code }}</span>{{ end }}
+  {{- else }}<span class="product-code">{{ $code }}</span>{{ end }}
+{{- end -}}
+</span>

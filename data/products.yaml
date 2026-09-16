@@ -1,0 +1,14 @@
+# Products that connect to Battle.net, by their four-character product code.
+# Icons are the in-game chat icons, served by bnet.cc (never stored in this repository).
+STAR: { name: "StarCraft", era: classic, icon: "https://bnet.cc/icons/STAR.png" }
+SEXP: { name: "StarCraft: Brood War", era: classic, icon: "https://bnet.cc/icons/SEXP.png" }
+JSTR: { name: "StarCraft (Japanese)", era: classic, icon: "https://bnet.cc/icons/JSTR.png" }
+SSHR: { name: "StarCraft Shareware", era: classic, icon: "https://bnet.cc/icons/SSHR.png" }
+W2BN: { name: "Warcraft II: Battle.net Edition", era: classic, icon: "https://bnet.cc/icons/W2BN.png" }
+DRTL: { name: "Diablo", era: classic, icon: "https://bnet.cc/icons/DRTL.png" }
+DSHR: { name: "Diablo Shareware", era: classic, icon: "https://bnet.cc/icons/DSHR.png" }
+D2DV: { name: "Diablo II", era: classic, icon: "https://bnet.cc/icons/D2DV.png" }
+D2XP: { name: "Diablo II: Lord of Destruction", era: classic, icon: "https://bnet.cc/icons/D2XP.png" }
+WAR3: { name: "Warcraft III: Reign of Chaos", era: classic, icon: "https://bnet.cc/icons/WAR3.png" }
+W3XP: { name: "Warcraft III: The Frozen Throne", era: classic, icon: "https://bnet.cc/icons/W3XP.png" }
+CHAT: { name: "Chat gateway (telnet)", era: classic, icon: "https://bnet.cc/icons/CHAT.png" }

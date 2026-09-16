@@ -1,0 +1,14 @@
+{{- $depth := .depth -}}
+{{- range .fields }}
+  {{- if .repeat }}
+    <tr class="repeat depth-{{ $depth }}"><td colspan="4"><strong>{{ .repeat }}</strong></td></tr>
+    {{- partial "field-rows.html" (dict "fields" .fields "depth" (add $depth 1)) }}
+  {{- else }}
+    <tr class="depth-{{ $depth }}">
+      <td><code>{{ .type }}</code></td>
+      <td>{{ .name }}</td>
+      <td>{{ with .notes }}{{ . | markdownify }}{{ end }}</td>
+      <td>{{ partial "confidence.html" .confidence }}</td>
+    </tr>
+  {{- end }}
+{{- end }}

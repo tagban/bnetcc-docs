@@ -26,11 +26,11 @@ disableHugoGeneratorInject = true
   style = "monokai"
 
 [params]
-  tagline = "Command Center documentation"
+  tagline = "Battle.net protocol documentation"
   repo = "tagban/bnetcc-docs"
   branch = "main"
   # Discord editor address (edit.bnet.cc). Leave empty until it is set up.
   editorURL = ""
   discordInvite = "https://discord.gg/dR4djHweh3"
-  footer = "Command Center is an educational project. It is not affiliated with, endorsed by or sponsored by Blizzard Entertainment."
+  footer = "Documenting Battle.net protocols for education and preservation. Not affiliated with, endorsed by or sponsored by Blizzard Entertainment."
   stylesheets = ["/css/wiki.css", "/css/site.css"]

@@ -1,0 +1,4 @@
+{{- /* A confidence mark: "verified", "single" or "unknown". */ -}}
+{{- with . }}{{ $key := . }}{{ with index hugo.Data.confidence $key -}}
+<span class="conf conf-{{ $key }}" title="{{ .meaning }}">{{ .mark }}<span class="conf-label"> {{ .label }}</span></span>
+{{- end }}{{ end -}}

@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div data-pagefind-body>
+<h1 class="title">{{ .Title }}</h1>
+{{ .Content }}
+
+<h2 id="messages">Messages</h2>
+<div class="table-wrap">
+<table class="wikitable packet-index">
+  <thead><tr><th>ID</th><th>Name</th><th>Direction</th><th>Used by</th><th>Summary</th></tr></thead>
+  <tbody>
+  {{- range sort (where .RegularPages "Layout" "packet") "Params.message_id" }}
+    <tr>
+      <td><code>{{ .Params.message_id }}</code></td>
+      <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+      <td class="nowrap">{{ with .Params.c2s }}C → S{{ end }}{{ if and .Params.c2s .Params.s2c }}<br>{{ end }}{{ with .Params.s2c }}S → C{{ end }}</td>
+      <td>{{ partial "products.html" .Params.products }}</td>
+      <td>{{ .Params.summary | markdownify }}</td>
+    </tr>
+  {{- end }}
+  </tbody>
+</table>
+</div>
+</div>
+
+{{- /* Messages BNETDocs covers that this site doesn't yet: links only, to show what's left. */}}
+{{- with .Params.bnetdocs_prefix }}
+  {{- $prefix := . }}
+  {{- $have := slice }}{{ range where $.RegularPages "Layout" "packet" }}{{ $have = $have | append .Title }}{{ end }}
+  {{- $missing := slice }}
+  {{- range $name, $dirs := hugo.Data.bnetdocs.packets }}{{ if and (hasPrefix $name $prefix) (not (in $have $name)) }}{{ $missing = $missing | append $name }}{{ end }}{{ end }}
+  {{- with $missing }}
+<h2 id="to-do">Not documented here yet</h2>
+<p>{{ len . }} more messages are documented on BNETDocs and still need pages here:</p>
+<p class="todo-list">
+    {{- range $i, $name := . }}{{ if $i }} · {{ end }}{{ $dirs := index hugo.Data.bnetdocs.packets $name }}{{ $e := or (index $dirs "c2s") (index $dirs "s2c") (index $dirs "p2p") }}<a href="{{ $e.url }}">{{ $name }}</a>{{ end }}
+</p>
+  {{- end }}
+{{- end }}
+{{ partial "pageinfo.html" . }}
+{{ end }}

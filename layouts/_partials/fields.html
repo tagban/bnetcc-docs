@@ -1,0 +1,9 @@
+{{- /* A message layout. Fields may contain a repeated group: { repeat: "For each CD key", fields: [...] }. */ -}}
+<div class="table-wrap">
+<table class="wikitable fields">
+  <thead><tr><th>Type</th><th>Field</th><th>Notes</th><th>Confidence</th></tr></thead>
+  <tbody>
+    {{- partial "field-rows.html" (dict "fields" .fields "depth" 0) }}
+  </tbody>
+</table>
+</div>

@@ -1,0 +1,4 @@
+# How sure we are of a fact. Used on every field, value and sequence step.
+verified: { mark: "✅", label: "Verified", meaning: "Confirmed against a real client or two independent sources." }
+single: { mark: "⚠️", label: "Single source", meaning: "From one source only, or worked out rather than captured. Treat with care." }
+unknown: { mark: "🛑", label: "Unknown", meaning: "Not known. Do not guess in code; capture it." }

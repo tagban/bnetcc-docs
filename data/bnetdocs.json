@@ -1,0 +1,4881 @@
+{
+ "source": "https://bnetdocs.org/packet/index.json",
+ "credits_page": "https://bnetdocs.org/credits",
+ "authors": [
+  {
+   "name": "Caaaaarrrrlll",
+   "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+  },
+  {
+   "name": "jaenster",
+   "url": "https://bnetdocs.org/user/5018/jaenster"
+  },
+  {
+   "name": "joe[x86]",
+   "url": "https://bnetdocs.org/user/6/joe-x86"
+  },
+  {
+   "name": "Kyro",
+   "url": "https://bnetdocs.org/user/1/kyro"
+  },
+  {
+   "name": "Leaky",
+   "url": "https://bnetdocs.org/user/36/leaky"
+  },
+  {
+   "name": "LordVader",
+   "url": "https://bnetdocs.org/user/22/lordvader"
+  },
+  {
+   "name": "RealityRipple",
+   "url": "https://bnetdocs.org/user/33/realityripple"
+  },
+  {
+   "name": "Ribose",
+   "url": "https://bnetdocs.org/user/30/ribose"
+  },
+  {
+   "name": "Ricola3D",
+   "url": "https://bnetdocs.org/user/5210/ricola3d"
+  },
+  {
+   "name": "xboi209",
+   "url": "https://bnetdocs.org/user/4955/xboi209"
+  }
+ ],
+ "contributors": [
+  {
+   "name": "Caaaaarrrrlll",
+   "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+  },
+  {
+   "name": "cen",
+   "url": "https://bnetdocs.org/user/4985"
+  },
+  {
+   "name": "Davnit",
+   "url": "https://bnetdocs.org/user/62"
+  },
+  {
+   "name": "jaenster",
+   "url": "https://bnetdocs.org/user/5018/jaenster"
+  },
+  {
+   "name": "joe[x86]",
+   "url": "https://bnetdocs.org/user/6/joe-x86"
+  },
+  {
+   "name": "Kyro",
+   "url": "https://bnetdocs.org/user/1/kyro"
+  },
+  {
+   "name": "l2k-Shadow",
+   "url": "https://bnetdocs.org/user/16"
+  },
+  {
+   "name": "Leaky",
+   "url": "https://bnetdocs.org/user/36/leaky"
+  },
+  {
+   "name": "LordVader",
+   "url": "https://bnetdocs.org/user/22/lordvader"
+  },
+  {
+   "name": "RealityRipple",
+   "url": "https://bnetdocs.org/user/33/realityripple"
+  },
+  {
+   "name": "Ribose",
+   "url": "https://bnetdocs.org/user/30/ribose"
+  },
+  {
+   "name": "Ricola3D",
+   "url": "https://bnetdocs.org/user/5210/ricola3d"
+  },
+  {
+   "name": "Sixen",
+   "url": "https://bnetdocs.org/user/123"
+  },
+  {
+   "name": "UserLoser",
+   "url": "https://bnetdocs.org/user/2"
+  },
+  {
+   "name": "Vector",
+   "url": "https://bnetdocs.org/user/176"
+  },
+  {
+   "name": "xboi209",
+   "url": "https://bnetdocs.org/user/4955/xboi209"
+  }
+ ],
+ "packets": {
+  "BNLS_AUTHORIZE": {
+   "c2s": {
+    "bnetdocs_id": 413,
+    "url": "https://bnetdocs.org/packet/413",
+    "message_id": "0x0E",
+    "created": "Fri, 04 Feb 2011 22:35:25 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 396,
+    "url": "https://bnetdocs.org/packet/396",
+    "message_id": "0x0E",
+    "created": "Fri, 04 Feb 2011 22:36:25 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_AUTHORIZEPROOF": {
+   "c2s": {
+    "bnetdocs_id": 185,
+    "url": "https://bnetdocs.org/packet/185",
+    "message_id": "0x0F",
+    "created": "Fri, 04 Feb 2011 22:36:52 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 196,
+    "url": "https://bnetdocs.org/packet/196",
+    "message_id": "0x0F",
+    "created": "Sun, 26 Feb 2012 04:22:27 +0000",
+    "edited": "Sun, 01 Oct 2017 18:35:46 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "BNLS_CDKEY": {
+   "c2s": {
+    "bnetdocs_id": 179,
+    "url": "https://bnetdocs.org/packet/179",
+    "message_id": "0x01",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 07 Mar 2018 01:15:10 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Leaky",
+     "url": "https://bnetdocs.org/user/36/leaky"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 123,
+    "url": "https://bnetdocs.org/packet/123",
+    "message_id": "0x01",
+    "created": "Fri, 04 Feb 2011 22:00:22 +0000",
+    "edited": "Sat, 02 Apr 2016 23:03:44 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Leaky",
+     "url": "https://bnetdocs.org/user/36/leaky"
+    }
+   }
+  },
+  "BNLS_CDKEY_EX": {
+   "c2s": {
+    "bnetdocs_id": 343,
+    "url": "https://bnetdocs.org/packet/343",
+    "message_id": "0x0C",
+    "created": "Tue, 27 Sep 2011 02:58:07 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 362,
+    "url": "https://bnetdocs.org/packet/362",
+    "message_id": "0x0C",
+    "created": "Tue, 27 Sep 2011 02:58:20 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_CHANGECHALLENGE": {
+   "c2s": {
+    "bnetdocs_id": 132,
+    "url": "https://bnetdocs.org/packet/132",
+    "message_id": "0x05",
+    "created": "Fri, 04 Feb 2011 22:07:35 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 115,
+    "url": "https://bnetdocs.org/packet/115",
+    "message_id": "0x05",
+    "created": "Fri, 04 Feb 2011 22:07:52 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_CHANGEPROOF": {
+   "c2s": {
+    "bnetdocs_id": 326,
+    "url": "https://bnetdocs.org/packet/326",
+    "message_id": "0x06",
+    "created": "Fri, 04 Feb 2011 22:08:19 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 203,
+    "url": "https://bnetdocs.org/packet/203",
+    "message_id": "0x06",
+    "created": "Fri, 06 Aug 2010 01:40:48 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_CHOOSENLSREVISION": {
+   "c2s": {
+    "bnetdocs_id": 283,
+    "url": "https://bnetdocs.org/packet/283",
+    "message_id": "0x0D",
+    "created": "Fri, 04 Feb 2011 21:57:07 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 208,
+    "url": "https://bnetdocs.org/packet/208",
+    "message_id": "0x0D",
+    "created": "Thu, 28 Jul 2011 16:52:14 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_CONFIRMLOGON": {
+   "c2s": {
+    "bnetdocs_id": 113,
+    "url": "https://bnetdocs.org/packet/113",
+    "message_id": "0x0A",
+    "created": "Fri, 04 Feb 2011 22:33:58 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 104,
+    "url": "https://bnetdocs.org/packet/104",
+    "message_id": "0x0A",
+    "created": "Sun, 26 Feb 2012 04:20:13 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_CREATEACCOUNT": {
+   "c2s": {
+    "bnetdocs_id": 214,
+    "url": "https://bnetdocs.org/packet/214",
+    "message_id": "0x04",
+    "created": "Fri, 04 Feb 2011 22:04:06 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 183,
+    "url": "https://bnetdocs.org/packet/183",
+    "message_id": "0x04",
+    "created": "Fri, 04 Feb 2011 22:04:23 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_HASHDATA": {
+   "c2s": {
+    "bnetdocs_id": 293,
+    "url": "https://bnetdocs.org/packet/293",
+    "message_id": "0x0B",
+    "created": "Fri, 04 Feb 2011 21:55:48 +0000",
+    "edited": "Sat, 22 Apr 2017 23:48:19 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 383,
+    "url": "https://bnetdocs.org/packet/383",
+    "message_id": "0x0B",
+    "created": "Fri, 04 Feb 2011 21:56:28 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_IPBAN": {
+   "s2c": {
+    "bnetdocs_id": 470,
+    "url": "https://bnetdocs.org/packet/470",
+    "message_id": "0xFF",
+    "created": "Sun, 23 Jun 2013 21:28:19 +0000",
+    "edited": "Sat, 28 Dec 2019 11:58:40 +0000",
+    "edits": 3,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "BNLS_LOGONCHALLENGE": {
+   "c2s": {
+    "bnetdocs_id": 306,
+    "url": "https://bnetdocs.org/packet/306",
+    "message_id": "0x02",
+    "created": "Fri, 04 Feb 2011 22:02:54 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 329,
+    "url": "https://bnetdocs.org/packet/329",
+    "message_id": "0x02",
+    "created": "Fri, 04 Feb 2011 22:03:36 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_LOGONPROOF": {
+   "c2s": {
+    "bnetdocs_id": 152,
+    "url": "https://bnetdocs.org/packet/152",
+    "message_id": "0x03",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 350,
+    "url": "https://bnetdocs.org/packet/350",
+    "message_id": "0x03",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_NULL": {
+   "c2s": {
+    "bnetdocs_id": 356,
+    "url": "https://bnetdocs.org/packet/356",
+    "message_id": "0x00",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Leaky",
+     "url": "https://bnetdocs.org/user/36/leaky"
+    }
+   }
+  },
+  "BNLS_REQUESTVERSIONBYTE": {
+   "c2s": {
+    "bnetdocs_id": 181,
+    "url": "https://bnetdocs.org/packet/181",
+    "message_id": "0x10",
+    "created": "Sun, 26 Sep 2010 23:50:44 +0000",
+    "edited": "Mon, 20 Aug 2018 08:39:31 +0000",
+    "edits": 2,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 134,
+    "url": "https://bnetdocs.org/packet/134",
+    "message_id": "0x10",
+    "created": "Sun, 26 Sep 2010 23:55:16 +0000",
+    "edited": "Mon, 20 Aug 2018 08:39:42 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "BNLS_RESERVESERVERSLOTS": {
+   "c2s": {
+    "bnetdocs_id": 239,
+    "url": "https://bnetdocs.org/packet/239",
+    "message_id": "0x12",
+    "created": "Fri, 04 Feb 2011 22:37:44 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 355,
+    "url": "https://bnetdocs.org/packet/355",
+    "message_id": "0x12",
+    "created": "Sun, 19 Jun 2011 19:11:56 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_SERVERLOGONCHALLENGE": {
+   "c2s": {
+    "bnetdocs_id": 315,
+    "url": "https://bnetdocs.org/packet/315",
+    "message_id": "0x13",
+    "created": "Fri, 04 Feb 2011 22:38:16 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 404,
+    "url": "https://bnetdocs.org/packet/404",
+    "message_id": "0x13",
+    "created": "Sun, 19 Jun 2011 19:36:41 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_SERVERLOGONPROOF": {
+   "c2s": {
+    "bnetdocs_id": 252,
+    "url": "https://bnetdocs.org/packet/252",
+    "message_id": "0x14",
+    "created": "Fri, 04 Feb 2011 22:38:46 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 176,
+    "url": "https://bnetdocs.org/packet/176",
+    "message_id": "0x14",
+    "created": "Fri, 04 Feb 2011 22:39:14 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_UPGRADECHALLENGE": {
+   "c2s": {
+    "bnetdocs_id": 395,
+    "url": "https://bnetdocs.org/packet/395",
+    "message_id": "0x07",
+    "created": "Fri, 04 Feb 2011 22:10:56 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 348,
+    "url": "https://bnetdocs.org/packet/348",
+    "message_id": "0x07",
+    "created": "Fri, 06 Aug 2010 01:38:27 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_UPGRADEPROOF": {
+   "c2s": {
+    "bnetdocs_id": 205,
+    "url": "https://bnetdocs.org/packet/205",
+    "message_id": "0x08",
+    "created": "Fri, 06 Aug 2010 01:34:49 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 201,
+    "url": "https://bnetdocs.org/packet/201",
+    "message_id": "0x08",
+    "created": "Fri, 04 Feb 2011 22:11:07 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_VERIFYSERVER": {
+   "c2s": {
+    "bnetdocs_id": 251,
+    "url": "https://bnetdocs.org/packet/251",
+    "message_id": "0x11",
+    "created": "Fri, 06 Aug 2010 01:10:57 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 238,
+    "url": "https://bnetdocs.org/packet/238",
+    "message_id": "0x11",
+    "created": "Fri, 06 Aug 2010 01:12:25 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_VERSIONCHECK": {
+   "c2s": {
+    "bnetdocs_id": 361,
+    "url": "https://bnetdocs.org/packet/361",
+    "message_id": "0x09",
+    "created": "Fri, 30 Sep 2011 08:04:20 +0000",
+    "edited": "Mon, 20 Aug 2018 08:39:24 +0000",
+    "edits": 2,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 213,
+    "url": "https://bnetdocs.org/packet/213",
+    "message_id": "0x09",
+    "created": "Fri, 04 Feb 2011 22:31:32 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_VERSIONCHECKEX": {
+   "c2s": {
+    "bnetdocs_id": 155,
+    "url": "https://bnetdocs.org/packet/155",
+    "message_id": "0x18",
+    "created": "Fri, 30 Sep 2011 08:11:16 +0000",
+    "edited": "Mon, 20 Aug 2018 08:39:49 +0000",
+    "edits": 2,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 368,
+    "url": "https://bnetdocs.org/packet/368",
+    "message_id": "0x18",
+    "created": "Fri, 30 Sep 2011 08:15:28 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_VERSIONCHECKEX2": {
+   "c2s": {
+    "bnetdocs_id": 260,
+    "url": "https://bnetdocs.org/packet/260",
+    "message_id": "0x1A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Mon, 20 Aug 2018 08:39:57 +0000",
+    "edits": 2,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 125,
+    "url": "https://bnetdocs.org/packet/125",
+    "message_id": "0x1A",
+    "created": "Fri, 30 Sep 2011 08:15:04 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "BNLS_WARDEN": {
+   "c2s": {
+    "bnetdocs_id": 471,
+    "url": "https://bnetdocs.org/packet/471",
+    "message_id": "0x7D",
+    "created": "Sat, 07 Aug 2010 00:41:29 +0000",
+    "edited": "Sat, 24 May 2025 22:27:20 +0000",
+    "edits": 3,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 472,
+    "url": "https://bnetdocs.org/packet/472",
+    "message_id": "0x7D",
+    "created": "Sat, 07 Aug 2010 00:41:07 +0000",
+    "edited": "Sat, 28 Dec 2019 22:32:02 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "BOTNET_ACCOUNT": {
+   "c2s": {
+    "bnetdocs_id": 209,
+    "url": "https://bnetdocs.org/packet/209",
+    "message_id": "0x0D",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 13 Mar 2018 02:29:39 +0000",
+    "edits": 3,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 366,
+    "url": "https://bnetdocs.org/packet/366",
+    "message_id": "0x0D",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 13 Mar 2018 02:25:25 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "BOTNET_ADMIN": {
+   "c2s": {
+    "bnetdocs_id": 514,
+    "url": "https://bnetdocs.org/packet/514",
+    "message_id": "0x0C",
+    "created": "Mon, 12 Mar 2018 01:30:16 +0000",
+    "edited": "Tue, 13 Mar 2018 05:00:40 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Ribose",
+     "url": "https://bnetdocs.org/user/30/ribose"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 515,
+    "url": "https://bnetdocs.org/packet/515",
+    "message_id": "0x0C",
+    "created": "Mon, 12 Mar 2018 01:30:20 +0000",
+    "edited": "Tue, 13 Mar 2018 05:00:57 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Ribose",
+     "url": "https://bnetdocs.org/user/30/ribose"
+    }
+   }
+  },
+  "BOTNET_CHAT": {
+   "c2s": {
+    "bnetdocs_id": 312,
+    "url": "https://bnetdocs.org/packet/312",
+    "message_id": "0x0B",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Mon, 16 Apr 2018 05:31:20 +0000",
+    "edits": 5,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 207,
+    "url": "https://bnetdocs.org/packet/207",
+    "message_id": "0x0B",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Mon, 16 Apr 2018 05:31:50 +0000",
+    "edits": 5,
+    "author": null
+   }
+  },
+  "BOTNET_CHAT_OPTIONS": {
+   "c2s": {
+    "bnetdocs_id": 335,
+    "url": "https://bnetdocs.org/packet/335",
+    "message_id": "0x10",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 13 Mar 2018 01:52:11 +0000",
+    "edits": 2,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 197,
+    "url": "https://bnetdocs.org/packet/197",
+    "message_id": "0x10",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 13 Mar 2018 01:52:23 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "BOTNET_CLIENT_VERSION": {
+   "c2s": {
+    "bnetdocs_id": 511,
+    "url": "https://bnetdocs.org/packet/511",
+    "message_id": "0x0A",
+    "created": "Mon, 12 Mar 2018 01:19:04 +0000",
+    "edited": "Tue, 13 Mar 2018 05:36:38 +0000",
+    "edits": 3,
+    "author": {
+     "name": "Ribose",
+     "url": "https://bnetdocs.org/user/30/ribose"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 512,
+    "url": "https://bnetdocs.org/packet/512",
+    "message_id": "0x09",
+    "created": "Mon, 12 Mar 2018 01:29:20 +0000",
+    "edited": "Mon, 12 Mar 2018 23:05:27 +0000",
+    "edits": 2,
+    "author": {
+     "name": "Ribose",
+     "url": "https://bnetdocs.org/user/30/ribose"
+    }
+   }
+  },
+  "BOTNET_COMMAND": {
+   "s2c": {
+    "bnetdocs_id": 140,
+    "url": "https://bnetdocs.org/packet/140",
+    "message_id": "0x04",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 02:59:05 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "BOTNET_COMMAND_TO": {
+   "c2s": {
+    "bnetdocs_id": 357,
+    "url": "https://bnetdocs.org/packet/357",
+    "message_id": "0x08",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 02:48:55 +0000",
+    "edits": 3,
+    "author": null
+   }
+  },
+  "BOTNET_COMMAND_TO_ALL": {
+   "c2s": {
+    "bnetdocs_id": 110,
+    "url": "https://bnetdocs.org/packet/110",
+    "message_id": "0x07",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 02:49:14 +0000",
+    "edits": 3,
+    "author": null
+   }
+  },
+  "BOTNET_COMMAND_TO_DATABASE": {
+   "c2s": {
+    "bnetdocs_id": 263,
+    "url": "https://bnetdocs.org/packet/263",
+    "message_id": "0x04",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 02:49:30 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "BOTNET_CYCLE": {
+   "c2s": {
+    "bnetdocs_id": 401,
+    "url": "https://bnetdocs.org/packet/401",
+    "message_id": "0x05",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 13 Mar 2018 04:49:03 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 124,
+    "url": "https://bnetdocs.org/packet/124",
+    "message_id": "0x05",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 13 Mar 2018 04:50:22 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "BOTNET_DATABASE": {
+   "c2s": {
+    "bnetdocs_id": 400,
+    "url": "https://bnetdocs.org/packet/400",
+    "message_id": "0x03",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 13 Mar 2018 06:43:02 +0000",
+    "edits": 7,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 243,
+    "url": "https://bnetdocs.org/packet/243",
+    "message_id": "0x03",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 13 Mar 2018 06:43:18 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "BOTNET_DATABASE_CHMO": {
+   "c2s": {
+    "bnetdocs_id": 516,
+    "url": "https://bnetdocs.org/packet/516",
+    "message_id": "0x0E",
+    "created": "Mon, 12 Mar 2018 01:30:34 +0000",
+    "edited": "Tue, 13 Mar 2018 05:38:12 +0000",
+    "edits": 3,
+    "author": {
+     "name": "Ribose",
+     "url": "https://bnetdocs.org/user/30/ribose"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 517,
+    "url": "https://bnetdocs.org/packet/517",
+    "message_id": "0x0E",
+    "created": "Mon, 12 Mar 2018 01:30:42 +0000",
+    "edited": "Tue, 13 Mar 2018 05:38:27 +0000",
+    "edits": 2,
+    "author": {
+     "name": "Ribose",
+     "url": "https://bnetdocs.org/user/30/ribose"
+    }
+   }
+  },
+  "BOTNET_DATABASE_CHPW": {
+   "c2s": {
+    "bnetdocs_id": 403,
+    "url": "https://bnetdocs.org/packet/403",
+    "message_id": "0x09",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 13 Mar 2018 04:12:19 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "BOTNET_KEEPALIVE": {
+   "c2s": {
+    "bnetdocs_id": 294,
+    "url": "https://bnetdocs.org/packet/294",
+    "message_id": "0x00",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Mon, 12 Mar 2018 04:08:09 +0000",
+    "edits": 2,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 311,
+    "url": "https://bnetdocs.org/packet/311",
+    "message_id": "0x00",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Mon, 12 Mar 2018 04:08:38 +0000",
+    "edits": 2,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   }
+  },
+  "BOTNET_LOGON": {
+   "c2s": {
+    "bnetdocs_id": 231,
+    "url": "https://bnetdocs.org/packet/231",
+    "message_id": "0x01",
+    "created": "Sun, 21 Aug 2011 19:55:49 +0000",
+    "edited": "Sun, 11 Mar 2018 22:03:49 +0000",
+    "edits": 2,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 204,
+    "url": "https://bnetdocs.org/packet/204",
+    "message_id": "0x01",
+    "created": "Sun, 21 Aug 2011 19:25:06 +0000",
+    "edited": "Mon, 12 Mar 2018 04:09:28 +0000",
+    "edits": 3,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   }
+  },
+  "BOTNET_PROTOCOL_VIOLATION": {
+   "s2c": {
+    "bnetdocs_id": 513,
+    "url": "https://bnetdocs.org/packet/513",
+    "message_id": "0x08",
+    "created": "Mon, 12 Mar 2018 01:30:04 +0000",
+    "edited": "Thu, 29 Mar 2018 02:35:11 +0000",
+    "edits": 7,
+    "author": {
+     "name": "Ribose",
+     "url": "https://bnetdocs.org/user/30/ribose"
+    }
+   }
+  },
+  "BOTNET_REVISION": {
+   "s2c": {
+    "bnetdocs_id": 385,
+    "url": "https://bnetdocs.org/packet/385",
+    "message_id": "0x0A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 13 Mar 2018 00:49:29 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "BOTNET_STATSUPDATE": {
+   "c2s": {
+    "bnetdocs_id": 171,
+    "url": "https://bnetdocs.org/packet/171",
+    "message_id": "0x02",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 13 Mar 2018 04:51:47 +0000",
+    "edits": 4,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 309,
+    "url": "https://bnetdocs.org/packet/309",
+    "message_id": "0x02",
+    "created": "Mon, 22 Aug 2011 19:29:39 +0000",
+    "edited": "Mon, 12 Mar 2018 04:12:00 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "BOTNET_USER": {
+   "s2c": {
+    "bnetdocs_id": 198,
+    "url": "https://bnetdocs.org/packet/198",
+    "message_id": "0x06",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Mon, 12 Mar 2018 04:43:22 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "BOTNET_USER_DISC": {
+   "s2c": {
+    "bnetdocs_id": 229,
+    "url": "https://bnetdocs.org/packet/229",
+    "message_id": "0x07",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Mon, 12 Mar 2018 04:48:23 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "BOTNET_USER_LIST": {
+   "c2s": {
+    "bnetdocs_id": 369,
+    "url": "https://bnetdocs.org/packet/369",
+    "message_id": "0x06",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Mon, 12 Mar 2018 04:45:54 +0000",
+    "edits": 3,
+    "author": null
+   }
+  },
+  "D2GS_(COMP)STARTGAME": {
+   "s2c": {
+    "bnetdocs_id": 273,
+    "url": "https://bnetdocs.org/packet/273",
+    "message_id": "0x5C",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_CHARACTERPHRASE": {
+   "c2s": {
+    "bnetdocs_id": 212,
+    "url": "https://bnetdocs.org/packet/212",
+    "message_id": "0x3F",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_CHARTOOBJ": {
+   "s2c": {
+    "bnetdocs_id": 230,
+    "url": "https://bnetdocs.org/packet/230",
+    "message_id": "0x10",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_DROPGOLD": {
+   "c2s": {
+    "bnetdocs_id": 137,
+    "url": "https://bnetdocs.org/packet/137",
+    "message_id": "0x50",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_DROPITEM": {
+   "c2s": {
+    "bnetdocs_id": 275,
+    "url": "https://bnetdocs.org/packet/275",
+    "message_id": "0x17",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_ENTERGAMEENVIRONMENT": {
+   "c2s": {
+    "bnetdocs_id": 300,
+    "url": "https://bnetdocs.org/packet/300",
+    "message_id": "0x6A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 04 Jul 2017 20:36:04 +0000",
+    "edits": 9,
+    "author": null
+   }
+  },
+  "D2GS_GAMECREATE": {
+   "c2s": {
+    "bnetdocs_id": 524,
+    "url": "https://bnetdocs.org/packet/524",
+    "message_id": "0x67",
+    "created": "Mon, 05 Oct 2020 01:11:35 +0000",
+    "edited": "Mon, 05 Oct 2020 06:47:43 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Ricola3D",
+     "url": "https://bnetdocs.org/user/5210/ricola3d"
+    }
+   }
+  },
+  "D2GS_GAMELOGON": {
+   "c2s": {
+    "bnetdocs_id": 131,
+    "url": "https://bnetdocs.org/packet/131",
+    "message_id": "0x68",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Mon, 05 Oct 2020 06:26:38 +0000",
+    "edits": 7,
+    "author": {
+     "name": "Ricola3D",
+     "url": "https://bnetdocs.org/user/5210/ricola3d"
+    }
+   }
+  },
+  "D2GS_GAMEQUESTAVAILABILITY": {
+   "s2c": {
+    "bnetdocs_id": 530,
+    "url": "https://bnetdocs.org/packet/530",
+    "message_id": "0x5E",
+    "created": "Mon, 05 Oct 2020 01:44:15 +0000",
+    "edited": "Mon, 05 Oct 2020 06:48:26 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Ricola3D",
+     "url": "https://bnetdocs.org/user/5210/ricola3d"
+    }
+   }
+  },
+  "D2GS_GAMEQUESTINFOS": {
+   "s2c": {
+    "bnetdocs_id": 526,
+    "url": "https://bnetdocs.org/packet/526",
+    "message_id": "0x29",
+    "created": "Mon, 05 Oct 2020 01:39:23 +0000",
+    "edited": "Mon, 05 Oct 2020 06:41:41 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Ricola3D",
+     "url": "https://bnetdocs.org/user/5210/ricola3d"
+    }
+   }
+  },
+  "D2GS_INSERTSOCKETITEM": {
+   "c2s": {
+    "bnetdocs_id": 345,
+    "url": "https://bnetdocs.org/packet/345",
+    "message_id": "0x28",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   }
+  },
+  "D2GS_INTERACTWITHENTITY": {
+   "c2s": {
+    "bnetdocs_id": 327,
+    "url": "https://bnetdocs.org/packet/327",
+    "message_id": "0x13",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_ITEMTOBELT": {
+   "c2s": {
+    "bnetdocs_id": 284,
+    "url": "https://bnetdocs.org/packet/284",
+    "message_id": "0x23",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_ITEMTOBODY": {
+   "c2s": {
+    "bnetdocs_id": 317,
+    "url": "https://bnetdocs.org/packet/317",
+    "message_id": "0x1A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_ITEMTOBUFFER": {
+   "c2s": {
+    "bnetdocs_id": 353,
+    "url": "https://bnetdocs.org/packet/353",
+    "message_id": "0x18",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_ITEMTOCUBE": {
+   "c2s": {
+    "bnetdocs_id": 410,
+    "url": "https://bnetdocs.org/packet/410",
+    "message_id": "0x2A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_LEFTSKILLONENTITY": {
+   "c2s": {
+    "bnetdocs_id": 192,
+    "url": "https://bnetdocs.org/packet/192",
+    "message_id": "0x06",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_LEFTSKILLONENTITYEX": {
+   "c2s": {
+    "bnetdocs_id": 423,
+    "url": "https://bnetdocs.org/packet/423",
+    "message_id": "0x07",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_LEFTSKILLONENTITYEX2": {
+   "c2s": {
+    "bnetdocs_id": 156,
+    "url": "https://bnetdocs.org/packet/156",
+    "message_id": "0x09",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_LEFTSKILLONENTITYEX3": {
+   "c2s": {
+    "bnetdocs_id": 424,
+    "url": "https://bnetdocs.org/packet/424",
+    "message_id": "0x0A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_LEFTSKILLONLOCATION": {
+   "c2s": {
+    "bnetdocs_id": 380,
+    "url": "https://bnetdocs.org/packet/380",
+    "message_id": "0x05",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_LEFTSKILLONLOCATIONEX": {
+   "c2s": {
+    "bnetdocs_id": 296,
+    "url": "https://bnetdocs.org/packet/296",
+    "message_id": "0x08",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_LOGONRESPONSE": {
+   "s2c": {
+    "bnetdocs_id": 264,
+    "url": "https://bnetdocs.org/packet/264",
+    "message_id": "0x7A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_NEGOTIATECOMPRESSION": {
+   "s2c": {
+    "bnetdocs_id": 245,
+    "url": "https://bnetdocs.org/packet/245",
+    "message_id": "0xAF",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 26 Oct 2018 00:17:23 +0000",
+    "edits": 7,
+    "author": null
+   }
+  },
+  "D2GS_NPCBUY": {
+   "c2s": {
+    "bnetdocs_id": 215,
+    "url": "https://bnetdocs.org/packet/215",
+    "message_id": "0x32",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_NPCCANCEL": {
+   "c2s": {
+    "bnetdocs_id": 168,
+    "url": "https://bnetdocs.org/packet/168",
+    "message_id": "0x30",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_NPCINIT": {
+   "c2s": {
+    "bnetdocs_id": 206,
+    "url": "https://bnetdocs.org/packet/206",
+    "message_id": "0x2F",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_NPCSELL": {
+   "c2s": {
+    "bnetdocs_id": 373,
+    "url": "https://bnetdocs.org/packet/373",
+    "message_id": "0x33",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_NPCTRADE": {
+   "c2s": {
+    "bnetdocs_id": 394,
+    "url": "https://bnetdocs.org/packet/394",
+    "message_id": "0x38",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_OVERHEADMESSAGE": {
+   "c2s": {
+    "bnetdocs_id": 303,
+    "url": "https://bnetdocs.org/packet/303",
+    "message_id": "0x14",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_PARTY": {
+   "c2s": {
+    "bnetdocs_id": 173,
+    "url": "https://bnetdocs.org/packet/173",
+    "message_id": "0x5E",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_PICKUPBODYITEM": {
+   "c2s": {
+    "bnetdocs_id": 428,
+    "url": "https://bnetdocs.org/packet/428",
+    "message_id": "0x1C",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_PICKUPBUFFERITEM": {
+   "c2s": {
+    "bnetdocs_id": 159,
+    "url": "https://bnetdocs.org/packet/159",
+    "message_id": "0x19",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_PICKUPITEM": {
+   "c2s": {
+    "bnetdocs_id": 136,
+    "url": "https://bnetdocs.org/packet/136",
+    "message_id": "0x16",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_PING": {
+   "c2s": {
+    "bnetdocs_id": 352,
+    "url": "https://bnetdocs.org/packet/352",
+    "message_id": "0x6D",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_PLAYERQUESTLOG": {
+   "s2c": {
+    "bnetdocs_id": 528,
+    "url": "https://bnetdocs.org/packet/528",
+    "message_id": "0x52",
+    "created": "Mon, 05 Oct 2020 01:43:36 +0000",
+    "edited": "Mon, 05 Oct 2020 06:48:14 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Ricola3D",
+     "url": "https://bnetdocs.org/user/5210/ricola3d"
+    }
+   }
+  },
+  "D2GS_POTIONTOMERCENARY": {
+   "c2s": {
+    "bnetdocs_id": 371,
+    "url": "https://bnetdocs.org/packet/371",
+    "message_id": "0x61",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_QUESTITEMSTATE": {
+   "s2c": {
+    "bnetdocs_id": 529,
+    "url": "https://bnetdocs.org/packet/529",
+    "message_id": "0x5D",
+    "created": "Mon, 05 Oct 2020 01:43:36 +0000",
+    "edited": "Mon, 05 Oct 2020 06:48:20 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Ricola3D",
+     "url": "https://bnetdocs.org/user/5210/ricola3d"
+    }
+   }
+  },
+  "D2GS_QUESTSPECIAL": {
+   "s2c": {
+    "bnetdocs_id": 527,
+    "url": "https://bnetdocs.org/packet/527",
+    "message_id": "0x50",
+    "created": "Mon, 05 Oct 2020 01:42:53 +0000",
+    "edited": "Mon, 05 Oct 2020 06:47:59 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Ricola3D",
+     "url": "https://bnetdocs.org/user/5210/ricola3d"
+    }
+   }
+  },
+  "D2GS_REMOVEBELTITEM": {
+   "c2s": {
+    "bnetdocs_id": 276,
+    "url": "https://bnetdocs.org/packet/276",
+    "message_id": "0x24",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_REMOVESTACKITEM": {
+   "c2s": {
+    "bnetdocs_id": 391,
+    "url": "https://bnetdocs.org/packet/391",
+    "message_id": "0x22",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_RIGHTSKILLONENTITY": {
+   "c2s": {
+    "bnetdocs_id": 190,
+    "url": "https://bnetdocs.org/packet/190",
+    "message_id": "0x0D",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_RIGHTSKILLONENTITYEX": {
+   "c2s": {
+    "bnetdocs_id": 426,
+    "url": "https://bnetdocs.org/packet/426",
+    "message_id": "0x0E",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_RIGHTSKILLONENTITYEX2": {
+   "c2s": {
+    "bnetdocs_id": 150,
+    "url": "https://bnetdocs.org/packet/150",
+    "message_id": "0x10",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_RIGHTSKILLONENTITYEX3": {
+   "c2s": {
+    "bnetdocs_id": 425,
+    "url": "https://bnetdocs.org/packet/425",
+    "message_id": "0x11",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_RIGHTSKILLONLOCATION": {
+   "c2s": {
+    "bnetdocs_id": 282,
+    "url": "https://bnetdocs.org/packet/282",
+    "message_id": "0x0C",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_RIGHTSKILLONLOCATIONEX": {
+   "c2s": {
+    "bnetdocs_id": 111,
+    "url": "https://bnetdocs.org/packet/111",
+    "message_id": "0x0F",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_RUNTOENTITY": {
+   "c2s": {
+    "bnetdocs_id": 399,
+    "url": "https://bnetdocs.org/packet/399",
+    "message_id": "0x04",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_RUNTOLOCATION": {
+   "c2s": {
+    "bnetdocs_id": 232,
+    "url": "https://bnetdocs.org/packet/232",
+    "message_id": "0x03",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_SCROLLTOTOME": {
+   "c2s": {
+    "bnetdocs_id": 169,
+    "url": "https://bnetdocs.org/packet/169",
+    "message_id": "0x29",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_SETBYTEATTR": {
+   "s2c": {
+    "bnetdocs_id": 221,
+    "url": "https://bnetdocs.org/packet/221",
+    "message_id": "0x1D",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_SETDWORDATTR": {
+   "s2c": {
+    "bnetdocs_id": 299,
+    "url": "https://bnetdocs.org/packet/299",
+    "message_id": "0x1F",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_SETWORDATTR": {
+   "s2c": {
+    "bnetdocs_id": 222,
+    "url": "https://bnetdocs.org/packet/222",
+    "message_id": "0x1E",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_SMALLGOLDPICKUP": {
+   "s2c": {
+    "bnetdocs_id": 269,
+    "url": "https://bnetdocs.org/packet/269",
+    "message_id": "0x19",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_STACKITEM": {
+   "c2s": {
+    "bnetdocs_id": 364,
+    "url": "https://bnetdocs.org/packet/364",
+    "message_id": "0x21",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_SWAP2HANDEDITEM": {
+   "c2s": {
+    "bnetdocs_id": 258,
+    "url": "https://bnetdocs.org/packet/258",
+    "message_id": "0x1B",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_SWITCHBELTITEM": {
+   "c2s": {
+    "bnetdocs_id": 114,
+    "url": "https://bnetdocs.org/packet/114",
+    "message_id": "0x25",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_SWITCHBODYITEM": {
+   "c2s": {
+    "bnetdocs_id": 126,
+    "url": "https://bnetdocs.org/packet/126",
+    "message_id": "0x1D",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_SWITCHINVENTORYITEM": {
+   "c2s": {
+    "bnetdocs_id": 133,
+    "url": "https://bnetdocs.org/packet/133",
+    "message_id": "0x1F",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   }
+  },
+  "D2GS_TRADE": {
+   "c2s": {
+    "bnetdocs_id": 98,
+    "url": "https://bnetdocs.org/packet/98",
+    "message_id": "0x4F",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "joe[x86]",
+     "url": "https://bnetdocs.org/user/6/joe-x86"
+    }
+   }
+  },
+  "D2GS_TRADEACTION": {
+   "s2c": {
+    "bnetdocs_id": 142,
+    "url": "https://bnetdocs.org/packet/142",
+    "message_id": "0x77",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_TRADERESULT": {
+   "s2c": {
+    "bnetdocs_id": 523,
+    "url": "https://bnetdocs.org/packet/523",
+    "message_id": "0x2A",
+    "created": "Wed, 27 May 2020 17:07:16 +0000",
+    "edited": "Wed, 27 May 2020 20:14:07 +0000",
+    "edits": 2,
+    "author": {
+     "name": "jaenster",
+     "url": "https://bnetdocs.org/user/5018/jaenster"
+    }
+   }
+  },
+  "D2GS_UNIQUEEVENTS": {
+   "s2c": {
+    "bnetdocs_id": 430,
+    "url": "https://bnetdocs.org/packet/430",
+    "message_id": "0x89",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   }
+  },
+  "D2GS_UNSELECTOBJ": {
+   "c2s": {
+    "bnetdocs_id": 267,
+    "url": "https://bnetdocs.org/packet/267",
+    "message_id": "0x2D",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_UPDATEQUESTSINFOS": {
+   "s2c": {
+    "bnetdocs_id": 525,
+    "url": "https://bnetdocs.org/packet/525",
+    "message_id": "0x28",
+    "created": "Mon, 05 Oct 2020 01:31:59 +0000",
+    "edited": "Mon, 05 Oct 2020 06:38:30 +0000",
+    "edits": 2,
+    "author": {
+     "name": "Ricola3D",
+     "url": "https://bnetdocs.org/user/5210/ricola3d"
+    }
+   }
+  },
+  "D2GS_USEBELTITEM": {
+   "c2s": {
+    "bnetdocs_id": 389,
+    "url": "https://bnetdocs.org/packet/389",
+    "message_id": "0x26",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_USEITEM": {
+   "c2s": {
+    "bnetdocs_id": 336,
+    "url": "https://bnetdocs.org/packet/336",
+    "message_id": "0x20",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_WALKTOENTITY": {
+   "c2s": {
+    "bnetdocs_id": 365,
+    "url": "https://bnetdocs.org/packet/365",
+    "message_id": "0x02",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_WALKTOLOCATION": {
+   "c2s": {
+    "bnetdocs_id": 128,
+    "url": "https://bnetdocs.org/packet/128",
+    "message_id": "0x01",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_WAYPOINT": {
+   "c2s": {
+    "bnetdocs_id": 281,
+    "url": "https://bnetdocs.org/packet/281",
+    "message_id": "0x49",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "D2GS_WORLDOBJECT": {
+   "s2c": {
+    "bnetdocs_id": 147,
+    "url": "https://bnetdocs.org/packet/147",
+    "message_id": "0x51",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "MCP_CANCELGAMECREATE": {
+   "c2s": {
+    "bnetdocs_id": 316,
+    "url": "https://bnetdocs.org/packet/316",
+    "message_id": "0x13",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "MCP_CHARCREATE": {
+   "c2s": {
+    "bnetdocs_id": 130,
+    "url": "https://bnetdocs.org/packet/130",
+    "message_id": "0x02",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 19:46:36 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 246,
+    "url": "https://bnetdocs.org/packet/246",
+    "message_id": "0x02",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 19:44:46 +0000",
+    "edits": 1,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   }
+  },
+  "MCP_CHARDELETE": {
+   "c2s": {
+    "bnetdocs_id": 333,
+    "url": "https://bnetdocs.org/packet/333",
+    "message_id": "0x0A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 20:40:29 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 411,
+    "url": "https://bnetdocs.org/packet/411",
+    "message_id": "0x0A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 20:41:32 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "MCP_CHARLIST": {
+   "c2s": {
+    "bnetdocs_id": 119,
+    "url": "https://bnetdocs.org/packet/119",
+    "message_id": "0x17",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 236,
+    "url": "https://bnetdocs.org/packet/236",
+    "message_id": "0x17",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 05 Nov 2020 12:09:48 +0000",
+    "edits": 2,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   }
+  },
+  "MCP_CHARLIST2": {
+   "c2s": {
+    "bnetdocs_id": 261,
+    "url": "https://bnetdocs.org/packet/261",
+    "message_id": "0x19",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 189,
+    "url": "https://bnetdocs.org/packet/189",
+    "message_id": "0x19",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 05 Nov 2020 12:10:08 +0000",
+    "edits": 2,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   }
+  },
+  "MCP_CHARLOGON": {
+   "c2s": {
+    "bnetdocs_id": 154,
+    "url": "https://bnetdocs.org/packet/154",
+    "message_id": "0x07",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 337,
+    "url": "https://bnetdocs.org/packet/337",
+    "message_id": "0x07",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 20:37:47 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "MCP_CHARRANK": {
+   "c2s": {
+    "bnetdocs_id": 481,
+    "url": "https://bnetdocs.org/packet/481",
+    "message_id": "0x16",
+    "created": "Tue, 03 May 2011 16:52:45 +0000",
+    "edited": "Wed, 29 Mar 2017 22:23:05 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "MCP_CHARUPGRADE": {
+   "c2s": {
+    "bnetdocs_id": 103,
+    "url": "https://bnetdocs.org/packet/103",
+    "message_id": "0x18",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 342,
+    "url": "https://bnetdocs.org/packet/342",
+    "message_id": "0x18",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 22:25:01 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "MCP_CREATEGAME": {
+   "c2s": {
+    "bnetdocs_id": 177,
+    "url": "https://bnetdocs.org/packet/177",
+    "message_id": "0x03",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 20:27:26 +0000",
+    "edits": 3,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 351,
+    "url": "https://bnetdocs.org/packet/351",
+    "message_id": "0x03",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 20:27:56 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "MCP_CREATEQUEUE": {
+   "s2c": {
+    "bnetdocs_id": 308,
+    "url": "https://bnetdocs.org/packet/308",
+    "message_id": "0x14",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "MCP_GAMEINFO": {
+   "c2s": {
+    "bnetdocs_id": 175,
+    "url": "https://bnetdocs.org/packet/175",
+    "message_id": "0x06",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 20:16:31 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 162,
+    "url": "https://bnetdocs.org/packet/162",
+    "message_id": "0x06",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 20:35:44 +0000",
+    "edits": 5,
+    "author": null
+   }
+  },
+  "MCP_GAMELIST": {
+   "c2s": {
+    "bnetdocs_id": 295,
+    "url": "https://bnetdocs.org/packet/295",
+    "message_id": "0x05",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 19:52:58 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 367,
+    "url": "https://bnetdocs.org/packet/367",
+    "message_id": "0x05",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 20:34:06 +0000",
+    "edits": 3,
+    "author": null
+   }
+  },
+  "MCP_JOINGAME": {
+   "c2s": {
+    "bnetdocs_id": 224,
+    "url": "https://bnetdocs.org/packet/224",
+    "message_id": "0x04",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 13 Nov 2020 02:10:58 +0000",
+    "edits": 3,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 107,
+    "url": "https://bnetdocs.org/packet/107",
+    "message_id": "0x04",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 13 Nov 2020 02:11:13 +0000",
+    "edits": 3,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   }
+  },
+  "MCP_MOTD": {
+   "c2s": {
+    "bnetdocs_id": 172,
+    "url": "https://bnetdocs.org/packet/172",
+    "message_id": "0x12",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 325,
+    "url": "https://bnetdocs.org/packet/325",
+    "message_id": "0x12",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 22:22:00 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "MCP_NULL": {
+   "c2s": {
+    "bnetdocs_id": 532,
+    "url": "https://bnetdocs.org/packet/532",
+    "message_id": "0x00",
+    "created": "Tue, 06 Jul 2021 00:07:02 +0000",
+    "edited": "Tue, 06 Jul 2021 07:15:33 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 533,
+    "url": "https://bnetdocs.org/packet/533",
+    "message_id": "0x00",
+    "created": "Tue, 06 Jul 2021 00:07:02 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "MCP_REQUESTLADDERDATA": {
+   "c2s": {
+    "bnetdocs_id": 99,
+    "url": "https://bnetdocs.org/packet/99",
+    "message_id": "0x11",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 20:46:15 +0000",
+    "edits": 1,
+    "author": {
+     "name": "RealityRipple",
+     "url": "https://bnetdocs.org/user/33/realityripple"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 354,
+    "url": "https://bnetdocs.org/packet/354",
+    "message_id": "0x11",
+    "created": "Sat, 22 Jun 2013 19:03:53 +0000",
+    "edited": "Wed, 29 Mar 2017 21:03:30 +0000",
+    "edits": 1,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   }
+  },
+  "MCP_STARTUP": {
+   "c2s": {
+    "bnetdocs_id": 320,
+    "url": "https://bnetdocs.org/packet/320",
+    "message_id": "0x01",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 18:41:23 +0000",
+    "edits": 1,
+    "author": {
+     "name": "RealityRipple",
+     "url": "https://bnetdocs.org/user/33/realityripple"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 375,
+    "url": "https://bnetdocs.org/packet/375",
+    "message_id": "0x01",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 18:42:49 +0000",
+    "edits": 1,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   }
+  },
+  "PKT_CLIENTREQ": {
+   "p2p": {
+    "bnetdocs_id": 328,
+    "url": "https://bnetdocs.org/packet/328",
+    "message_id": "0x03",
+    "created": "Sun, 26 Feb 2012 04:26:54 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Leaky",
+     "url": "https://bnetdocs.org/user/36/leaky"
+    }
+   }
+  },
+  "PKT_CONNTEST": {
+   "c2s": {
+    "bnetdocs_id": 234,
+    "url": "https://bnetdocs.org/packet/234",
+    "message_id": "0x08",
+    "created": "Tue, 20 Mar 2012 12:55:09 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "PKT_CONNTEST2": {
+   "c2s": {
+    "bnetdocs_id": 199,
+    "url": "https://bnetdocs.org/packet/199",
+    "message_id": "0x09",
+    "created": "Tue, 20 Mar 2012 12:53:58 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "PKT_KEEPALIVE": {
+   "c2s": {
+    "bnetdocs_id": 387,
+    "url": "https://bnetdocs.org/packet/387",
+    "message_id": "0x07",
+    "created": "Sun, 26 Feb 2012 04:25:36 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "PKT_SERVERPING": {
+   "s2c": {
+    "bnetdocs_id": 165,
+    "url": "https://bnetdocs.org/packet/165",
+    "message_id": "0x05",
+    "created": "Sun, 26 Feb 2012 04:25:06 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "PKT_STORM": {
+   "p2p": {
+    "bnetdocs_id": 482,
+    "url": "https://bnetdocs.org/packet/482",
+    "message_id": "0x00",
+    "created": "Tue, 20 Mar 2012 12:30:21 +0000",
+    "edited": "Sat, 28 Dec 2019 22:41:47 +0000",
+    "edits": 4,
+    "author": {
+     "name": "Ribose",
+     "url": "https://bnetdocs.org/user/30/ribose"
+    }
+   }
+  },
+  "SCGP_CHANGERACE": {
+   "p2p": {
+    "bnetdocs_id": 497,
+    "url": "https://bnetdocs.org/packet/497",
+    "message_id": "0x41",
+    "created": "Sat, 24 Mar 2012 14:47:20 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_CHANGESLOTSTATE": {
+   "p2p": {
+    "bnetdocs_id": 500,
+    "url": "https://bnetdocs.org/packet/500",
+    "message_id": "0x44",
+    "created": "Sat, 24 Mar 2012 15:02:27 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_CHANGETEAM": {
+   "p2p": {
+    "bnetdocs_id": 498,
+    "url": "https://bnetdocs.org/packet/498",
+    "message_id": "0x42",
+    "created": "Sat, 24 Mar 2012 14:59:52 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_CHANGETEAMUMS": {
+   "p2p": {
+    "bnetdocs_id": 499,
+    "url": "https://bnetdocs.org/packet/499",
+    "message_id": "0x43",
+    "created": "Sat, 24 Mar 2012 14:59:40 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_FORCENAMES": {
+   "p2p": {
+    "bnetdocs_id": 488,
+    "url": "https://bnetdocs.org/packet/488",
+    "message_id": "0x4B",
+    "created": "Sat, 24 Mar 2012 14:20:38 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_GAMECHATNULL": {
+   "p2p": {
+    "bnetdocs_id": 504,
+    "url": "https://bnetdocs.org/packet/504",
+    "message_id": "0x02",
+    "created": "Sat, 24 Mar 2012 15:31:38 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_GAMECHATPRIVATE": {
+   "p2p": {
+    "bnetdocs_id": 503,
+    "url": "https://bnetdocs.org/packet/503",
+    "message_id": "0x01",
+    "created": "Sat, 24 Mar 2012 15:31:32 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Ribose",
+     "url": "https://bnetdocs.org/user/30/ribose"
+    }
+   }
+  },
+  "SCGP_GAMECHATPUBLIC": {
+   "p2p": {
+    "bnetdocs_id": 484,
+    "url": "https://bnetdocs.org/packet/484",
+    "message_id": "0x00",
+    "created": "Sat, 24 Mar 2012 15:32:33 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Ribose",
+     "url": "https://bnetdocs.org/user/30/ribose"
+    }
+   }
+  },
+  "SCGP_GAMESTART": {
+   "p2p": {
+    "bnetdocs_id": 493,
+    "url": "https://bnetdocs.org/packet/493",
+    "message_id": "0x3C",
+    "created": "Sat, 24 Mar 2012 14:30:08 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_HUMAN": {
+   "p2p": {
+    "bnetdocs_id": 496,
+    "url": "https://bnetdocs.org/packet/496",
+    "message_id": "0x3F",
+    "created": "Sat, 24 Mar 2012 14:43:53 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_LOBBYCHAT": {
+   "p2p": {
+    "bnetdocs_id": 485,
+    "url": "https://bnetdocs.org/packet/485",
+    "message_id": "0x4C",
+    "created": "Sat, 24 Mar 2012 14:20:49 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_MAP": {
+   "p2p": {
+    "bnetdocs_id": 490,
+    "url": "https://bnetdocs.org/packet/490",
+    "message_id": "0x4F",
+    "created": "Sat, 24 Mar 2012 14:34:14 +0000",
+    "edited": "Sat, 24 May 2025 21:30:41 +0000",
+    "edits": 3,
+    "author": null
+   }
+  },
+  "SCGP_MAPPERCENT": {
+   "p2p": {
+    "bnetdocs_id": 494,
+    "url": "https://bnetdocs.org/packet/494",
+    "message_id": "0x3D",
+    "created": "Sat, 24 Mar 2012 14:33:59 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_NOP": {
+   "p2p": {
+    "bnetdocs_id": 483,
+    "url": "https://bnetdocs.org/packet/483",
+    "message_id": "0x05",
+    "created": "Sat, 24 Mar 2012 14:19:48 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_PLAYERJOIN": {
+   "p2p": {
+    "bnetdocs_id": 486,
+    "url": "https://bnetdocs.org/packet/486",
+    "message_id": "0x49",
+    "created": "Sat, 24 Mar 2012 14:19:58 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_REJECT": {
+   "p2p": {
+    "bnetdocs_id": 489,
+    "url": "https://bnetdocs.org/packet/489",
+    "message_id": "0x4E",
+    "created": "Sat, 24 Mar 2012 14:21:08 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_ROOMDATA": {
+   "p2p": {
+    "bnetdocs_id": 487,
+    "url": "https://bnetdocs.org/packet/487",
+    "message_id": "0x4A",
+    "created": "Sat, 24 Mar 2012 14:20:26 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_SEED": {
+   "p2p": {
+    "bnetdocs_id": 502,
+    "url": "https://bnetdocs.org/packet/502",
+    "message_id": "0x48",
+    "created": "Sat, 24 Mar 2012 15:10:20 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_SLOTSWITCH": {
+   "p2p": {
+    "bnetdocs_id": 501,
+    "url": "https://bnetdocs.org/packet/501",
+    "message_id": "0x45",
+    "created": "Sat, 24 Mar 2012 15:04:48 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_SLOTUPDATE": {
+   "p2p": {
+    "bnetdocs_id": 495,
+    "url": "https://bnetdocs.org/packet/495",
+    "message_id": "0x3E",
+    "created": "Sat, 24 Mar 2012 14:37:38 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_UNKNOWNREQUEST": {
+   "p2p": {
+    "bnetdocs_id": 491,
+    "url": "https://bnetdocs.org/packet/491",
+    "message_id": "0x50",
+    "created": "Sat, 24 Mar 2012 14:28:41 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SCGP_UNKNOWNRESPONSE": {
+   "p2p": {
+    "bnetdocs_id": 492,
+    "url": "https://bnetdocs.org/packet/492",
+    "message_id": "0x40",
+    "created": "Sat, 24 Mar 2012 14:27:42 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_ANNOUNCEMENT": {
+   "s2c": {
+    "bnetdocs_id": 475,
+    "url": "https://bnetdocs.org/packet/475",
+    "message_id": "0x20",
+    "created": "Sat, 25 Sep 2010 23:17:23 +0000",
+    "edited": "Fri, 27 Dec 2019 02:38:25 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_AUTH_ACCOUNTCHANGE": {
+   "c2s": {
+    "bnetdocs_id": 108,
+    "url": "https://bnetdocs.org/packet/108",
+    "message_id": "0x55",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 407,
+    "url": "https://bnetdocs.org/packet/407",
+    "message_id": "0x55",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 28 Dec 2019 23:01:03 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_AUTH_ACCOUNTCHANGEPROOF": {
+   "c2s": {
+    "bnetdocs_id": 270,
+    "url": "https://bnetdocs.org/packet/270",
+    "message_id": "0x56",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 379,
+    "url": "https://bnetdocs.org/packet/379",
+    "message_id": "0x56",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 28 Dec 2019 23:03:29 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_AUTH_ACCOUNTCREATE": {
+   "c2s": {
+    "bnetdocs_id": 274,
+    "url": "https://bnetdocs.org/packet/274",
+    "message_id": "0x52",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 28 Dec 2019 23:07:37 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 138,
+    "url": "https://bnetdocs.org/packet/138",
+    "message_id": "0x52",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 28 Dec 2019 22:59:12 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_AUTH_ACCOUNTLOGON": {
+   "c2s": {
+    "bnetdocs_id": 323,
+    "url": "https://bnetdocs.org/packet/323",
+    "message_id": "0x53",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 210,
+    "url": "https://bnetdocs.org/packet/210",
+    "message_id": "0x53",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 28 Dec 2019 23:02:29 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_AUTH_ACCOUNTLOGONPROOF": {
+   "c2s": {
+    "bnetdocs_id": 378,
+    "url": "https://bnetdocs.org/packet/378",
+    "message_id": "0x54",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 330,
+    "url": "https://bnetdocs.org/packet/330",
+    "message_id": "0x54",
+    "created": "Sun, 26 Feb 2012 02:11:20 +0000",
+    "edited": "Sat, 28 Dec 2019 22:54:27 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_AUTH_ACCOUNTUPGRADE": {
+   "c2s": {
+    "bnetdocs_id": 200,
+    "url": "https://bnetdocs.org/packet/200",
+    "message_id": "0x57",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 28 Dec 2019 23:02:11 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 310,
+    "url": "https://bnetdocs.org/packet/310",
+    "message_id": "0x57",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 28 Dec 2019 22:56:02 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_AUTH_ACCOUNTUPGRADEPROOF": {
+   "c2s": {
+    "bnetdocs_id": 432,
+    "url": "https://bnetdocs.org/packet/432",
+    "message_id": "0x58",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 28 Dec 2019 23:07:15 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 219,
+    "url": "https://bnetdocs.org/packet/219",
+    "message_id": "0x58",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 15 Oct 2020 07:46:11 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_AUTH_CHECK": {
+   "c2s": {
+    "bnetdocs_id": 408,
+    "url": "https://bnetdocs.org/packet/408",
+    "message_id": "0x51",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 10 Nov 2020 21:56:33 +0000",
+    "edits": 7,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 106,
+    "url": "https://bnetdocs.org/packet/106",
+    "message_id": "0x51",
+    "created": "Wed, 15 Jun 2011 01:44:58 +0000",
+    "edited": "Sat, 05 Dec 2020 20:13:16 +0000",
+    "edits": 8,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   }
+  },
+  "SID_AUTH_INFO": {
+   "c2s": {
+    "bnetdocs_id": 279,
+    "url": "https://bnetdocs.org/packet/279",
+    "message_id": "0x50",
+    "created": "Tue, 31 May 2011 02:31:46 +0000",
+    "edited": "Sat, 15 Jan 2022 07:00:54 +0000",
+    "edits": 8,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 146,
+    "url": "https://bnetdocs.org/packet/146",
+    "message_id": "0x50",
+    "created": "Sun, 29 May 2011 16:11:46 +0000",
+    "edited": "Wed, 09 Dec 2020 06:19:00 +0000",
+    "edits": 11,
+    "author": null
+   }
+  },
+  "SID_CDKEY": {
+   "c2s": {
+    "bnetdocs_id": 170,
+    "url": "https://bnetdocs.org/packet/170",
+    "message_id": "0x30",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 17 Nov 2020 10:13:40 +0000",
+    "edits": 2,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 188,
+    "url": "https://bnetdocs.org/packet/188",
+    "message_id": "0x30",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 19:16:27 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_CDKEY2": {
+   "c2s": {
+    "bnetdocs_id": 359,
+    "url": "https://bnetdocs.org/packet/359",
+    "message_id": "0x36",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 19:30:49 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 184,
+    "url": "https://bnetdocs.org/packet/184",
+    "message_id": "0x36",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 19:16:59 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_CDKEY3": {
+   "c2s": {
+    "bnetdocs_id": 505,
+    "url": "https://bnetdocs.org/packet/505",
+    "message_id": "0x42",
+    "created": "Sat, 17 May 2014 18:50:47 +0000",
+    "edited": "Sat, 24 May 2025 22:38:45 +0000",
+    "edits": 2,
+    "author": {
+     "name": "xboi209",
+     "url": "https://bnetdocs.org/user/4955/xboi209"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 506,
+    "url": "https://bnetdocs.org/packet/506",
+    "message_id": "0x42",
+    "created": "Sat, 17 May 2014 18:50:47 +0000",
+    "edited": "Sat, 24 May 2025 22:36:53 +0000",
+    "edits": 2,
+    "author": {
+     "name": "xboi209",
+     "url": "https://bnetdocs.org/user/4955/xboi209"
+    }
+   }
+  },
+  "SID_CHANGEEMAIL": {
+   "c2s": {
+    "bnetdocs_id": 105,
+    "url": "https://bnetdocs.org/packet/105",
+    "message_id": "0x5B",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_CHANGEPASSWORD": {
+   "c2s": {
+    "bnetdocs_id": 338,
+    "url": "https://bnetdocs.org/packet/338",
+    "message_id": "0x31",
+    "created": "Mon, 06 Jun 2011 01:49:02 +0000",
+    "edited": "Sat, 28 Dec 2019 19:59:30 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 220,
+    "url": "https://bnetdocs.org/packet/220",
+    "message_id": "0x31",
+    "created": "Mon, 06 Jun 2011 01:39:18 +0000",
+    "edited": "Sat, 28 Dec 2019 20:00:25 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_CHATCOMMAND": {
+   "c2s": {
+    "bnetdocs_id": 360,
+    "url": "https://bnetdocs.org/packet/360",
+    "message_id": "0x0E",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_CHATEVENT": {
+   "s2c": {
+    "bnetdocs_id": 307,
+    "url": "https://bnetdocs.org/packet/307",
+    "message_id": "0x0F",
+    "created": "Thu, 02 Sep 2010 16:27:58 +0000",
+    "edited": "Sat, 31 Oct 2020 21:10:45 +0000",
+    "edits": 5,
+    "author": {
+     "name": "joe[x86]",
+     "url": "https://bnetdocs.org/user/6/joe-x86"
+    }
+   }
+  },
+  "SID_CHECKAD": {
+   "c2s": {
+    "bnetdocs_id": 250,
+    "url": "https://bnetdocs.org/packet/250",
+    "message_id": "0x15",
+    "created": "Thu, 02 Jun 2011 18:42:14 +0000",
+    "edited": "Sat, 25 Feb 2023 06:05:25 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 272,
+    "url": "https://bnetdocs.org/packet/272",
+    "message_id": "0x15",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_CHECKDATAFILE": {
+   "c2s": {
+    "bnetdocs_id": 341,
+    "url": "https://bnetdocs.org/packet/341",
+    "message_id": "0x32",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 397,
+    "url": "https://bnetdocs.org/packet/397",
+    "message_id": "0x32",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 28 Dec 2019 22:45:25 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_CHECKDATAFILE2": {
+   "c2s": {
+    "bnetdocs_id": 280,
+    "url": "https://bnetdocs.org/packet/280",
+    "message_id": "0x3C",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 318,
+    "url": "https://bnetdocs.org/packet/318",
+    "message_id": "0x3C",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 28 Dec 2019 22:46:02 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_CLANCREATIONINVITATION": {
+   "c2s": {
+    "bnetdocs_id": 319,
+    "url": "https://bnetdocs.org/packet/319",
+    "message_id": "0x72",
+    "created": "Sat, 25 Jun 2011 04:25:36 +0000",
+    "edited": "Thu, 29 Mar 2018 00:45:29 +0000",
+    "edits": 3,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 157,
+    "url": "https://bnetdocs.org/packet/157",
+    "message_id": "0x72",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 28 Mar 2018 21:24:04 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_CLANDISBAND": {
+   "c2s": {
+    "bnetdocs_id": 129,
+    "url": "https://bnetdocs.org/packet/129",
+    "message_id": "0x73",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 28 Mar 2018 21:36:05 +0000",
+    "edits": 2,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 402,
+    "url": "https://bnetdocs.org/packet/402",
+    "message_id": "0x73",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 01:15:53 +0000",
+    "edits": 3,
+    "author": null
+   }
+  },
+  "SID_CLANFINDCANDIDATES": {
+   "c2s": {
+    "bnetdocs_id": 151,
+    "url": "https://bnetdocs.org/packet/151",
+    "message_id": "0x70",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 28 Mar 2018 21:06:28 +0000",
+    "edits": 2,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 278,
+    "url": "https://bnetdocs.org/packet/278",
+    "message_id": "0x70",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 00:44:52 +0000",
+    "edits": 5,
+    "author": null
+   }
+  },
+  "SID_CLANINFO": {
+   "s2c": {
+    "bnetdocs_id": 149,
+    "url": "https://bnetdocs.org/packet/149",
+    "message_id": "0x75",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 28 Mar 2018 21:56:46 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_CLANINVITATION": {
+   "c2s": {
+    "bnetdocs_id": 288,
+    "url": "https://bnetdocs.org/packet/288",
+    "message_id": "0x77",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 00:08:19 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 211,
+    "url": "https://bnetdocs.org/packet/211",
+    "message_id": "0x77",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 00:22:07 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_CLANINVITATIONRESPONSE": {
+   "c2s": {
+    "bnetdocs_id": 218,
+    "url": "https://bnetdocs.org/packet/218",
+    "message_id": "0x79",
+    "created": "Sat, 25 Jun 2011 04:36:04 +0000",
+    "edited": "Thu, 29 Mar 2018 00:47:04 +0000",
+    "edits": 4,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 235,
+    "url": "https://bnetdocs.org/packet/235",
+    "message_id": "0x79",
+    "created": "Sat, 25 Jun 2011 04:29:40 +0000",
+    "edited": "Thu, 29 Mar 2018 00:07:23 +0000",
+    "edits": 3,
+    "author": null
+   }
+  },
+  "SID_CLANINVITEMULTIPLE": {
+   "c2s": {
+    "bnetdocs_id": 259,
+    "url": "https://bnetdocs.org/packet/259",
+    "message_id": "0x71",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 00:10:57 +0000",
+    "edits": 4,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 285,
+    "url": "https://bnetdocs.org/packet/285",
+    "message_id": "0x71",
+    "created": "Sun, 13 Feb 2011 18:10:02 +0000",
+    "edited": "Thu, 29 Mar 2018 00:22:40 +0000",
+    "edits": 5,
+    "author": null
+   }
+  },
+  "SID_CLANMAKECHIEFTAIN": {
+   "c2s": {
+    "bnetdocs_id": 257,
+    "url": "https://bnetdocs.org/packet/257",
+    "message_id": "0x74",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 28 Mar 2018 21:36:47 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 301,
+    "url": "https://bnetdocs.org/packet/301",
+    "message_id": "0x74",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 01:15:41 +0000",
+    "edits": 3,
+    "author": null
+   }
+  },
+  "SID_CLANMEMBERINFORMATION": {
+   "c2s": {
+    "bnetdocs_id": 160,
+    "url": "https://bnetdocs.org/packet/160",
+    "message_id": "0x82",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 01:43:59 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 158,
+    "url": "https://bnetdocs.org/packet/158",
+    "message_id": "0x82",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 01:50:22 +0000",
+    "edits": 2,
+    "author": {
+     "name": "Leaky",
+     "url": "https://bnetdocs.org/user/36/leaky"
+    }
+   }
+  },
+  "SID_CLANMEMBERLIST": {
+   "c2s": {
+    "bnetdocs_id": 289,
+    "url": "https://bnetdocs.org/packet/289",
+    "message_id": "0x7D",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 01:28:09 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 216,
+    "url": "https://bnetdocs.org/packet/216",
+    "message_id": "0x7D",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 01:37:24 +0000",
+    "edits": 5,
+    "author": null
+   }
+  },
+  "SID_CLANMEMBERRANKCHANGE": {
+   "s2c": {
+    "bnetdocs_id": 392,
+    "url": "https://bnetdocs.org/packet/392",
+    "message_id": "0x81",
+    "created": "Sat, 21 May 2011 04:56:32 +0000",
+    "edited": "Thu, 29 Mar 2018 01:40:56 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_CLANMEMBERREMOVED": {
+   "s2c": {
+    "bnetdocs_id": 297,
+    "url": "https://bnetdocs.org/packet/297",
+    "message_id": "0x7E",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 01:38:03 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_CLANMEMBERSTATUSCHANGE": {
+   "s2c": {
+    "bnetdocs_id": 116,
+    "url": "https://bnetdocs.org/packet/116",
+    "message_id": "0x7F",
+    "created": "Wed, 20 Jul 2011 01:44:10 +0000",
+    "edited": "Thu, 29 Mar 2018 01:37:49 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_CLANMOTD": {
+   "c2s": {
+    "bnetdocs_id": 398,
+    "url": "https://bnetdocs.org/packet/398",
+    "message_id": "0x7C",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 01:27:06 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 321,
+    "url": "https://bnetdocs.org/packet/321",
+    "message_id": "0x7C",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 01:27:40 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_CLANQUITNOTIFY": {
+   "s2c": {
+    "bnetdocs_id": 304,
+    "url": "https://bnetdocs.org/packet/304",
+    "message_id": "0x76",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 01:40:20 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_CLANRANKCHANGE": {
+   "c2s": {
+    "bnetdocs_id": 193,
+    "url": "https://bnetdocs.org/packet/193",
+    "message_id": "0x7A",
+    "created": "Mon, 12 Sep 2011 04:01:05 +0000",
+    "edited": "Thu, 29 Mar 2018 01:07:32 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 248,
+    "url": "https://bnetdocs.org/packet/248",
+    "message_id": "0x7A",
+    "created": "Sun, 22 May 2011 22:07:04 +0000",
+    "edited": "Thu, 29 Mar 2018 01:13:16 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_CLANREMOVEMEMBER": {
+   "c2s": {
+    "bnetdocs_id": 139,
+    "url": "https://bnetdocs.org/packet/139",
+    "message_id": "0x78",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 00:56:06 +0000",
+    "edits": 4,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 376,
+    "url": "https://bnetdocs.org/packet/376",
+    "message_id": "0x78",
+    "created": "Wed, 20 Jul 2011 01:42:36 +0000",
+    "edited": "Thu, 29 Mar 2018 01:13:10 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_CLANSETMOTD": {
+   "c2s": {
+    "bnetdocs_id": 167,
+    "url": "https://bnetdocs.org/packet/167",
+    "message_id": "0x7B",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 01:20:10 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_CLICKAD": {
+   "c2s": {
+    "bnetdocs_id": 135,
+    "url": "https://bnetdocs.org/packet/135",
+    "message_id": "0x16",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_CLIENTID": {
+   "c2s": {
+    "bnetdocs_id": 244,
+    "url": "https://bnetdocs.org/packet/244",
+    "message_id": "0x05",
+    "created": "Sun, 01 Apr 2012 18:42:34 +0000",
+    "edited": "Sat, 24 May 2025 22:30:59 +0000",
+    "edits": 4,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 344,
+    "url": "https://bnetdocs.org/packet/344",
+    "message_id": "0x05",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 28 Mar 2017 09:38:29 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_CLIENTID2": {
+   "c2s": {
+    "bnetdocs_id": 381,
+    "url": "https://bnetdocs.org/packet/381",
+    "message_id": "0x1E",
+    "created": "Sun, 01 Apr 2012 18:41:40 +0000",
+    "edited": "Sat, 17 Oct 2020 07:43:39 +0000",
+    "edits": 3,
+    "author": {
+     "name": "Leaky",
+     "url": "https://bnetdocs.org/user/36/leaky"
+    }
+   }
+  },
+  "SID_CREATEACCOUNT": {
+   "c2s": {
+    "bnetdocs_id": 305,
+    "url": "https://bnetdocs.org/packet/305",
+    "message_id": "0x2A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 228,
+    "url": "https://bnetdocs.org/packet/228",
+    "message_id": "0x2A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 27 Dec 2019 04:46:34 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_CREATEACCOUNT2": {
+   "c2s": {
+    "bnetdocs_id": 226,
+    "url": "https://bnetdocs.org/packet/226",
+    "message_id": "0x3D",
+    "created": "Thu, 21 Jul 2011 12:40:58 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 255,
+    "url": "https://bnetdocs.org/packet/255",
+    "message_id": "0x3D",
+    "created": "Sun, 01 May 2011 00:30:26 +0000",
+    "edited": "Sat, 28 Dec 2019 22:35:05 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_DISPLAYAD": {
+   "c2s": {
+    "bnetdocs_id": 143,
+    "url": "https://bnetdocs.org/packet/143",
+    "message_id": "0x21",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_ENTERCHAT": {
+   "c2s": {
+    "bnetdocs_id": 145,
+    "url": "https://bnetdocs.org/packet/145",
+    "message_id": "0x0A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 17 Nov 2020 10:29:44 +0000",
+    "edits": 2,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 186,
+    "url": "https://bnetdocs.org/packet/186",
+    "message_id": "0x0A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_EXTRAWORK": {
+   "c2s": {
+    "bnetdocs_id": 240,
+    "url": "https://bnetdocs.org/packet/240",
+    "message_id": "0x4B",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 27 Dec 2019 04:30:51 +0000",
+    "edits": 3,
+    "author": null
+   }
+  },
+  "SID_FINDLADDERUSER": {
+   "c2s": {
+    "bnetdocs_id": 233,
+    "url": "https://bnetdocs.org/packet/233",
+    "message_id": "0x2F",
+    "created": "Fri, 01 Jun 2012 21:11:16 +0000",
+    "edited": "Sat, 28 Dec 2019 23:08:33 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 390,
+    "url": "https://bnetdocs.org/packet/390",
+    "message_id": "0x2F",
+    "created": "Fri, 01 Jun 2012 21:13:12 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_FLOODDETECTED": {
+   "s2c": {
+    "bnetdocs_id": 242,
+    "url": "https://bnetdocs.org/packet/242",
+    "message_id": "0x13",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_FRIENDSADD": {
+   "s2c": {
+    "bnetdocs_id": 118,
+    "url": "https://bnetdocs.org/packet/118",
+    "message_id": "0x67",
+    "created": "Thu, 02 Jun 2011 21:49:59 +0000",
+    "edited": "Tue, 28 Mar 2017 20:36:12 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_FRIENDSLIST": {
+   "c2s": {
+    "bnetdocs_id": 191,
+    "url": "https://bnetdocs.org/packet/191",
+    "message_id": "0x65",
+    "created": "Thu, 02 Jun 2011 18:28:52 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 153,
+    "url": "https://bnetdocs.org/packet/153",
+    "message_id": "0x65",
+    "created": "Thu, 02 Jun 2011 21:39:30 +0000",
+    "edited": "Sat, 10 Oct 2020 13:07:18 +0000",
+    "edits": 3,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   }
+  },
+  "SID_FRIENDSPOSITION": {
+   "s2c": {
+    "bnetdocs_id": 117,
+    "url": "https://bnetdocs.org/packet/117",
+    "message_id": "0x69",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 28 Mar 2017 20:37:53 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_FRIENDSREMOVE": {
+   "s2c": {
+    "bnetdocs_id": 256,
+    "url": "https://bnetdocs.org/packet/256",
+    "message_id": "0x68",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 28 Mar 2017 20:37:05 +0000",
+    "edits": 3,
+    "author": null
+   }
+  },
+  "SID_FRIENDSUPDATE": {
+   "c2s": {
+    "bnetdocs_id": 253,
+    "url": "https://bnetdocs.org/packet/253",
+    "message_id": "0x66",
+    "created": "Thu, 02 Jun 2011 18:32:22 +0000",
+    "edited": "Tue, 28 Mar 2017 20:28:17 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 384,
+    "url": "https://bnetdocs.org/packet/384",
+    "message_id": "0x66",
+    "created": "Thu, 02 Jun 2011 18:33:52 +0000",
+    "edited": "Tue, 28 Mar 2017 20:27:29 +0000",
+    "edits": 3,
+    "author": null
+   }
+  },
+  "SID_GAMEDATAADDRESS": {
+   "c2s": {
+    "bnetdocs_id": 202,
+    "url": "https://bnetdocs.org/packet/202",
+    "message_id": "0x1B",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 24 May 2025 20:58:03 +0000",
+    "edits": 4,
+    "author": {
+     "name": "xboi209",
+     "url": "https://bnetdocs.org/user/4955/xboi209"
+    }
+   }
+  },
+  "SID_GAMEPLAYERSEARCH": {
+   "c2s": {
+    "bnetdocs_id": 313,
+    "url": "https://bnetdocs.org/packet/313",
+    "message_id": "0x60",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 241,
+    "url": "https://bnetdocs.org/packet/241",
+    "message_id": "0x60",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_GAMERESULT": {
+   "c2s": {
+    "bnetdocs_id": 187,
+    "url": "https://bnetdocs.org/packet/187",
+    "message_id": "0x2C",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 20 Aug 2021 04:35:13 +0000",
+    "edits": 5,
+    "author": null
+   }
+  },
+  "SID_GETADVLISTEX": {
+   "c2s": {
+    "bnetdocs_id": 386,
+    "url": "https://bnetdocs.org/packet/386",
+    "message_id": "0x09",
+    "created": "Sun, 03 Oct 2010 18:04:18 +0000",
+    "edited": "Sat, 24 May 2025 21:07:04 +0000",
+    "edits": 1,
+    "author": {
+     "name": "RealityRipple",
+     "url": "https://bnetdocs.org/user/33/realityripple"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 266,
+    "url": "https://bnetdocs.org/packet/266",
+    "message_id": "0x09",
+    "created": "Sat, 19 Feb 2011 04:13:29 +0000",
+    "edited": "Thu, 26 Oct 2017 06:08:26 +0000",
+    "edits": 9,
+    "author": {
+     "name": "Leaky",
+     "url": "https://bnetdocs.org/user/36/leaky"
+    }
+   }
+  },
+  "SID_GETCHANNELLIST": {
+   "c2s": {
+    "bnetdocs_id": 374,
+    "url": "https://bnetdocs.org/packet/374",
+    "message_id": "0x0B",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 363,
+    "url": "https://bnetdocs.org/packet/363",
+    "message_id": "0x0B",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 15 Oct 2020 07:26:24 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_GETFILETIME": {
+   "c2s": {
+    "bnetdocs_id": 382,
+    "url": "https://bnetdocs.org/packet/382",
+    "message_id": "0x33",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Mon, 21 May 2018 22:07:04 +0000",
+    "edits": 4,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 195,
+    "url": "https://bnetdocs.org/packet/195",
+    "message_id": "0x33",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_GETICONDATA": {
+   "c2s": {
+    "bnetdocs_id": 121,
+    "url": "https://bnetdocs.org/packet/121",
+    "message_id": "0x2D",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 17 Sep 2021 20:19:13 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 120,
+    "url": "https://bnetdocs.org/packet/120",
+    "message_id": "0x2D",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 17 Sep 2021 20:20:47 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_GETLADDERDATA": {
+   "c2s": {
+    "bnetdocs_id": 298,
+    "url": "https://bnetdocs.org/packet/298",
+    "message_id": "0x2E",
+    "created": "Fri, 01 Jun 2012 21:12:30 +0000",
+    "edited": "Sat, 28 Dec 2019 23:09:34 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 254,
+    "url": "https://bnetdocs.org/packet/254",
+    "message_id": "0x2E",
+    "created": "Fri, 01 Jun 2012 21:11:02 +0000",
+    "edited": "Sat, 28 Dec 2019 23:12:22 +0000",
+    "edits": 2,
+    "author": {
+     "name": "Leaky",
+     "url": "https://bnetdocs.org/user/36/leaky"
+    }
+   }
+  },
+  "SID_JOINCHANNEL": {
+   "c2s": {
+    "bnetdocs_id": 227,
+    "url": "https://bnetdocs.org/packet/227",
+    "message_id": "0x0C",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 15 Oct 2020 07:30:34 +0000",
+    "edits": 9,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   }
+  },
+  "SID_LEAVECHAT": {
+   "c2s": {
+    "bnetdocs_id": 339,
+    "url": "https://bnetdocs.org/packet/339",
+    "message_id": "0x10",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_LEAVEGAME": {
+   "c2s": {
+    "bnetdocs_id": 340,
+    "url": "https://bnetdocs.org/packet/340",
+    "message_id": "0x1F",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_LOCALEINFO": {
+   "c2s": {
+    "bnetdocs_id": 287,
+    "url": "https://bnetdocs.org/packet/287",
+    "message_id": "0x12",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 15 Jan 2022 07:00:19 +0000",
+    "edits": 8,
+    "author": null
+   }
+  },
+  "SID_LOGONCHALLENGE": {
+   "s2c": {
+    "bnetdocs_id": 161,
+    "url": "https://bnetdocs.org/packet/161",
+    "message_id": "0x28",
+    "created": "Thu, 02 Jun 2011 18:35:28 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_LOGONCHALLENGEEX": {
+   "s2c": {
+    "bnetdocs_id": 286,
+    "url": "https://bnetdocs.org/packet/286",
+    "message_id": "0x1D",
+    "created": "Thu, 10 May 2012 04:34:12 +0000",
+    "edited": "Sat, 17 Oct 2020 07:42:50 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_LOGONREALMEX": {
+   "c2s": {
+    "bnetdocs_id": 144,
+    "url": "https://bnetdocs.org/packet/144",
+    "message_id": "0x3E",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 29 Mar 2017 19:39:57 +0000",
+    "edits": 2,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 237,
+    "url": "https://bnetdocs.org/packet/237",
+    "message_id": "0x3E",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sun, 14 Nov 2021 06:50:18 +0000",
+    "edits": 3,
+    "author": null
+   }
+  },
+  "SID_LOGONRESPONSE": {
+   "c2s": {
+    "bnetdocs_id": 262,
+    "url": "https://bnetdocs.org/packet/262",
+    "message_id": "0x29",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 27 Dec 2019 04:16:33 +0000",
+    "edits": 3,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 314,
+    "url": "https://bnetdocs.org/packet/314",
+    "message_id": "0x29",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 27 Dec 2019 04:16:33 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_LOGONRESPONSE2": {
+   "c2s": {
+    "bnetdocs_id": 225,
+    "url": "https://bnetdocs.org/packet/225",
+    "message_id": "0x3A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 27 Dec 2019 04:14:04 +0000",
+    "edits": 2,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 377,
+    "url": "https://bnetdocs.org/packet/377",
+    "message_id": "0x3A",
+    "created": "Sun, 26 Feb 2012 02:13:13 +0000",
+    "edited": "Thu, 03 Dec 2020 07:48:59 +0000",
+    "edits": 7,
+    "author": {
+     "name": "Kyro",
+     "url": "https://bnetdocs.org/user/1/kyro"
+    }
+   }
+  },
+  "SID_MESSAGEBOX": {
+   "s2c": {
+    "bnetdocs_id": 346,
+    "url": "https://bnetdocs.org/packet/346",
+    "message_id": "0x19",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 24 May 2025 22:34:55 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_NETGAMEPORT": {
+   "c2s": {
+    "bnetdocs_id": 349,
+    "url": "https://bnetdocs.org/packet/349",
+    "message_id": "0x45",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 28 Dec 2019 23:22:25 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_NEWS_INFO": {
+   "c2s": {
+    "bnetdocs_id": 247,
+    "url": "https://bnetdocs.org/packet/247",
+    "message_id": "0x46",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 101,
+    "url": "https://bnetdocs.org/packet/101",
+    "message_id": "0x46",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 28 Mar 2017 05:15:55 +0000",
+    "edits": 3,
+    "author": {
+     "name": "RealityRipple",
+     "url": "https://bnetdocs.org/user/33/realityripple"
+    }
+   }
+  },
+  "SID_NOTIFYJOIN": {
+   "c2s": {
+    "bnetdocs_id": 194,
+    "url": "https://bnetdocs.org/packet/194",
+    "message_id": "0x22",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_NULL": {
+   "c2s": {
+    "bnetdocs_id": 174,
+    "url": "https://bnetdocs.org/packet/174",
+    "message_id": "0x00",
+    "created": "Fri, 06 Aug 2010 01:55:17 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Kyro",
+     "url": "https://bnetdocs.org/user/1/kyro"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 370,
+    "url": "https://bnetdocs.org/packet/370",
+    "message_id": "0x00",
+    "created": "Wed, 14 Jul 2010 17:18:43 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Kyro",
+     "url": "https://bnetdocs.org/user/1/kyro"
+    }
+   }
+  },
+  "SID_OPTIONALWORK": {
+   "s2c": {
+    "bnetdocs_id": 102,
+    "url": "https://bnetdocs.org/packet/102",
+    "message_id": "0x4A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 27 Dec 2019 04:27:12 +0000",
+    "edits": 1,
+    "author": {
+     "name": "RealityRipple",
+     "url": "https://bnetdocs.org/user/33/realityripple"
+    }
+   }
+  },
+  "SID_PING": {
+   "c2s": {
+    "bnetdocs_id": 268,
+    "url": "https://bnetdocs.org/packet/268",
+    "message_id": "0x25",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 164,
+    "url": "https://bnetdocs.org/packet/164",
+    "message_id": "0x25",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_PROFILE": {
+   "c2s": {
+    "bnetdocs_id": 409,
+    "url": "https://bnetdocs.org/packet/409",
+    "message_id": "0x35",
+    "created": "Tue, 12 Jun 2012 09:32:04 +0000",
+    "edited": "Thu, 29 Mar 2018 02:05:25 +0000",
+    "edits": 4,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 249,
+    "url": "https://bnetdocs.org/packet/249",
+    "message_id": "0x35",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Thu, 29 Mar 2018 02:04:03 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_QUERYADURL": {
+   "c2s": {
+    "bnetdocs_id": 141,
+    "url": "https://bnetdocs.org/packet/141",
+    "message_id": "0x41",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 290,
+    "url": "https://bnetdocs.org/packet/290",
+    "message_id": "0x41",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_QUERYREALMS": {
+   "c2s": {
+    "bnetdocs_id": 334,
+    "url": "https://bnetdocs.org/packet/334",
+    "message_id": "0x34",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 324,
+    "url": "https://bnetdocs.org/packet/324",
+    "message_id": "0x34",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 24 May 2025 21:09:57 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_QUERYREALMS2": {
+   "c2s": {
+    "bnetdocs_id": 322,
+    "url": "https://bnetdocs.org/packet/322",
+    "message_id": "0x40",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 277,
+    "url": "https://bnetdocs.org/packet/277",
+    "message_id": "0x40",
+    "created": "Sat, 31 Mar 2012 13:55:39 +0000",
+    "edited": "Wed, 29 Mar 2017 18:33:05 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_READCOOKIE": {
+   "c2s": {
+    "bnetdocs_id": 478,
+    "url": "https://bnetdocs.org/packet/478",
+    "message_id": "0x24",
+    "created": "Sat, 25 Sep 2010 23:26:30 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 477,
+    "url": "https://bnetdocs.org/packet/477",
+    "message_id": "0x24",
+    "created": "Sat, 25 Sep 2010 23:25:57 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_READMEMORY": {
+   "c2s": {
+    "bnetdocs_id": 474,
+    "url": "https://bnetdocs.org/packet/474",
+    "message_id": "0x17",
+    "created": "Sat, 25 Sep 2010 23:15:05 +0000",
+    "edited": "Sat, 24 May 2025 22:32:00 +0000",
+    "edits": 1,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 473,
+    "url": "https://bnetdocs.org/packet/473",
+    "message_id": "0x17",
+    "created": "Tue, 19 Jul 2011 01:51:27 +0000",
+    "edited": "Sat, 24 May 2025 22:32:42 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_READUSERDATA": {
+   "c2s": {
+    "bnetdocs_id": 358,
+    "url": "https://bnetdocs.org/packet/358",
+    "message_id": "0x26",
+    "created": "Sun, 26 Dec 2010 19:51:11 +0000",
+    "edited": "Sun, 19 Sep 2021 07:13:37 +0000",
+    "edits": 6,
+    "author": {
+     "name": "Leaky",
+     "url": "https://bnetdocs.org/user/36/leaky"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 112,
+    "url": "https://bnetdocs.org/packet/112",
+    "message_id": "0x26",
+    "created": "Thu, 02 Jun 2011 18:51:40 +0000",
+    "edited": "Thu, 19 Aug 2021 22:40:56 +0000",
+    "edits": 4,
+    "author": null
+   }
+  },
+  "SID_REGISTRY": {
+   "c2s": {
+    "bnetdocs_id": 109,
+    "url": "https://bnetdocs.org/packet/109",
+    "message_id": "0x18",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 05 Nov 2021 01:44:06 +0000",
+    "edits": 2,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 388,
+    "url": "https://bnetdocs.org/packet/388",
+    "message_id": "0x18",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 05 Nov 2021 01:44:01 +0000",
+    "edits": 2,
+    "author": {
+     "name": "Leaky",
+     "url": "https://bnetdocs.org/user/36/leaky"
+    }
+   }
+  },
+  "SID_REPORTCRASH": {
+   "c2s": {
+    "bnetdocs_id": 433,
+    "url": "https://bnetdocs.org/packet/433",
+    "message_id": "0x5D",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_REPORTVERSION": {
+   "c2s": {
+    "bnetdocs_id": 347,
+    "url": "https://bnetdocs.org/packet/347",
+    "message_id": "0x07",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Wed, 25 Oct 2017 19:41:11 +0000",
+    "edits": 2,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 412,
+    "url": "https://bnetdocs.org/packet/412",
+    "message_id": "0x07",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 02 Oct 2020 07:45:26 +0000",
+    "edits": 4,
+    "author": null
+   }
+  },
+  "SID_REQUIREDWORK": {
+   "s2c": {
+    "bnetdocs_id": 182,
+    "url": "https://bnetdocs.org/packet/182",
+    "message_id": "0x4C",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 27 Dec 2019 04:27:12 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_RESETPASSWORD": {
+   "c2s": {
+    "bnetdocs_id": 405,
+    "url": "https://bnetdocs.org/packet/405",
+    "message_id": "0x5A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 27 Dec 2019 04:27:12 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_SERVERLIST": {
+   "s2c": {
+    "bnetdocs_id": 100,
+    "url": "https://bnetdocs.org/packet/100",
+    "message_id": "0x04",
+    "created": "Wed, 30 May 2012 19:25:03 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "LordVader",
+     "url": "https://bnetdocs.org/user/22/lordvader"
+    }
+   }
+  },
+  "SID_SETEMAIL": {
+   "c2s": {
+    "bnetdocs_id": 332,
+    "url": "https://bnetdocs.org/packet/332",
+    "message_id": "0x59",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 223,
+    "url": "https://bnetdocs.org/packet/223",
+    "message_id": "0x59",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_STARTADVEX": {
+   "c2s": {
+    "bnetdocs_id": 291,
+    "url": "https://bnetdocs.org/packet/291",
+    "message_id": "0x08",
+    "created": "Thu, 07 Oct 2010 17:36:25 +0000",
+    "edited": "Fri, 25 Sep 2020 01:55:56 +0000",
+    "edits": 3,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 148,
+    "url": "https://bnetdocs.org/packet/148",
+    "message_id": "0x08",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 28 Mar 2017 05:01:40 +0000",
+    "edits": 4,
+    "author": null
+   }
+  },
+  "SID_STARTADVEX2": {
+   "c2s": {
+    "bnetdocs_id": 163,
+    "url": "https://bnetdocs.org/packet/163",
+    "message_id": "0x1A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Fri, 18 May 2018 04:52:52 +0000",
+    "edits": 3,
+    "author": {
+     "name": "xboi209",
+     "url": "https://bnetdocs.org/user/4955/xboi209"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 510,
+    "url": "https://bnetdocs.org/packet/510",
+    "message_id": "0x1A",
+    "created": "Sun, 01 Jun 2014 18:56:29 +0000",
+    "edited": "Wed, 21 May 2025 06:01:10 +0000",
+    "edits": 3,
+    "author": {
+     "name": "xboi209",
+     "url": "https://bnetdocs.org/user/4955/xboi209"
+    }
+   }
+  },
+  "SID_STARTADVEX3": {
+   "c2s": {
+    "bnetdocs_id": 265,
+    "url": "https://bnetdocs.org/packet/265",
+    "message_id": "0x1C",
+    "created": "Thu, 07 Oct 2010 17:37:56 +0000",
+    "edited": "Fri, 02 Oct 2020 08:39:56 +0000",
+    "edits": 10,
+    "author": {
+     "name": "Leaky",
+     "url": "https://bnetdocs.org/user/36/leaky"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 178,
+    "url": "https://bnetdocs.org/packet/178",
+    "message_id": "0x1C",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sun, 06 Dec 2020 05:36:51 +0000",
+    "edits": 3,
+    "author": {
+     "name": "Leaky",
+     "url": "https://bnetdocs.org/user/36/leaky"
+    }
+   }
+  },
+  "SID_STARTVERSIONING": {
+   "c2s": {
+    "bnetdocs_id": 372,
+    "url": "https://bnetdocs.org/packet/372",
+    "message_id": "0x06",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 17 Oct 2020 07:45:34 +0000",
+    "edits": 3,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 127,
+    "url": "https://bnetdocs.org/packet/127",
+    "message_id": "0x06",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sun, 06 Dec 2020 05:34:48 +0000",
+    "edits": 3,
+    "author": null
+   }
+  },
+  "SID_STARTVERSIONING2": {
+   "s2c": {
+    "bnetdocs_id": 331,
+    "url": "https://bnetdocs.org/packet/331",
+    "message_id": "0x3F",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_STOPADV": {
+   "c2s": {
+    "bnetdocs_id": 271,
+    "url": "https://bnetdocs.org/packet/271",
+    "message_id": "0x02",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_SWITCHPRODUCT": {
+   "c2s": {
+    "bnetdocs_id": 415,
+    "url": "https://bnetdocs.org/packet/415",
+    "message_id": "0x5C",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 28 Mar 2017 05:31:12 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_SYSTEMINFO": {
+   "c2s": {
+    "bnetdocs_id": 166,
+    "url": "https://bnetdocs.org/packet/166",
+    "message_id": "0x2B",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 24 May 2025 22:40:51 +0000",
+    "edits": 1,
+    "author": null
+   }
+  },
+  "SID_TOURNAMENT": {
+   "s2c": {
+    "bnetdocs_id": 429,
+    "url": "https://bnetdocs.org/packet/429",
+    "message_id": "0x4E",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 28 Dec 2019 23:18:19 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Leaky",
+     "url": "https://bnetdocs.org/user/36/leaky"
+    }
+   }
+  },
+  "SID_UDPPINGRESPONSE": {
+   "c2s": {
+    "bnetdocs_id": 406,
+    "url": "https://bnetdocs.org/packet/406",
+    "message_id": "0x14",
+    "created": "Sun, 29 May 2011 16:18:07 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_UNKNOWN_37": {
+   "c2s": {
+    "bnetdocs_id": 508,
+    "url": "https://bnetdocs.org/packet/508",
+    "message_id": "0x37",
+    "created": "Sun, 18 May 2014 20:17:22 +0000",
+    "edited": "Sat, 24 May 2025 22:41:51 +0000",
+    "edits": 2,
+    "author": {
+     "name": "xboi209",
+     "url": "https://bnetdocs.org/user/4955/xboi209"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 509,
+    "url": "https://bnetdocs.org/packet/509",
+    "message_id": "0x37",
+    "created": "Sun, 18 May 2014 20:19:10 +0000",
+    "edited": "Sat, 24 May 2025 22:42:49 +0000",
+    "edits": 1,
+    "author": {
+     "name": "xboi209",
+     "url": "https://bnetdocs.org/user/4955/xboi209"
+    }
+   }
+  },
+  "SID_UNKNOWN_39": {
+   "c2s": {
+    "bnetdocs_id": 507,
+    "url": "https://bnetdocs.org/packet/507",
+    "message_id": "0x39",
+    "created": "Sun, 18 May 2014 18:47:18 +0000",
+    "edited": "Sat, 24 May 2025 22:43:43 +0000",
+    "edits": 2,
+    "author": {
+     "name": "xboi209",
+     "url": "https://bnetdocs.org/user/4955/xboi209"
+    }
+   }
+  },
+  "SID_UNKNOWN_DE": {
+   "c2s": {
+    "bnetdocs_id": 518,
+    "url": "https://bnetdocs.org/packet/518",
+    "message_id": "0xDE",
+    "created": "Fri, 27 Dec 2019 00:43:27 +0000",
+    "edited": "Sun, 29 Dec 2019 16:02:57 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "SID_WARCRAFTGENERAL": {
+   "c2s": {
+    "bnetdocs_id": 393,
+    "url": "https://bnetdocs.org/packet/393",
+    "message_id": "0x44",
+    "created": "Tue, 14 Dec 2010 14:16:57 +0000",
+    "edited": "Tue, 28 Mar 2017 21:03:41 +0000",
+    "edits": 2,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 292,
+    "url": "https://bnetdocs.org/packet/292",
+    "message_id": "0x44",
+    "created": "Thu, 06 Jan 2011 15:54:20 +0000",
+    "edited": "Tue, 28 Mar 2017 21:25:25 +0000",
+    "edits": 3,
+    "author": {
+     "name": "Leaky",
+     "url": "https://bnetdocs.org/user/36/leaky"
+    }
+   }
+  },
+  "SID_WARCRAFTUNKNOWN": {
+   "s2c": {
+    "bnetdocs_id": 479,
+    "url": "https://bnetdocs.org/packet/479",
+    "message_id": "0x43",
+    "created": "Sat, 25 Sep 2010 23:30:59 +0000",
+    "edited": "Tue, 15 Mar 2016 05:22:15 +0000",
+    "edits": 2,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "SID_WARDEN": {
+   "c2s": {
+    "bnetdocs_id": 431,
+    "url": "https://bnetdocs.org/packet/431",
+    "message_id": "0x5E",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sun, 18 Jan 2026 17:58:37 +0000",
+    "edits": 2,
+    "author": null
+   },
+   "s2c": {
+    "bnetdocs_id": 420,
+    "url": "https://bnetdocs.org/packet/420",
+    "message_id": "0x5E",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sun, 18 Jan 2026 17:59:42 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "SID_WRITECOOKIE": {
+   "s2c": {
+    "bnetdocs_id": 476,
+    "url": "https://bnetdocs.org/packet/476",
+    "message_id": "0x23",
+    "created": "Sat, 18 Jun 2011 13:54:25 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": null
+   }
+  },
+  "SID_WRITEUSERDATA": {
+   "c2s": {
+    "bnetdocs_id": 122,
+    "url": "https://bnetdocs.org/packet/122",
+    "message_id": "0x27",
+    "created": "Thu, 02 Jun 2011 18:47:11 +0000",
+    "edited": "Thu, 15 Oct 2020 20:10:33 +0000",
+    "edits": 2,
+    "author": null
+   }
+  },
+  "W3GS_CHAT_FROM_HOST": {
+   "s2c": {
+    "bnetdocs_id": 462,
+    "url": "https://bnetdocs.org/packet/462",
+    "message_id": "0x0F",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Mon, 30 Dec 2019 15:01:53 +0000",
+    "edits": 3,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_CHAT_TO_HOST": {
+   "c2s": {
+    "bnetdocs_id": 465,
+    "url": "https://bnetdocs.org/packet/465",
+    "message_id": "0x28",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 24 May 2025 22:29:01 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_CLIENTINFO": {
+   "c2s": {
+    "bnetdocs_id": 452,
+    "url": "https://bnetdocs.org/packet/452",
+    "message_id": "0x37",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 28 Dec 2019 22:47:14 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_COUNTDOWN_END": {
+   "s2c": {
+    "bnetdocs_id": 459,
+    "url": "https://bnetdocs.org/packet/459",
+    "message_id": "0x0B",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_COUNTDOWN_START": {
+   "s2c": {
+    "bnetdocs_id": 458,
+    "url": "https://bnetdocs.org/packet/458",
+    "message_id": "0x0A",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_CREATEGAME": {
+   "s2c": {
+    "bnetdocs_id": 436,
+    "url": "https://bnetdocs.org/packet/436",
+    "message_id": "0x31",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_DECREATEGAME": {
+   "s2c": {
+    "bnetdocs_id": 438,
+    "url": "https://bnetdocs.org/packet/438",
+    "message_id": "0x33",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_DROPREQ": {
+   "c2s": {
+    "bnetdocs_id": 521,
+    "url": "https://bnetdocs.org/packet/521",
+    "message_id": "0x29",
+    "created": "Sun, 29 Dec 2019 16:20:18 +0000",
+    "edited": "Sun, 29 Dec 2019 16:30:21 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_GAMEINFO": {
+   "s2c": {
+    "bnetdocs_id": 435,
+    "url": "https://bnetdocs.org/packet/435",
+    "message_id": "0x30",
+    "created": "Fri, 23 Jul 2010 23:28:12 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_GAMELOADED_SELF": {
+   "c2s": {
+    "bnetdocs_id": 463,
+    "url": "https://bnetdocs.org/packet/463",
+    "message_id": "0x23",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_HOST_KICK_PLAYER": {
+   "s2c": {
+    "bnetdocs_id": 522,
+    "url": "https://bnetdocs.org/packet/522",
+    "message_id": "0x1C",
+    "created": "Sun, 29 Dec 2019 16:33:23 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_INCOMING_ACTION": {
+   "s2c": {
+    "bnetdocs_id": 440,
+    "url": "https://bnetdocs.org/packet/440",
+    "message_id": "0x0C",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_INCOMING_ACTION2": {
+   "s2c": {
+    "bnetdocs_id": 468,
+    "url": "https://bnetdocs.org/packet/468",
+    "message_id": "0x48",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_LEAVEREQ": {
+   "c2s": {
+    "bnetdocs_id": 453,
+    "url": "https://bnetdocs.org/packet/453",
+    "message_id": "0x21",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sat, 28 Dec 2019 22:48:21 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_LEAVERS": {
+   "s2c": {
+    "bnetdocs_id": 454,
+    "url": "https://bnetdocs.org/packet/454",
+    "message_id": "0x1B",
+    "created": "Thu, 02 Jun 2011 20:06:11 +0000",
+    "edited": "Sun, 29 Dec 2019 16:29:11 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_MAPCHECK": {
+   "s2c": {
+    "bnetdocs_id": 441,
+    "url": "https://bnetdocs.org/packet/441",
+    "message_id": "0x3D",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_MAPPART": {
+   "s2c": {
+    "bnetdocs_id": 444,
+    "url": "https://bnetdocs.org/packet/444",
+    "message_id": "0x43",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_MAPPARTNOTOK": {
+   "c2s": {
+    "bnetdocs_id": 469,
+    "url": "https://bnetdocs.org/packet/469",
+    "message_id": "0x45",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_MAPPARTOK": {
+   "c2s": {
+    "bnetdocs_id": 445,
+    "url": "https://bnetdocs.org/packet/445",
+    "message_id": "0x44",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_MAPSIZE": {
+   "c2s": {
+    "bnetdocs_id": 467,
+    "url": "https://bnetdocs.org/packet/467",
+    "message_id": "0x42",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_OUTGOING_ACTION": {
+   "c2s": {
+    "bnetdocs_id": 439,
+    "url": "https://bnetdocs.org/packet/439",
+    "message_id": "0x26",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_OUTGOING_KEEPALIVE": {
+   "c2s": {
+    "bnetdocs_id": 464,
+    "url": "https://bnetdocs.org/packet/464",
+    "message_id": "0x27",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Tue, 25 May 2021 22:29:13 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_PING_FROM_HOST": {
+   "s2c": {
+    "bnetdocs_id": 447,
+    "url": "https://bnetdocs.org/packet/447",
+    "message_id": "0x01",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sun, 29 Dec 2019 16:43:04 +0000",
+    "edits": 2,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_PING_FROM_OTHERS": {
+   "p2p": {
+    "bnetdocs_id": 449,
+    "url": "https://bnetdocs.org/packet/449",
+    "message_id": "0x35",
+    "created": "Thu, 02 Jun 2011 20:08:40 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_PLAYERINFO": {
+   "s2c": {
+    "bnetdocs_id": 451,
+    "url": "https://bnetdocs.org/packet/451",
+    "message_id": "0x06",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sun, 29 Dec 2019 16:36:55 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_PLAYERLEFT": {
+   "s2c": {
+    "bnetdocs_id": 455,
+    "url": "https://bnetdocs.org/packet/455",
+    "message_id": "0x07",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_PLAYERLOADED": {
+   "s2c": {
+    "bnetdocs_id": 457,
+    "url": "https://bnetdocs.org/packet/457",
+    "message_id": "0x08",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_PONG_TO_HOST": {
+   "c2s": {
+    "bnetdocs_id": 448,
+    "url": "https://bnetdocs.org/packet/448",
+    "message_id": "0x46",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sun, 29 Dec 2019 16:41:49 +0000",
+    "edits": 2,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_PONG_TO_OTHERS": {
+   "p2p": {
+    "bnetdocs_id": 450,
+    "url": "https://bnetdocs.org/packet/450",
+    "message_id": "0x36",
+    "created": "Thu, 02 Jun 2011 20:08:27 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_REFRESHGAME": {
+   "s2c": {
+    "bnetdocs_id": 437,
+    "url": "https://bnetdocs.org/packet/437",
+    "message_id": "0x32",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_REJECTJOIN": {
+   "s2c": {
+    "bnetdocs_id": 456,
+    "url": "https://bnetdocs.org/packet/456",
+    "message_id": "0x05",
+    "created": "Sun, 13 Mar 2011 21:30:17 +0000",
+    "edited": "Fri, 30 Mar 2018 19:41:51 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_REQJOIN": {
+   "c2s": {
+    "bnetdocs_id": 446,
+    "url": "https://bnetdocs.org/packet/446",
+    "message_id": "0x1E",
+    "created": "Mon, 11 Jun 2012 21:06:14 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_SEARCHGAME": {
+   "c2s": {
+    "bnetdocs_id": 434,
+    "url": "https://bnetdocs.org/packet/434",
+    "message_id": "0x2F",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 466,
+    "url": "https://bnetdocs.org/packet/466",
+    "message_id": "0x2F",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_SLOTINFO": {
+   "s2c": {
+    "bnetdocs_id": 461,
+    "url": "https://bnetdocs.org/packet/461",
+    "message_id": "0x09",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_SLOTINFOJOIN": {
+   "s2c": {
+    "bnetdocs_id": 460,
+    "url": "https://bnetdocs.org/packet/460",
+    "message_id": "0x04",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": "Sun, 08 Mar 2020 11:05:22 +0000",
+    "edits": 1,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_STARTDOWNLOAD": {
+   "c2s": {
+    "bnetdocs_id": 443,
+    "url": "https://bnetdocs.org/packet/443",
+    "message_id": "0x3F",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   },
+   "s2c": {
+    "bnetdocs_id": 442,
+    "url": "https://bnetdocs.org/packet/442",
+    "message_id": "0x3F",
+    "created": "Thu, 15 Jul 2010 02:47:39 +0000",
+    "edited": null,
+    "edits": 0,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_START_LAG": {
+   "s2c": {
+    "bnetdocs_id": 519,
+    "url": "https://bnetdocs.org/packet/519",
+    "message_id": "0x10",
+    "created": "Sun, 29 Dec 2019 15:11:35 +0000",
+    "edited": "Sun, 29 Dec 2019 16:27:03 +0000",
+    "edits": 3,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  },
+  "W3GS_STOP_LAG": {
+   "s2c": {
+    "bnetdocs_id": 520,
+    "url": "https://bnetdocs.org/packet/520",
+    "message_id": "0x11",
+    "created": "Sun, 29 Dec 2019 15:11:35 +0000",
+    "edited": "Sun, 29 Dec 2019 16:27:10 +0000",
+    "edits": 4,
+    "author": {
+     "name": "Caaaaarrrrlll",
+     "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+    }
+   }
+  }
+ }
+}

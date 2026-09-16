@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{- $bd := hugo.Data.bnetdocs }}
+<div data-pagefind-body>
+<h1 class="title">{{ .Title }}</h1>
+{{ .Content }}
+
+<h2 id="bnetdocs">BNETDocs contributors</h2>
+<p>For over two decades, <a href="https://bnetdocs.org/">BNETDocs</a> has been the community's record of how Battle.net works. This site is written in its own words, but it stands on their research. Every page that covers a message BNETDocs also documents links to that page and names its author.</p>
+
+<h3 id="bnetdocs-packet-authors">Packet page authors</h3>
+{{- $counts := dict }}
+{{- range $name, $dirs := $bd.packets }}{{ range $dir, $e := $dirs }}{{ with $e.author }}{{ $counts = merge $counts (dict .name (add (index $counts .name | default 0) 1)) }}{{ end }}{{ end }}{{ end }}
+<ul class="credits">
+  {{- range $bd.authors }}
+  <li><a href="{{ .url }}">{{ .name }}</a>: {{ index $counts .name }} packet {{ cond (eq (index $counts .name) 1) "page" "pages" }}</li>
+  {{- end }}
+</ul>
+{{- $unattributed := 0 }}
+{{- range $name, $dirs := $bd.packets }}{{ range $dir, $e := $dirs }}{{ if not $e.author }}{{ $unattributed = add $unattributed 1 }}{{ end }}{{ end }}{{ end }}
+<p>{{ $unattributed }} BNETDocs packet pages predate its current site and have no author on record. They are credited to the <a href="{{ $bd.credits_page }}">original BNETDocs contributors</a>.</p>
+
+{{- with $bd.contributors }}
+<h3 id="bnetdocs-contributors">Everyone credited by BNETDocs</h3>
+<p>Including authors of BNETDocs' documents, comments and server list.</p>
+<ul class="credits">
+  {{- range . }}<li><a href="{{ .url }}">{{ .name }}</a></li>{{ end }}
+</ul>
+{{- end }}
+
+{{- with hugo.Data.recentchanges }}
+  {{- $authors := slice }}{{ range . }}{{ $authors = $authors | append .author }}{{ end }}
+<h2 id="this-site">Contributors to this site</h2>
+<ul class="credits">{{ range sort (uniq $authors) }}<li>{{ . }}</li>{{ end }}</ul>
+{{- end }}
+</div>
+{{ partial "pageinfo.html" . }}
+{{ end }}

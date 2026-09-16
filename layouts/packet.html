@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{- $page := . }}
+<div data-pagefind-body>
+<h1 class="title"><code class="message-id">{{ .Params.message_id }}</code> {{ .Title }}</h1>
+
+<table class="packet-facts">
+  <tr><th>Protocol</th><td>{{ .Params.protocol }}</td></tr>
+  <tr><th>Directions</th><td>{{ with .Params.c2s }}Client → Server{{ end }}{{ if and .Params.c2s .Params.s2c }} and {{ end }}{{ with .Params.s2c }}Server → Client{{ end }}</td></tr>
+  <tr><th>Used by</th><td>{{ partial "products.html" .Params.products }}</td></tr>
+  {{- with .Params.status }}<tr><th>Status</th><td>{{ . }}</td></tr>{{ end }}
+</table>
+
+{{ with .Params.summary }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
+
+{{- range $dir := slice "c2s" "s2c" }}
+  {{- with index $page.Params $dir }}
+<h2 id="{{ $dir }}">{{ cond (eq $dir "c2s") "Client → Server" "Server → Client" }}</h2>
+    {{- with .when }}<p>{{ . | markdownify }}</p>{{ end }}
+    {{- with .fields }}{{ partial "fields.html" (dict "fields" .) }}{{ else }}<p>No payload: the message is only its 4-byte header.</p>{{ end }}
+    {{- with .values }}{{ partial "values.html" . }}{{ end }}
+  {{- end }}
+{{- end }}
+
+{{- with .Content }}
+<h2 id="remarks">Remarks</h2>
+{{ . }}
+{{- end }}
+
+{{- /* Every connection sequence that uses this message. */}}
+{{- $used := slice }}
+{{- range where site.RegularPages "Layout" "sequence" }}
+  {{- $seq := . }}
+  {{- range .Params.steps }}{{ if eq .packet $page.Title }}{{ $used = $used | append $seq }}{{ end }}{{ end }}
+{{- end }}
+{{- with $used | uniq }}
+<h2 id="sequences">Appears in</h2>
+<ul>{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ partial "products.html" .Params.products }}</li>{{ end }}</ul>
+{{- end }}
+</div>
+{{ partial "sources.html" . }}
+{{ partial "categories.html" . }}
+{{ partial "pageinfo.html" . }}
+{{ end }}

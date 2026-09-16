@@ -1,0 +1,20 @@
+{{- /* Sources we used, plus credit to the BNETDocs authors who documented this message first. */ -}}
+{{- $page := . }}
+{{- $bnetdocs := index hugo.Data.bnetdocs.packets .Title }}
+{{- if or .Params.sources $bnetdocs }}
+<h2 id="sources">Sources and credits</h2>
+<ul class="sources">
+  {{- range .Params.sources }}
+  <li>{{ with .url }}<a href="{{ . }}">{{ end }}{{ .name }}{{ with .url }}</a>{{ end }}{{ with .note }}: {{ . | markdownify }}{{ end }}</li>
+  {{- end }}
+  {{- range $dir, $e := $bnetdocs }}
+  <li>BNETDocs, <a href="{{ $e.url }}">{{ $page.Title }} ({{ index (dict "c2s" "client to server" "s2c" "server to client" "p2p" "peer to peer") $dir }})</a>:
+    {{- with $e.author }} documented by <a href="{{ .url }}">{{ .name }}</a>
+    {{- else }} documented by the original <a href="{{ hugo.Data.bnetdocs.credits_page }}">BNETDocs contributors</a>
+    {{- end }}{{ with $e.edits }}, and edited {{ . }} {{ cond (eq . 1) "time" "times" }} since{{ end }}.</li>
+  {{- end }}
+</ul>
+{{- with $bnetdocs }}
+<p class="note">This page is written in our own words. BNETDocs is credited for its research; none of its text is copied. See <a href="/credits/">Credits</a>.</p>
+{{- end }}
+{{- end }}

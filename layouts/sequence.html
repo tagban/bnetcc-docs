@@ -1,0 +1,42 @@
+{{ define "main" }}
+{{- $packets := where site.RegularPages "Layout" "packet" }}
+<div data-pagefind-body>
+<h1 class="title">{{ .Title }}</h1>
+<p>{{ partial "products.html" .Params.products }}</p>
+{{ with .Params.summary }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
+
+<div class="table-wrap">
+<table class="wikitable sequence">
+  <thead><tr><th>#</th><th>Client</th><th></th><th>Server</th><th>What happens</th><th>Confidence</th></tr></thead>
+  <tbody>
+  {{- $n := 0 }}
+  {{- range .Params.steps }}
+    {{- if .section }}
+    <tr class="seq-section"><td colspan="6">{{ .section | markdownify }}</td></tr>
+    {{- else }}
+      {{- $n = add $n 1 }}
+      {{- $label := .raw }}
+      {{- $link := "" }}
+      {{- with .packet }}{{ $label = . }}{{ with index (where $packets "Title" .) 0 }}{{ $link = .RelPermalink }}{{ end }}{{ end }}
+      {{- $cell := $label }}
+      {{- if $link }}{{ $cell = printf "<a href=%q>%s</a>" $link $label }}{{ end }}
+      {{- with .transport }}{{ $cell = printf "%s <span class=\"transport\">%s</span>" $cell . }}{{ end }}
+    <tr class="from-{{ .from }}{{ if .optional }} seq-optional{{ end }}">
+      <td class="seq-n">{{ $n }}</td>
+      <td class="seq-client">{{ if eq .from "client" }}<code>{{ $cell | safeHTML }}</code>{{ end }}</td>
+      <td class="seq-arrow" aria-label="{{ if eq .from "client" }}client to server{{ else }}server to client{{ end }}">{{ if eq .from "client" }}→{{ else }}←{{ end }}</td>
+      <td class="seq-server">{{ if eq .from "server" }}<code>{{ $cell | safeHTML }}</code>{{ end }}</td>
+      <td>{{ with .note }}{{ . | markdownify }}{{ end }}</td>
+      <td>{{ partial "confidence.html" .confidence }}</td>
+    </tr>
+    {{- end }}
+  {{- end }}
+  </tbody>
+</table>
+</div>
+
+{{ with .Content }}<h2 id="remarks">Remarks</h2>{{ . }}{{ end }}
+</div>
+{{ partial "sources.html" . }}
+{{ partial "pageinfo.html" . }}
+{{ end }}

@@ -5,20 +5,28 @@ build:
   list: "never"
 ---
 
-### Docs
+### Classic (1.0)
 
-- [Home](/)
+- [Overview](/classic/)
+- [Connecting](/classic/connecting/)
+- [BNCS messages](/classic/bncs/)
+- [Connection sequences](/classic/sequences/)
+
+### Coming soon
+
+- Battle.net 2.0
+- Battle.net App
+- History and bots
+
+### This site
+
+- [How to read these pages](/how-to-read/)
+- [Credits](/credits/)
 - [Recent changes](/recent-changes/)
 - [All pages](/all-pages/)
-- [Categories](/categories/)
 
-### Command Center
+### Links
 
 - [bnet.cc](https://bnet.cc)
-- [Releases](https://bnet.cc/releases.php)
-- [Source code](https://github.com/tagban/bnet_command_center)
 - [Discord](https://discord.gg/dR4djHweh3)
-
-### Protocol references
-
 - [BNETDocs](https://bnetdocs.org/)

@@ -1,0 +1,14 @@
+{{- /* Value tables for a direction: status codes, flags, event IDs. */ -}}
+{{- range . }}
+<h3>{{ .name }}</h3>
+<div class="table-wrap">
+<table class="wikitable values">
+  <thead><tr><th>Value</th><th>Meaning</th><th>Confidence</th></tr></thead>
+  <tbody>
+  {{- range .items }}
+    <tr><td><code>{{ .value }}</code></td><td>{{ .meaning | markdownify }}</td><td>{{ partial "confidence.html" .confidence }}</td></tr>
+  {{- end }}
+  </tbody>
+</table>
+</div>
+{{- end }}
