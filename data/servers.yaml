@@ -8,7 +8,7 @@
   port: 6112
   group: "classic-community"
   kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
-  website: "https://us.bnet.cc:6114"
+  website: "http://us.bnet.cc:6116/"
   added_by: "BNET.cc"
 
 - id: "war-pianka-io"
