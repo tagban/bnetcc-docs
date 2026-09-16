@@ -73,6 +73,7 @@
   kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
   bnetdocs: "https://bnetdocs.org/server/109/bnetdocs-atlas"
   added_by: "Caaaaarrrrlll"
+  website: "http://atlas.bnetdocs.org/"
 
 - id: "bnetdocs-110"
   name: "BNETDocs PvPGN"
@@ -91,6 +92,7 @@
   kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
   bnetdocs: "https://bnetdocs.org/server/111/eurobattle-net"
   added_by: "cen"
+  website: "https://eurobattle.net/"
 
 - id: "bnetdocs-112"
   name: "Rubattle.net"
@@ -99,6 +101,7 @@
   group: "classic-community"
   kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
   bnetdocs: "https://bnetdocs.org/server/112/rubattle-net"
+  website: "https://www.rubattle.net/"
 
 - id: "bnetdocs-106"
   name: "BNETDocs' JBLS"
