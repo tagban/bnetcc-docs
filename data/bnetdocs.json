@@ -7,6 +7,18 @@
    "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
   },
   {
+   "name": "Davnit",
+   "url": "https://bnetdocs.org/user/62/davnit"
+  },
+  {
+   "name": "Hdx",
+   "url": "https://bnetdocs.org/user/18/hdx"
+  },
+  {
+   "name": "inetknght",
+   "url": "https://bnetdocs.org/user/70/inetknght"
+  },
+  {
    "name": "jaenster",
    "url": "https://bnetdocs.org/user/5018/jaenster"
   },
@@ -39,6 +51,10 @@
    "url": "https://bnetdocs.org/user/5210/ricola3d"
   },
   {
+   "name": "Sixen",
+   "url": "https://bnetdocs.org/user/123/sixen"
+  },
+  {
    "name": "xboi209",
    "url": "https://bnetdocs.org/user/4955/xboi209"
   }
@@ -54,7 +70,15 @@
   },
   {
    "name": "Davnit",
-   "url": "https://bnetdocs.org/user/62"
+   "url": "https://bnetdocs.org/user/62/davnit"
+  },
+  {
+   "name": "Hdx",
+   "url": "https://bnetdocs.org/user/18/hdx"
+  },
+  {
+   "name": "inetknght",
+   "url": "https://bnetdocs.org/user/70/inetknght"
   },
   {
    "name": "jaenster",
@@ -94,7 +118,7 @@
   },
   {
    "name": "Sixen",
-   "url": "https://bnetdocs.org/user/123"
+   "url": "https://bnetdocs.org/user/123/sixen"
   },
   {
    "name": "UserLoser",
@@ -4875,6 +4899,378 @@
      "name": "Caaaaarrrrlll",
      "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
     }
+   }
+  }
+ },
+ "documents": {
+  "33": {
+   "title": "Account Closure Codes",
+   "url": "https://bnetdocs.org/document/33",
+   "created": "Sun, 26 Feb 2012 02:16:47 +0000",
+   "edits": 4,
+   "author": {
+    "name": "Ribose",
+    "url": "https://bnetdocs.org/user/30/ribose"
+   }
+  },
+  "10": {
+   "title": "Battle.net Chat Server Protocol Overview",
+   "url": "https://bnetdocs.org/document/10",
+   "created": "Wed, 19 Jun 2013 14:01:10 +0000",
+   "edits": 11,
+   "author": {
+    "name": "Kyro",
+    "url": "https://bnetdocs.org/user/1/kyro"
+   }
+  },
+  "39": {
+   "title": "Battle.net History Timeline",
+   "url": "https://bnetdocs.org/document/39",
+   "created": "Mon, 19 Feb 2018 23:44:34 +0000",
+   "edits": 9,
+   "author": {
+    "name": "Caaaaarrrrlll",
+    "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+   }
+  },
+  "32": {
+   "title": "Battle.net v2 Information",
+   "url": "https://bnetdocs.org/document/32",
+   "created": "Fri, 30 Sep 2011 05:49:04 +0000",
+   "edits": 1,
+   "author": {
+    "name": "Caaaaarrrrlll",
+    "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+   }
+  },
+  "41": {
+   "title": "Blizzard Weak Digital Signature",
+   "url": "https://bnetdocs.org/document/41",
+   "created": "Thu, 08 Mar 2018 19:45:19 +0000",
+   "edits": 14,
+   "author": {
+    "name": "xboi209",
+    "url": "https://bnetdocs.org/user/4955/xboi209"
+   }
+  },
+  "23": {
+   "title": "BNLS Checksum Algorithm",
+   "url": "https://bnetdocs.org/document/23",
+   "created": "Sun, 31 Jul 2011 04:37:24 +0000",
+   "edits": 7,
+   "author": {
+    "name": "Sixen",
+    "url": "https://bnetdocs.org/user/123/sixen"
+   }
+  },
+  "22": {
+   "title": "BNLS Packet Guide",
+   "url": "https://bnetdocs.org/document/22",
+   "created": "Mon, 30 May 2011 21:27:36 +0000",
+   "edits": 17,
+   "author": {
+    "name": "Caaaaarrrrlll",
+    "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+   }
+  },
+  "44": {
+   "title": "BNLS Product Codes",
+   "url": "https://bnetdocs.org/document/44",
+   "created": "Mon, 20 Aug 2018 08:27:50 +0000",
+   "edits": 3,
+   "author": {
+    "name": "Caaaaarrrrlll",
+    "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+   }
+  },
+  "48": {
+   "title": "BNLS Server Historical List",
+   "url": "https://bnetdocs.org/document/48",
+   "created": "Sun, 19 Jan 2020 01:04:01 +0000",
+   "edits": 8,
+   "author": {
+    "name": "Caaaaarrrrlll",
+    "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+   }
+  },
+  "42": {
+   "title": "BotNet Protocol Overview",
+   "url": "https://bnetdocs.org/document/42",
+   "created": "Sun, 11 Mar 2018 20:43:09 +0000",
+   "edits": 13,
+   "author": {
+    "name": "Ribose",
+    "url": "https://bnetdocs.org/user/30/ribose"
+   }
+  },
+  "15": {
+   "title": "Chat Flags",
+   "url": "https://bnetdocs.org/document/15",
+   "created": "Thu, 17 Nov 2011 01:46:55 +0000",
+   "edits": 5,
+   "author": {
+    "name": "Kyro",
+    "url": "https://bnetdocs.org/user/1/kyro"
+   }
+  },
+  "17": {
+   "title": "Chat Gateway Protocol",
+   "url": "https://bnetdocs.org/document/17",
+   "created": "Fri, 30 Sep 2011 18:42:06 +0000",
+   "edits": 34,
+   "author": {
+    "name": "Caaaaarrrrlll",
+    "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+   }
+  },
+  "38": {
+   "title": "Chat Language Filter",
+   "url": "https://bnetdocs.org/document/38",
+   "created": "Wed, 22 Nov 2017 06:38:05 +0000",
+   "edits": 7,
+   "author": {
+    "name": "Ribose",
+    "url": "https://bnetdocs.org/user/30/ribose"
+   }
+  },
+  "18": {
+   "title": "Chat Statstrings",
+   "url": "https://bnetdocs.org/document/18",
+   "created": "Sun, 03 Jun 2012 07:03:05 +0000",
+   "edits": 10,
+   "author": {
+    "name": "Hdx",
+    "url": "https://bnetdocs.org/user/18/hdx"
+   }
+  },
+  "47": {
+   "title": "CheckRevision",
+   "url": "https://bnetdocs.org/document/47",
+   "created": "Mon, 07 Jan 2019 03:20:58 +0000",
+   "edits": 54,
+   "author": {
+    "name": "xboi209",
+    "url": "https://bnetdocs.org/user/4955/xboi209"
+   }
+  },
+  "4": {
+   "title": "Clan System Overview",
+   "url": "https://bnetdocs.org/document/4",
+   "created": "Sat, 02 Apr 2011 22:53:05 +0000",
+   "edits": 7,
+   "author": {
+    "name": "Kyro",
+    "url": "https://bnetdocs.org/user/1/kyro"
+   }
+  },
+  "45": {
+   "title": "Classic Chat API (CAPI)",
+   "url": "https://bnetdocs.org/document/45",
+   "created": "Sat, 13 Oct 2018 19:13:41 +0000",
+   "edits": 8,
+   "author": {
+    "name": "Davnit",
+    "url": "https://bnetdocs.org/user/62/davnit"
+   }
+  },
+  "28": {
+   "title": "Diablo II Game Server Accept Sequence",
+   "url": "https://bnetdocs.org/document/28",
+   "created": "Tue, 25 Mar 2014 22:50:21 +0000",
+   "edits": 4,
+   "author": {
+    "name": "Sixen",
+    "url": "https://bnetdocs.org/user/123/sixen"
+   }
+  },
+  "8": {
+   "title": "Diablo II Game Server Buffers And Positions",
+   "url": "https://bnetdocs.org/document/8",
+   "created": "Tue, 25 Mar 2014 22:31:28 +0000",
+   "edits": 0,
+   "author": {
+    "name": "LordVader",
+    "url": "https://bnetdocs.org/user/22/lordvader"
+   }
+  },
+  "9": {
+   "title": "Diablo II Game Server Skill List",
+   "url": "https://bnetdocs.org/document/9",
+   "created": "Tue, 25 Mar 2014 22:33:28 +0000",
+   "edits": 0,
+   "author": {
+    "name": "LordVader",
+    "url": "https://bnetdocs.org/user/22/lordvader"
+   }
+  },
+  "29": {
+   "title": "Diablo II Realm Server Logon Sequence",
+   "url": "https://bnetdocs.org/document/29",
+   "created": "Sun, 26 Feb 2012 03:55:00 +0000",
+   "edits": 3,
+   "author": {
+    "name": "Sixen",
+    "url": "https://bnetdocs.org/user/123/sixen"
+   }
+  },
+  "43": {
+   "title": "ExtraWork",
+   "url": "https://bnetdocs.org/document/43",
+   "created": "Sat, 17 Mar 2018 23:32:10 +0000",
+   "edits": 10,
+   "author": {
+    "name": "xboi209",
+    "url": "https://bnetdocs.org/user/4955/xboi209"
+   }
+  },
+  "5": {
+   "title": "File Transfer Protocol Version 1",
+   "url": "https://bnetdocs.org/document/5",
+   "created": "Sun, 26 Feb 2012 04:14:21 +0000",
+   "edits": 8,
+   "author": {
+    "name": "RealityRipple",
+    "url": "https://bnetdocs.org/user/33/realityripple"
+   }
+  },
+  "6": {
+   "title": "File Transfer Protocol Version 2",
+   "url": "https://bnetdocs.org/document/6",
+   "created": "Sun, 26 Feb 2012 04:13:54 +0000",
+   "edits": 5,
+   "author": {
+    "name": "RealityRipple",
+    "url": "https://bnetdocs.org/user/33/realityripple"
+   }
+  },
+  "13": {
+   "title": "Game Statstrings",
+   "url": "https://bnetdocs.org/document/13",
+   "created": "Fri, 18 Feb 2011 06:13:43 +0000",
+   "edits": 10,
+   "author": {
+    "name": "Kyro",
+    "url": "https://bnetdocs.org/user/1/kyro"
+   }
+  },
+  "25": {
+   "title": "Icons.bni",
+   "url": "https://bnetdocs.org/document/25",
+   "created": "Thu, 25 Aug 2011 08:43:36 +0000",
+   "edits": 10,
+   "author": {
+    "name": "inetknght",
+    "url": "https://bnetdocs.org/user/70/inetknght"
+   }
+  },
+  "40": {
+   "title": "Known Server Issues",
+   "url": "https://bnetdocs.org/document/40",
+   "created": "Sat, 03 Mar 2018 22:03:08 +0000",
+   "edits": 31,
+   "author": {
+    "name": "Caaaaarrrrlll",
+    "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+   }
+  },
+  "50": {
+   "title": "List of Bots",
+   "url": "https://bnetdocs.org/document/50",
+   "created": "Fri, 27 Jun 2025 03:29:18 +0000",
+   "edits": 21,
+   "author": {
+    "name": "Caaaaarrrrlll",
+    "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+   }
+  },
+  "24": {
+   "title": "NLS/SRP Protocol",
+   "url": "https://bnetdocs.org/document/24",
+   "created": "Mon, 03 Jan 2011 19:02:14 +0000",
+   "edits": 11,
+   "author": {
+    "name": "Sixen",
+    "url": "https://bnetdocs.org/user/123/sixen"
+   }
+  },
+  "19": {
+   "title": "Notational Convention (Sizes & Types)",
+   "url": "https://bnetdocs.org/document/19",
+   "created": "Sat, 25 Sep 2010 15:43:34 +0000",
+   "edits": 16,
+   "author": {
+    "name": "Sixen",
+    "url": "https://bnetdocs.org/user/123/sixen"
+   }
+  },
+  "12": {
+   "title": "Product Identification",
+   "url": "https://bnetdocs.org/document/12",
+   "created": "Sat, 24 Sep 2011 04:29:06 +0000",
+   "edits": 35,
+   "author": {
+    "name": "Kyro",
+    "url": "https://bnetdocs.org/user/1/kyro"
+   }
+  },
+  "20": {
+   "title": "Product Keys and Hashing",
+   "url": "https://bnetdocs.org/document/20",
+   "created": "Tue, 17 Aug 2010 09:48:06 +0000",
+   "edits": 14,
+   "author": {
+    "name": "RealityRipple",
+    "url": "https://bnetdocs.org/user/33/realityripple"
+   }
+  },
+  "16": {
+   "title": "Protocol Headers",
+   "url": "https://bnetdocs.org/document/16",
+   "created": "Sat, 10 Mar 2012 21:39:48 +0000",
+   "edits": 6,
+   "author": {
+    "name": "Hdx",
+    "url": "https://bnetdocs.org/user/18/hdx"
+   }
+  },
+  "35": {
+   "title": "PvPGN Tracking Protocol",
+   "url": "https://bnetdocs.org/document/35",
+   "created": "Wed, 13 Apr 2016 07:39:56 +0000",
+   "edits": 22,
+   "author": {
+    "name": "Caaaaarrrrlll",
+    "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+   }
+  },
+  "34": {
+   "title": "Storm UDP Protocol",
+   "url": "https://bnetdocs.org/document/34",
+   "created": "Sat, 24 Mar 2012 13:49:09 +0000",
+   "edits": 1,
+   "author": {
+    "name": "Ribose",
+    "url": "https://bnetdocs.org/user/30/ribose"
+   }
+  },
+  "31": {
+   "title": "Telnet Protocol Message Formatting",
+   "url": "https://bnetdocs.org/document/31",
+   "created": "Sun, 13 Mar 2011 21:56:53 +0000",
+   "edits": 10,
+   "author": {
+    "name": "Caaaaarrrrlll",
+    "url": "https://bnetdocs.org/user/63/caaaaarrrrlll"
+   }
+  },
+  "27": {
+   "title": "WarCraft III Profile Requests",
+   "url": "https://bnetdocs.org/document/27",
+   "created": "Thu, 20 Jun 2013 02:09:38 +0000",
+   "edits": 4,
+   "author": {
+    "name": "Sixen",
+    "url": "https://bnetdocs.org/user/123/sixen"
    }
   }
  }

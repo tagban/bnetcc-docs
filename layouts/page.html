@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div data-pagefind-body>
+<h1 class="title">{{ .Title }}</h1>
+{{ with .Params.products }}<p>{{ partial "products.html" . }}</p>{{ end }}
+{{ with .Params.summary }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
+{{ partial "infobox.html" . }}
+{{ partial "toc.html" . }}
+{{ .Content }}
+</div>
+{{ partial "sources.html" . }}
+{{ partial "categories.html" . }}
+{{ partial "pageinfo.html" . }}
+{{ end }}

@@ -7,12 +7,17 @@
 <h2 id="bnetdocs">BNETDocs contributors</h2>
 <p>For over two decades, <a href="https://bnetdocs.org/">BNETDocs</a> has been the community's record of how Battle.net works. This site is written in its own words, but it stands on their research. Every page that covers a message BNETDocs also documents links to that page and names its author.</p>
 
-<h3 id="bnetdocs-packet-authors">Packet page authors</h3>
-{{- $counts := dict }}
+<h3 id="bnetdocs-authors">Packet page and document authors</h3>
+{{- $counts := dict }}{{ $docs := dict }}
 {{- range $name, $dirs := $bd.packets }}{{ range $dir, $e := $dirs }}{{ with $e.author }}{{ $counts = merge $counts (dict .name (add (index $counts .name | default 0) 1)) }}{{ end }}{{ end }}{{ end }}
+{{- range $id, $d := $bd.documents }}{{ with $d.author }}{{ $docs = merge $docs (dict .name (add (index $docs .name | default 0) 1)) }}{{ end }}{{ end }}
 <ul class="credits">
   {{- range $bd.authors }}
-  <li><a href="{{ .url }}">{{ .name }}</a>: {{ index $counts .name }} packet {{ cond (eq (index $counts .name) 1) "page" "pages" }}</li>
+    {{- $p := index $counts .name | default 0 }}{{ $d := index $docs .name | default 0 }}
+  <li><a href="{{ .url }}">{{ .name }}</a>:
+    {{- with $p }} {{ . }} packet {{ cond (eq . 1) "page" "pages" }}{{ end }}
+    {{- if and $p $d }},{{ end }}
+    {{- with $d }} {{ . }} {{ cond (eq . 1) "document" "documents" }}{{ end }}</li>
   {{- end }}
 </ul>
 {{- $unattributed := 0 }}

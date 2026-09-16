@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Refresh data/bnetdocs.json: who wrote each BNETDocs packet page, for credit on our pages.
+"""Refresh data/bnetdocs.json: who wrote each BNETDocs packet page and document, for credit on our pages.
 
-Only credit metadata is kept (page link, packet name and direction, author, dates, edit
-count). BNETDocs' packet formats and remarks are never copied into this site.
+Only credit metadata is kept (page link, name, author, dates, edit count). BNETDocs'
+packet formats, remarks and document text are never copied into this site.
 
 Run from anywhere:  python3 scripts/bnetdocs_credits.py
 """
@@ -39,8 +39,9 @@ def credits_page_people():
 
 def main():
     packets = get_json("/packet/index.json")["packets"]
+    documents = get_json("/document/index.json")["documents"]
     names = {}
-    for user_id in sorted({p["user_id"] for p in packets if p["user_id"]}):
+    for user_id in sorted({p["user_id"] for p in packets + documents if p["user_id"]}):
         user = get_json(f"/user/{user_id}.json")["user"]
         names[user_id] = {"name": user["name"], "url": user["url"]}
         time.sleep(0.5)  # be gentle with BNETDocs
@@ -58,6 +59,16 @@ def main():
         }
         out.setdefault(p["packet_name"], {})[DIRECTIONS.get(p["packet_direction_id"], str(p["packet_direction_id"]))] = entry
 
+    docs_out = {}
+    for d in documents:
+        docs_out[str(d["id"])] = {
+            "title": d["title"],
+            "url": f"{BASE}/document/{d['id']}",
+            "created": d["created_datetime"]["iso"] if d["created_datetime"] else None,
+            "edits": d["edited_count"],
+            "author": names.get(d["user_id"]),
+        }
+
     (ROOT / "data").mkdir(exist_ok=True)
     (ROOT / "data/bnetdocs.json").write_text(json.dumps({
         "source": f"{BASE}/packet/index.json",
@@ -67,8 +78,9 @@ def main():
             {**credits_page_people(), **names}.values(), key=lambda a: a["name"].lower()
         ),
         "packets": out,
+        "documents": docs_out,
     }, indent=1, ensure_ascii=False) + "\n")
-    print(f"{len(packets)} BNETDocs packet pages, {len(names)} named authors")
+    print(f"{len(packets)} BNETDocs packet pages, {len(documents)} documents, {len(names)} named authors")
 
 
 if __name__ == "__main__":

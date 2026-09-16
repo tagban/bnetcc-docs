@@ -11,6 +11,7 @@ build:
 - [Connecting](/classic/connecting/)
 - [BNCS messages](/classic/bncs/)
 - [Connection sequences](/classic/sequences/)
+- [Chat gateway (telnet)](/classic/chat-gateway/)
 
 ### Coming soon
 
