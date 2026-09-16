@@ -1,5 +1,6 @@
 # Battle.net servers checked once a day by .github/workflows/server-status.yml.
 # Only servers that are online, enabled and not defunct are listed. Seeded from BNETDocs' server list.
+# website (optional): a page for the server. Clicking the server's name opens it in a new window.
 
 - id: "bnet-cc-us"
   name: "BNET.cc (Command Center)"
@@ -7,7 +8,7 @@
   port: 6112
   group: "classic-community"
   kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
-  website: "https://bnet.cc"
+  website: "https://us.bnet.cc:6114"
   added_by: "BNET.cc"
 
 - id: "war-pianka-io"

@@ -13,7 +13,7 @@
     <li class="srv-{{ $state }}">
       <span class="srv-dot" role="img" aria-label="{{ $label }}" title="{{ $label }}"></span>
       <span class="srv-text">
-        <span class="srv-name">{{ .name }}</span>
+        <span class="srv-name">{{ with .website }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ .name }}{{ with .website }}</a>{{ end }}</span>
         <span class="srv-addr">{{ .address }}:{{ .port }}</span>
       </span>
     </li>
