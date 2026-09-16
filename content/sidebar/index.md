@@ -21,6 +21,7 @@ build:
 
 ### This site
 
+- [Servers](/servers/)
 - [How to read these pages](/how-to-read/)
 - [Credits](/credits/)
 - [Recent changes](/recent-changes/)

@@ -93,3 +93,9 @@ h1.title .message-id { padding: 0; font-size: .75em; color: #00c0ff; background:
 /* Wider than bnet.cc's 800px: message and sequence tables need the room. */
 #page { max-width: 1280px; }
 #sidebar { width: 220px; }
+
+.status { font-weight: bold; }
+.status-online { color: #6fcf73; }
+.status-offline { color: #ff6b6b; }
+.status-skip { color: #888888; font-weight: normal; }
+#content table.servers td:nth-child(2) { min-width: 12em; }

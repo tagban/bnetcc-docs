@@ -1,0 +1,931 @@
+# Battle.net servers checked once a day by .github/workflows/server-status.yml.
+# Seeded from BNETDocs' server list (credited per entry). Add or edit entries freely.
+# check: http (web request) or tcp (can a connection be opened). enabled: false skips a server.
+
+- id: "bnetdocs-98"
+  name: "Battle.net Website"
+  address: "battle.net"
+  port: 443
+  group: "websites"
+  kind: "Primary Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/98/battle-net-website"
+
+- id: "bnetdocs-100"
+  name: "BNETDocs Phoenix"
+  address: "www.bnetdocs.org"
+  port: 443
+  group: "websites"
+  kind: "Primary Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/100/bnetdocs-phoenix"
+  added_by: "Caaaaarrrrlll"
+
+- id: "bnetdocs-126"
+  name: "Blizzard API (DNS)"
+  address: "api.blizzard.com"
+  port: 443
+  group: "websites"
+  kind: "Ancillary Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/126/blizzard-api-dns"
+
+- id: "bnetdocs-127"
+  name: "Blizzard API / United States (DNS)"
+  address: "us.api.blizzard.com"
+  port: 443
+  group: "websites"
+  kind: "Ancillary Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/127/blizzard-api-united-states-dns"
+
+- id: "bnetdocs-99"
+  name: "Blizzard.com Website"
+  address: "blizzard.com"
+  port: 443
+  group: "websites"
+  kind: "Ancillary Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/99/blizzard-com-website"
+
+- id: "bnetdocs-101"
+  name: "BNETDocs Archive"
+  address: "files.bnetdocs.org"
+  port: 443
+  group: "websites"
+  kind: "Ancillary Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/101/bnetdocs-archive"
+  added_by: "Caaaaarrrrlll"
+
+- id: "bnetdocs-121"
+  name: "BNETDocs Jenkins"
+  address: "jenkins.bnetdocs.org"
+  port: 443
+  group: "websites"
+  kind: "Ancillary Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/121/bnetdocs-jenkins"
+  added_by: "Caaaaarrrrlll"
+
+- id: "bnetdocs-104"
+  name: "BNETDocs Phoenix: Dev"
+  address: "dev.bnetdocs.org"
+  port: 443
+  group: "websites"
+  kind: "Ancillary Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/104/bnetdocs-phoenix-dev"
+  added_by: "Caaaaarrrrlll"
+
+- id: "bnetdocs-102"
+  name: "BNETDocs Redux"
+  address: "redux.bnetdocs.org"
+  port: 443
+  group: "websites"
+  kind: "Ancillary Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/102/bnetdocs-redux"
+  added_by: "Caaaaarrrrlll"
+
+- id: "bnetdocs-103"
+  name: "BNETDocs Redux: Labs"
+  address: "labs.bnetdocs.org"
+  port: 443
+  group: "websites"
+  kind: "Ancillary Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/103/bnetdocs-redux-labs"
+  added_by: "Caaaaarrrrlll"
+
+- id: "bnetdocs-4"
+  name: "Asia / Kalimdor (DNS) (Old)"
+  address: "asia.battle.net"
+  port: 6112
+  group: "classic-blizzard"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/4/asia-kalimdor-dns-old"
+
+- id: "bnetdocs-8"
+  name: "Classic Test / Westfall (DNS) (Defunct)"
+  address: "classicbeta.battle.net"
+  port: 6112
+  group: "classic-blizzard"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
+  check: "tcp"
+  enabled: false
+  bnetdocs: "https://bnetdocs.org/server/8/classic-test-westfall-dns-defunct"
+
+- id: "bnetdocs-3"
+  name: "Europe / Northrend (DNS) (Old)"
+  address: "europe.battle.net"
+  port: 6112
+  group: "classic-blizzard"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/3/europe-northrend-dns-old"
+
+- id: "bnetdocs-2"
+  name: "U.S. East / Azeroth (DNS) (Old)"
+  address: "useast.battle.net"
+  port: 6112
+  group: "classic-blizzard"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/2/u-s-east-azeroth-dns-old"
+
+- id: "bnetdocs-5"
+  name: "U.S. Test / Stratholme (DNS) (Old)"
+  address: "ustest.battle.net"
+  port: 6112
+  group: "classic-blizzard"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/5/u-s-test-stratholme-dns-old"
+
+- id: "bnetdocs-1"
+  name: "U.S. West / Exodus (DNS) (Old)"
+  address: "exodus.battle.net"
+  port: 6112
+  group: "classic-blizzard"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/1/u-s-west-exodus-dns-old"
+
+- id: "bnetdocs-0"
+  name: "U.S. West / Lordaeron (DNS) (Old)"
+  address: "uswest.battle.net"
+  port: 6112
+  group: "classic-blizzard"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/0/u-s-west-lordaeron-dns-old"
+
+- id: "bnetdocs-7"
+  name: "Warcraft III / Westfall (DNS) (Defunct)"
+  address: "beta.battle.net"
+  port: 6112
+  group: "classic-blizzard"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/7/warcraft-iii-westfall-dns-defunct"
+
+- id: "bnetdocs-6"
+  name: "Warcraft III Demo (DNS) (Defunct)"
+  address: "demo.war3.battle.net"
+  port: 6112
+  group: "classic-blizzard"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/6/warcraft-iii-demo-dns-defunct"
+
+- id: "bnetdocs-11"
+  name: "Europe / Northrend (DNS)"
+  address: "connect-eur.classic.blizzard.com"
+  port: 6112
+  group: "classic-blizzard"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic Remastered"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/11/europe-northrend-dns"
+
+- id: "bnetdocs-12"
+  name: "South Korea / Kalimdor (DNS)"
+  address: "connect-kor.classic.blizzard.com"
+  port: 6112
+  group: "classic-blizzard"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic Remastered"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/12/south-korea-kalimdor-dns"
+
+- id: "bnetdocs-10"
+  name: "U.S. East / Azeroth (DNS)"
+  address: "connect-use.classic.blizzard.com"
+  port: 6112
+  group: "classic-blizzard"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic Remastered"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/10/u-s-east-azeroth-dns"
+
+- id: "bnetdocs-9"
+  name: "U.S. West / Lordaeron (DNS)"
+  address: "connect-usw.classic.blizzard.com"
+  port: 6112
+  group: "classic-blizzard"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic Remastered"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/9/u-s-west-lordaeron-dns"
+
+- id: "bnetdocs-13"
+  name: "Warcraft III Public Test Realm (DNS)"
+  address: "war3-ptr.classic.blizzard.com"
+  port: 6112
+  group: "classic-blizzard"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic Remastered"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/13/warcraft-iii-public-test-realm-dns"
+
+- id: "bnetdocs-96"
+  name: "Fish Server (DNS) (Defunct)"
+  address: "bnetd.fishbattle.net"
+  port: 6112
+  group: "classic-community"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Partnered Communities"
+  check: "tcp"
+  enabled: false
+  bnetdocs: "https://bnetdocs.org/server/96/fish-server-dns-defunct"
+
+- id: "bnetdocs-97"
+  name: "Good Old Games (DNS)"
+  address: "connect-forever.classic.blizzard.com"
+  port: 6112
+  group: "classic-community"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Partnered Communities"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/97/good-old-games-dns"
+
+- id: "bnetdocs-109"
+  name: "BNETDocs Atlas"
+  address: "atlas.bnetdocs.org"
+  port: 6112
+  group: "classic-community"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/109/bnetdocs-atlas"
+  added_by: "Caaaaarrrrlll"
+
+- id: "bnetdocs-110"
+  name: "BNETDocs PvPGN"
+  address: "pvpgn.bnetdocs.org"
+  port: 6112
+  group: "classic-community"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/110/bnetdocs-pvpgn"
+  added_by: "Caaaaarrrrlll"
+
+- id: "bnetdocs-111"
+  name: "Eurobattle.net"
+  address: "server.eurobattle.net"
+  port: 6112
+  group: "classic-community"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/111/eurobattle-net"
+  added_by: "cen"
+
+- id: "bnetdocs-113"
+  name: "ICCup (StarCraft)"
+  address: "sc.theabyss.ru"
+  port: 6112
+  group: "classic-community"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/113/iccup-starcraft"
+
+- id: "bnetdocs-114"
+  name: "ICCup (WarCraft)"
+  address: "wc3.theabyss.ru"
+  port: 6112
+  group: "classic-community"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/114/iccup-warcraft"
+
+- id: "bnetdocs-115"
+  name: "Init6 Chicago (Defunct)"
+  address: "chi.wserv.org"
+  port: 6112
+  group: "classic-community"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
+  check: "tcp"
+  enabled: false
+  bnetdocs: "https://bnetdocs.org/server/115/init6-chicago-defunct"
+  added_by: "l2k-Shadow"
+
+- id: "bnetdocs-116"
+  name: "Init6 Dallas (Defunct)"
+  address: "dal.wserv.org"
+  port: 6112
+  group: "classic-community"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
+  check: "tcp"
+  enabled: false
+  bnetdocs: "https://bnetdocs.org/server/116/init6-dallas-defunct"
+  added_by: "l2k-Shadow"
+
+- id: "bnetdocs-117"
+  name: "Init6 Los Angeles (Defunct)"
+  address: "chat.wserv.org"
+  port: 6112
+  group: "classic-community"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
+  check: "tcp"
+  enabled: false
+  bnetdocs: "https://bnetdocs.org/server/117/init6-los-angeles-defunct"
+  added_by: "l2k-Shadow"
+
+- id: "bnetdocs-118"
+  name: "Init6 Montréal (Defunct)"
+  address: "mtl.wserv.org"
+  port: 6112
+  group: "classic-community"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
+  check: "tcp"
+  enabled: false
+  bnetdocs: "https://bnetdocs.org/server/118/init6-montr-al-defunct"
+  added_by: "l2k-Shadow"
+
+- id: "bnetdocs-119"
+  name: "Init6 Seattle (Defunct)"
+  address: "sea.wserv.org"
+  port: 6112
+  group: "classic-community"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
+  check: "tcp"
+  enabled: false
+  bnetdocs: "https://bnetdocs.org/server/119/init6-seattle-defunct"
+  added_by: "l2k-Shadow"
+
+- id: "bnetdocs-112"
+  name: "Rubattle.net"
+  address: "rubattle.net"
+  port: 6112
+  group: "classic-community"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/112/rubattle-net"
+
+- id: "bnetdocs-106"
+  name: "BNETDocs' JBLS"
+  address: "bnls.bnetdocs.org"
+  port: 9367
+  group: "bnls"
+  kind: "Battle.net Logon Service (BNLS) for Bots"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/106/bnetdocs-jbls"
+  added_by: "Caaaaarrrrlll"
+
+- id: "bnetdocs-107"
+  name: "Davnit's JBLS"
+  address: "jbls.davnit.net"
+  port: 9367
+  group: "bnls"
+  kind: "Battle.net Logon Service (BNLS) for Bots"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/107/davnit-s-jbls"
+  added_by: "Davnit"
+
+- id: "bnetdocs-108"
+  name: "Phix's JBLS"
+  address: "phix.no-ip.org"
+  port: 9367
+  group: "bnls"
+  kind: "Battle.net Logon Service (BNLS) for Bots"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/108/phix-s-jbls"
+
+- id: "bnetdocs-105"
+  name: "Valhalla Legends Botnet Service"
+  address: "botnet.bnetdocs.org"
+  port: 21845
+  group: "botnet"
+  kind: "Valhalla Legends Botnet Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/105/valhalla-legends-botnet-service"
+  added_by: "Caaaaarrrrlll"
+
+- id: "bnetdocs-19"
+  name: "Account (DNS)"
+  address: "account.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/19/account-dns"
+
+- id: "bnetdocs-20"
+  name: "Anycast Connect (DNS CNAME)"
+  address: "connect.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/20/anycast-connect-dns-cname"
+
+- id: "bnetdocs-27"
+  name: "Asia-Pacific (DNS)"
+  address: "connect-apac.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/27/asia-pacific-dns"
+
+- id: "bnetdocs-31"
+  name: "Asia-Pacific (DNS)"
+  address: "connect-live-apac-a.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/31/asia-pacific-dns"
+
+- id: "bnetdocs-32"
+  name: "Asia-Pacific (DNS)"
+  address: "connect-live-apac-b.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/32/asia-pacific-dns"
+
+- id: "bnetdocs-21"
+  name: "Chat API Anycast (DNS CNAME)"
+  address: "api.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/21/chat-api-anycast-dns-cname"
+
+- id: "bnetdocs-22"
+  name: "Chat API Anycast (DNS CNAME)"
+  address: "connect-bot.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/22/chat-api-anycast-dns-cname"
+
+- id: "bnetdocs-23"
+  name: "Chat API Asia-Pacific (DNS)"
+  address: "connect-bot-apac.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/23/chat-api-asia-pacific-dns"
+
+- id: "bnetdocs-24"
+  name: "Chat API China (DNS)"
+  address: "connect-bot-cn.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/24/chat-api-china-dns"
+
+- id: "bnetdocs-25"
+  name: "Chat API EMEA (DNS)"
+  address: "connect-bot-emea.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/25/chat-api-emea-dns"
+
+- id: "bnetdocs-26"
+  name: "Chat API North America (DNS)"
+  address: "connect-bot-na.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/26/chat-api-north-america-dns"
+
+- id: "bnetdocs-28"
+  name: "China (DNS)"
+  address: "connect-cn.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/28/china-dns"
+
+- id: "bnetdocs-33"
+  name: "China (DNS)"
+  address: "connect-live-cn-a.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/33/china-dns"
+
+- id: "bnetdocs-34"
+  name: "China (DNS)"
+  address: "connect-live-cn-b.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/34/china-dns"
+
+- id: "bnetdocs-39"
+  name: "Depot (DNS)"
+  address: "depot.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  enabled: false
+  bnetdocs: "https://bnetdocs.org/server/39/depot-dns"
+
+- id: "bnetdocs-29"
+  name: "EMEA (DNS)"
+  address: "connect-emea.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/29/emea-dns"
+
+- id: "bnetdocs-35"
+  name: "EMEA (DNS)"
+  address: "connect-live-emea-a.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/35/emea-dns"
+
+- id: "bnetdocs-36"
+  name: "EMEA (DNS)"
+  address: "connect-live-emea-b.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/36/emea-dns"
+
+- id: "bnetdocs-37"
+  name: "North America (DNS)"
+  address: "connect-live-na-a.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/37/north-america-dns"
+
+- id: "bnetdocs-38"
+  name: "North America (DNS)"
+  address: "connect-live-na-b.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/38/north-america-dns"
+
+- id: "bnetdocs-30"
+  name: "North America (DNS)"
+  address: "connect-na.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/30/north-america-dns"
+
+- id: "bnetdocs-40"
+  name: "Nydus (DNS)"
+  address: "nydus.battle.net"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/40/nydus-dns"
+
+- id: "bnetdocs-41"
+  name: "Anycast Connect PTR (DNS CNAME)"
+  address: "connect-ptr.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service Public Test Realm"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/41/anycast-connect-ptr-dns-cname"
+
+- id: "bnetdocs-42"
+  name: "Asia-Pacific Public Test Realm (DNS)"
+  address: "connect-ptr-apac.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service Public Test Realm"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/42/asia-pacific-public-test-realm-dns"
+
+- id: "bnetdocs-43"
+  name: "EMEA Public Test Realm (DNS)"
+  address: "connect-ptr-emea.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service Public Test Realm"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/43/emea-public-test-realm-dns"
+
+- id: "bnetdocs-45"
+  name: "North America Public Test Realm (DNS)"
+  address: "connect-ptr-na-a.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service Public Test Realm"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/45/north-america-public-test-realm-dns"
+
+- id: "bnetdocs-46"
+  name: "North America Public Test Realm (DNS)"
+  address: "connect-ptr-na-b.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service Public Test Realm"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/46/north-america-public-test-realm-dns"
+
+- id: "bnetdocs-44"
+  name: "North America Public Test Realm (DNS)"
+  address: "connect-ptr-na.classic.blizzard.com"
+  port: 443
+  group: "remastered"
+  kind: "Battle.net v1 Remastered Service Public Test Realm"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/44/north-america-public-test-realm-dns"
+
+- id: "bnetdocs-60"
+  name: "Game Service / China (DNS)"
+  address: "cn.actual.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Game Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/60/game-service-china-dns"
+
+- id: "bnetdocs-61"
+  name: "Game Service / Europe (DNS)"
+  address: "eu.actual.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Game Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/61/game-service-europe-dns"
+
+- id: "bnetdocs-131"
+  name: "Game Service / Region Agnostic (DNS)"
+  address: "prod.actual.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Game Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/131/game-service-region-agnostic-dns"
+  added_by: "Caaaaarrrrlll"
+
+- id: "bnetdocs-62"
+  name: "Game Service / Singapore (DNS)"
+  address: "sg.actual.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Game Service"
+  check: "tcp"
+  enabled: false
+  bnetdocs: "https://bnetdocs.org/server/62/game-service-singapore-dns"
+
+- id: "bnetdocs-63"
+  name: "Game Service / South Korea (DNS)"
+  address: "kr.actual.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Game Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/63/game-service-south-korea-dns"
+
+- id: "bnetdocs-64"
+  name: "Game Service / Taiwan (DNS)"
+  address: "tw.actual.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Game Service"
+  check: "tcp"
+  enabled: false
+  bnetdocs: "https://bnetdocs.org/server/64/game-service-taiwan-dns"
+
+- id: "bnetdocs-65"
+  name: "Game Service / United States (DNS)"
+  address: "us.actual.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Game Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/65/game-service-united-states-dns"
+
+- id: "bnetdocs-66"
+  name: "Game Service / Public Test (DNS)"
+  address: "public-test.actual.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Game Service Public Test Realm"
+  check: "tcp"
+  enabled: false
+  bnetdocs: "https://bnetdocs.org/server/66/game-service-public-test-dns"
+
+- id: "bnetdocs-59"
+  name: "IIR (DNS)"
+  address: "iir.blizzard.com"
+  port: 3724
+  group: "bnet2"
+  kind: "Battle.net v2 Logon Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/59/iir-dns"
+
+- id: "bnetdocs-67"
+  name: "Logon Service / China (DNS)"
+  address: "cn.logon.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Logon Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/67/logon-service-china-dns"
+
+- id: "bnetdocs-68"
+  name: "Logon Service / Europe (DNS)"
+  address: "eu.logon.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Logon Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/68/logon-service-europe-dns"
+
+- id: "bnetdocs-69"
+  name: "Logon Service / Singapore (DNS)"
+  address: "sg.logon.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Logon Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/69/logon-service-singapore-dns"
+
+- id: "bnetdocs-70"
+  name: "Logon Service / South Korea (DNS)"
+  address: "kr.logon.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Logon Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/70/logon-service-south-korea-dns"
+
+- id: "bnetdocs-71"
+  name: "Logon Service / Taiwan (DNS)"
+  address: "tw.logon.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Logon Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/71/logon-service-taiwan-dns"
+
+- id: "bnetdocs-72"
+  name: "Logon Service / United States (DNS)"
+  address: "us.logon.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Logon Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/72/logon-service-united-states-dns"
+
+- id: "bnetdocs-73"
+  name: "Logon Service / Public Test (DNS)"
+  address: "public-test.logon.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Logon Service Public Test Realm"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/73/logon-service-public-test-dns"
+
+- id: "bnetdocs-74"
+  name: "Patch Service / China (DNS)"
+  address: "cn.patch.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Patch Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/74/patch-service-china-dns"
+
+- id: "bnetdocs-75"
+  name: "Patch Service / Europe (DNS)"
+  address: "eu.patch.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Patch Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/75/patch-service-europe-dns"
+
+- id: "bnetdocs-76"
+  name: "Patch Service / Singapore (DNS)"
+  address: "sg.patch.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Patch Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/76/patch-service-singapore-dns"
+
+- id: "bnetdocs-77"
+  name: "Patch Service / South Korea (DNS)"
+  address: "kr.patch.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Patch Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/77/patch-service-south-korea-dns"
+
+- id: "bnetdocs-78"
+  name: "Patch Service / Taiwan (DNS)"
+  address: "tw.patch.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Patch Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/78/patch-service-taiwan-dns"
+
+- id: "bnetdocs-79"
+  name: "Patch Service / United States (DNS)"
+  address: "us.patch.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Patch Service"
+  check: "tcp"
+  bnetdocs: "https://bnetdocs.org/server/79/patch-service-united-states-dns"
+
+- id: "bnetdocs-94"
+  name: "Patch Service / Public Test (DNS)"
+  address: "public-test.patch.battle.net"
+  port: 1119
+  group: "bnet2"
+  kind: "Battle.net v2 Patch Service Public Test Realm"
+  check: "tcp"
+  enabled: false
+  bnetdocs: "https://bnetdocs.org/server/94/patch-service-public-test-dns"
+
+- id: "bnetdocs-125"
+  name: "BNETDocs Production Server"
+  address: "vultr-chi.bnetdocs.org"
+  port: 443
+  group: "websites"
+  kind: "Other Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/125/bnetdocs-production-server"
+  added_by: "Caaaaarrrrlll"
+
+- id: "bnetdocs-122"
+  name: "CodeSpeak.org"
+  address: "codespeak.org"
+  port: 443
+  group: "websites"
+  kind: "Other Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/122/codespeak-org"
+  added_by: "Vector"
+
+- id: "bnetdocs-123"
+  name: "DarkBlizz.org"
+  address: "darkblizz.org"
+  port: 443
+  group: "websites"
+  kind: "Other Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/123/darkblizz-org"
+  added_by: "MysT_DooM"
+
+- id: "bnetdocs-124"
+  name: "Davnit.net"
+  address: "davnit.net"
+  port: 443
+  group: "websites"
+  kind: "Other Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/124/davnit-net"
+  added_by: "Davnit"
+
+- id: "bnetdocs-128"
+  name: "Keep the Battle.net Pride Alive!"
+  address: "ktbpa.com"
+  port: 443
+  group: "websites"
+  kind: "Other Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/128/keep-the-battle-net-pride-alive"
+  added_by: "Caaaaarrrrlll"
+
+- id: "bnetdocs-129"
+  name: "www.StealthBot.net (HTTP)"
+  address: "www.stealthbot.net"
+  port: 80
+  group: "websites"
+  kind: "Other Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/129/www-stealthbot-net-http"
+  added_by: "Caaaaarrrrlll"
+
+- id: "bnetdocs-130"
+  name: "www.StealthBot.net (HTTPS)"
+  address: "www.stealthbot.net"
+  port: 443
+  group: "websites"
+  kind: "Other Website Service"
+  check: "http"
+  bnetdocs: "https://bnetdocs.org/server/130/www-stealthbot-net-https"
+  added_by: "Caaaaarrrrlll"

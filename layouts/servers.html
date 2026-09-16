@@ -1,0 +1,53 @@
+{{ define "main" }}
+{{- $status := index hugo.Data "server-status" }}
+{{- $groups := slice
+  (slice "classic-community" "Classic Battle.net: community servers")
+  (slice "classic-blizzard" "Classic Battle.net: Blizzard")
+  (slice "bnls" "Logon servers for bots (BNLS and JBLS)")
+  (slice "botnet" "BotNet")
+  (slice "remastered" "Battle.net for remastered games")
+  (slice "bnet2" "Battle.net 2.0")
+  (slice "websites" "Websites")
+  (slice "other" "Other") }}
+<div data-pagefind-body>
+<h1 class="title">{{ .Title }}</h1>
+{{ .Content }}
+{{- with $status }}
+<p class="note">Last checked {{ (time .checked).Format "January 2, 2006 at 15:04 UTC" }}.</p>
+{{- else }}
+<p class="note">Not checked yet. The first check runs within a day.</p>
+{{- end }}
+
+{{- range $groups }}
+  {{- $label := index . 1 }}
+  {{- with where hugo.Data.servers "group" (index . 0) }}
+<h2>{{ $label }}</h2>
+<div class="table-wrap">
+<table class="wikitable servers">
+  <thead><tr><th>Status</th><th>Server</th><th>Address</th><th>Last seen online</th><th>Listed by</th></tr></thead>
+  <tbody>
+    {{- range sort . "name" }}
+      {{- $id := .id }}
+      {{- $r := dict }}
+      {{- with $status }}{{ with index .servers $id }}{{ $r = . }}{{ end }}{{ end }}
+    <tr>
+      <td class="nowrap">
+        {{- if or (eq .enabled false) (eq $r.checked false) }}<span class="status status-skip">– Not checked</span>
+        {{- else if $r.online }}<span class="status status-online">● Online</span>{{ with $r.latency_ms }} <span class="note">{{ . }} ms</span>{{ end }}
+        {{- else if $r }}<span class="status status-offline" title="{{ $r.error }}">○ Offline</span>
+        {{- else }}<span class="status status-skip">– Not checked yet</span>{{ end -}}
+      </td>
+      <td>{{ .name }}</td>
+      <td class="nowrap"><code>{{ .address }}:{{ .port }}</code></td>
+      <td class="nowrap">{{ with $r.last_online }}{{ (time .).Format "Jan 2, 2006" }}{{ else }}<span class="note">—</span>{{ end }}</td>
+      <td>{{ with .bnetdocs }}<a href="{{ . }}">BNETDocs</a>{{ end }}{{ with .added_by }}<br><span class="note">added by {{ . }}</span>{{ end }}</td>
+    </tr>
+    {{- end }}
+  </tbody>
+</table>
+</div>
+  {{- end }}
+{{- end }}
+</div>
+{{ partial "pageinfo.html" . }}
+{{ end }}
