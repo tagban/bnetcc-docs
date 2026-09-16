@@ -47,4 +47,9 @@ sources:
     url: "https://github.com/BNETDocs/Atlas/blob/master/src/Atlasd/Battlenet/Protocols/Game/Messages/SID_CLIENTID2.cs"
 ---
 
-**The GOG release is different.** The edition of *Warcraft II: Battle.net Edition* sold by GOG doesn't behave exactly like the original. This page describes the original. The GOG edition's differences will be added here once they're captured from a real client.
+**The GOG release.** The edition of *Warcraft II: Battle.net Edition* sold by GOG logs on with this same sequence. What differs is the version check:
+
+- It reports a newer game version, around **2.0.2.1**. The original's final version is 2.02.
+- One of the game files its version check hashes is slightly different, so its EXE hash doesn't match the original's.
+
+A server that restricts game versions has to accept the GOG edition's version and hash separately from the original's. The exact values will be added here once they're captured.

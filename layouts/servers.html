@@ -37,7 +37,7 @@
         {{- else if $r }}<span class="status status-offline" title="{{ $r.error }}">○ Offline</span>
         {{- else }}<span class="status status-skip">– Not checked yet</span>{{ end -}}
       </td>
-      <td>{{ .name }}</td>
+      <td>{{ with .website }}<a href="{{ . }}">{{ end }}{{ .name }}{{ with .website }}</a>{{ end }}</td>
       <td class="nowrap"><code>{{ .address }}:{{ .port }}</code></td>
       <td class="nowrap">{{ with $r.last_online }}{{ (time .).Format "Jan 2, 2006" }}{{ else }}<span class="note">—</span>{{ end }}</td>
       <td>{{ with .bnetdocs }}<a href="{{ . }}">BNETDocs</a>{{ end }}{{ with .added_by }}<br><span class="note">added by {{ . }}</span>{{ end }}</td>

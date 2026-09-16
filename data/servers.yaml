@@ -2,6 +2,16 @@
 # Seeded from BNETDocs' server list (credited per entry). Add or edit entries freely.
 # check: http (web request) or tcp (can a connection be opened). enabled: false skips a server.
 
+- id: "bnet-cc-us"
+  name: "BNET.cc (Command Center)"
+  address: "us.bnet.cc"
+  port: 6112
+  group: "classic-community"
+  kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
+  check: "tcp"
+  website: "https://bnet.cc"
+  added_by: "BNET.cc"
+
 - id: "bnetdocs-98"
   name: "Battle.net Website"
   address: "battle.net"
