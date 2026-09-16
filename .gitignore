@@ -1,0 +1,5 @@
+/public/
+/resources/_gen/
+.hugo_build.lock
+/data/recentchanges.json
+.DS_Store

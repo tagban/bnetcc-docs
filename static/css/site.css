@@ -1,0 +1,46 @@
+/* BNET.cc Docs colors, matching bnet.cc. */
+
+body { color: #cccccc; background: #000000; font-family: Arial, Helvetica, sans-serif; }
+a { color: #ffac04; }
+a:visited { color: #e8a01a; }
+a:hover { color: #ffffff; }
+a:focus-visible { outline-color: #00c0ff; }
+
+#header { background: #111111; border-color: #333333; }
+#header .logo { font-family: Impact, "Arial Black", sans-serif; font-size: 28px; font-style: italic; letter-spacing: 2px; color: #00c0ff; text-decoration: none; text-shadow: 2px 2px 3px #000000, 0 0 12px #0055aa; }
+#header .tagline { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #cccccc; }
+
+#topbar { color: #555555; background: #161616; border-color: #333333; }
+#topbar a, #topbar a:visited { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #00c0ff; }
+#topbar a:hover { color: #ffffff; }
+
+#layout { background: #0a0a0a; border-color: #333333; }
+#sidebar { background: #12131c; border-left-color: #2b2d42; }
+#sidebar h3 { color: #ffffff; font-variant: small-caps; letter-spacing: 1px; background: #1c1e2b; border-color: #2b2d42; }
+#sidebar ul, #sidebar .navbox-body { background: #0e0f16; border-color: #2b2d42; }
+#sidebar li { color: #888888; }
+
+#content h1, #content h2, #content h3, #content h4 { color: #ffffff; }
+#content h1, #content h2 { border-bottom-color: #333333; }
+#content h1.title { border-bottom-color: #00c0ff; }
+
+code { color: #00c0ff; background: #161616; }
+pre { background: #111111; border-color: #333333; }
+pre code { color: inherit; }
+
+table.wikitable { background: #161616; border-color: #575757; }
+#content th { color: #ffffff; background: #393731; border-color: #575757; }
+#content td { border-color: #575757; }
+#content tbody tr:nth-child(even) td { background: #1d1d1d; }
+
+.toc, .catlinks, #content .infobox { background: #111111; border-color: #333333; }
+.pageinfo, .filesize, .changes .date, .changes .changed { color: #888888; }
+#footer { color: #777777; }
+
+#search {
+  --pagefind-ui-primary: #00c0ff;
+  --pagefind-ui-text: #cccccc;
+  --pagefind-ui-background: #111111;
+  --pagefind-ui-border: #333333;
+  --pagefind-ui-tag: #1c1c1c;
+}

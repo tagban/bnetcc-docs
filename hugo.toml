@@ -1,0 +1,36 @@
+baseURL = "https://docs.bnet.cc/"
+title = "BNET.cc Docs"
+locale = "en"
+theme = "flatwiki"
+enableGitInfo = true
+disableKinds = ["rss"]
+disableHugoGeneratorInject = true
+
+[outputs]
+  home = ["html", "json"]
+
+[taxonomies]
+  category = "categories"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.goldmark.extensions.typographer]
+  disable = true
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
+
+[markup.highlight]
+  style = "monokai"
+
+[params]
+  tagline = "Command Center documentation"
+  repo = "tagban/bnetcc-docs"
+  branch = "main"
+  # Discord editor address (edit.bnet.cc). Leave empty until it is set up.
+  editorURL = ""
+  discordInvite = "https://discord.gg/dR4djHweh3"
+  footer = "Command Center is an educational project. It is not affiliated with, endorsed by or sponsored by Blizzard Entertainment."
+  stylesheets = ["/css/wiki.css", "/css/site.css"]
