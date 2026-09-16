@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Check whether each server in data/servers.yaml is reachable, once a day.
 
-Writes data/server-status.json. The check is deliberately gentle: web services get one
-HTTP request; everything else gets one TCP connection that is closed straight away. No
-game or logon data is ever sent, so nothing is logged in to.
+Writes data/server-status.json. The check is deliberately gentle: one TCP connection per
+server, closed straight away. No game or logon data is ever sent, so nothing is logged in to.
 
 Usage:  python3 scripts/check_servers.py [--limit N]
 """
@@ -11,10 +10,7 @@ import argparse
 import json
 import re
 import socket
-import ssl
 import time
-import urllib.error
-import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
@@ -50,28 +46,11 @@ def check_tcp(address, port):
         return round((time.monotonic() - start) * 1000)
 
 
-def check_http(address, port):
-    scheme = "http" if port == 80 else "https"
-    host = address if port in (80, 443) else f"{address}:{port}"
-    url = address if address.startswith("http") else f"{scheme}://{host}/"
-    request = urllib.request.Request(url, method="GET", headers={"User-Agent": "docs.bnet.cc daily status check"})
-    start = time.monotonic()
-    try:
-        with urllib.request.urlopen(request, timeout=TIMEOUT, context=ssl.create_default_context()) as r:
-            code = r.status
-    except urllib.error.HTTPError as e:
-        code = e.code
-    if code >= 500:
-        raise OSError(f"HTTP {code}")
-    return round((time.monotonic() - start) * 1000)
-
-
 def check(server):
     if server.get("enabled") is False:
         return server["id"], {"checked": False}
     try:
-        fn = check_http if server.get("check") == "http" else check_tcp
-        latency = fn(server["address"], int(server["port"]))
+        latency = check_tcp(server["address"], int(server["port"]))
         return server["id"], {"online": True, "latency_ms": latency}
     except Exception as e:  # any failure to connect counts as offline
         reason = type(e).__name__ if not str(e) else str(e)

@@ -1,6 +1,5 @@
 # Battle.net servers checked once a day by .github/workflows/server-status.yml.
 # Only servers that are online, enabled and not defunct are listed. Seeded from BNETDocs' server list.
-# check: http (web request) or tcp (can a connection be opened).
 
 - id: "bnet-cc-us"
   name: "BNET.cc (Command Center)"
@@ -8,85 +7,8 @@
   port: 6112
   group: "classic-community"
   kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
-  check: "tcp"
   website: "https://bnet.cc"
   added_by: "BNET.cc"
-
-- id: "bnetdocs-98"
-  name: "Battle.net Website"
-  address: "battle.net"
-  port: 443
-  group: "websites"
-  kind: "Primary Website Service"
-  check: "http"
-  bnetdocs: "https://bnetdocs.org/server/98/battle-net-website"
-
-- id: "bnetdocs-100"
-  name: "BNETDocs Phoenix"
-  address: "www.bnetdocs.org"
-  port: 443
-  group: "websites"
-  kind: "Primary Website Service"
-  check: "http"
-  bnetdocs: "https://bnetdocs.org/server/100/bnetdocs-phoenix"
-  added_by: "Caaaaarrrrlll"
-
-- id: "bnetdocs-126"
-  name: "Blizzard API (DNS)"
-  address: "api.blizzard.com"
-  port: 443
-  group: "websites"
-  kind: "Ancillary Website Service"
-  check: "http"
-  bnetdocs: "https://bnetdocs.org/server/126/blizzard-api-dns"
-
-- id: "bnetdocs-127"
-  name: "Blizzard API / United States (DNS)"
-  address: "us.api.blizzard.com"
-  port: 443
-  group: "websites"
-  kind: "Ancillary Website Service"
-  check: "http"
-  bnetdocs: "https://bnetdocs.org/server/127/blizzard-api-united-states-dns"
-
-- id: "bnetdocs-99"
-  name: "Blizzard.com Website"
-  address: "blizzard.com"
-  port: 443
-  group: "websites"
-  kind: "Ancillary Website Service"
-  check: "http"
-  bnetdocs: "https://bnetdocs.org/server/99/blizzard-com-website"
-
-- id: "bnetdocs-101"
-  name: "BNETDocs Archive"
-  address: "files.bnetdocs.org"
-  port: 443
-  group: "websites"
-  kind: "Ancillary Website Service"
-  check: "http"
-  bnetdocs: "https://bnetdocs.org/server/101/bnetdocs-archive"
-  added_by: "Caaaaarrrrlll"
-
-- id: "bnetdocs-102"
-  name: "BNETDocs Redux"
-  address: "redux.bnetdocs.org"
-  port: 443
-  group: "websites"
-  kind: "Ancillary Website Service"
-  check: "http"
-  bnetdocs: "https://bnetdocs.org/server/102/bnetdocs-redux"
-  added_by: "Caaaaarrrrlll"
-
-- id: "bnetdocs-103"
-  name: "BNETDocs Redux: Labs"
-  address: "labs.bnetdocs.org"
-  port: 443
-  group: "websites"
-  kind: "Ancillary Website Service"
-  check: "http"
-  bnetdocs: "https://bnetdocs.org/server/103/bnetdocs-redux-labs"
-  added_by: "Caaaaarrrrlll"
 
 - id: "bnetdocs-4"
   name: "Asia / Kalimdor (DNS) (Old)"
@@ -94,7 +16,6 @@
   port: 6112
   group: "classic-blizzard"
   kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/4/asia-kalimdor-dns-old"
 
 - id: "bnetdocs-3"
@@ -103,7 +24,6 @@
   port: 6112
   group: "classic-blizzard"
   kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/3/europe-northrend-dns-old"
 
 - id: "bnetdocs-2"
@@ -112,7 +32,6 @@
   port: 6112
   group: "classic-blizzard"
   kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/2/u-s-east-azeroth-dns-old"
 
 - id: "bnetdocs-1"
@@ -121,7 +40,6 @@
   port: 6112
   group: "classic-blizzard"
   kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/1/u-s-west-exodus-dns-old"
 
 - id: "bnetdocs-0"
@@ -130,7 +48,6 @@
   port: 6112
   group: "classic-blizzard"
   kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/0/u-s-west-lordaeron-dns-old"
 
 - id: "bnetdocs-97"
@@ -139,7 +56,6 @@
   port: 6112
   group: "classic-community"
   kind: "Battle.net v1 Game Client Service (BNCS) / Partnered Communities"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/97/good-old-games-dns"
 
 - id: "bnetdocs-109"
@@ -148,7 +64,6 @@
   port: 6112
   group: "classic-community"
   kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/109/bnetdocs-atlas"
   added_by: "Caaaaarrrrlll"
 
@@ -158,7 +73,6 @@
   port: 6112
   group: "classic-community"
   kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/110/bnetdocs-pvpgn"
   added_by: "Caaaaarrrrlll"
 
@@ -168,7 +82,6 @@
   port: 6112
   group: "classic-community"
   kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/111/eurobattle-net"
   added_by: "cen"
 
@@ -178,7 +91,6 @@
   port: 6112
   group: "classic-community"
   kind: "Battle.net v1 Game Client Service (BNCS) / Communities"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/112/rubattle-net"
 
 - id: "bnetdocs-106"
@@ -187,7 +99,6 @@
   port: 9367
   group: "bnls"
   kind: "Battle.net Logon Service (BNLS) for Bots"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/106/bnetdocs-jbls"
   added_by: "Caaaaarrrrlll"
 
@@ -197,7 +108,6 @@
   port: 9367
   group: "bnls"
   kind: "Battle.net Logon Service (BNLS) for Bots"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/107/davnit-s-jbls"
   added_by: "Davnit"
 
@@ -207,7 +117,6 @@
   port: 21845
   group: "botnet"
   kind: "Valhalla Legends Botnet Service"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/105/valhalla-legends-botnet-service"
   added_by: "Caaaaarrrrlll"
 
@@ -217,7 +126,6 @@
   port: 443
   group: "remastered"
   kind: "Battle.net v1 Remastered Service"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/19/account-dns"
 
 - id: "bnetdocs-40"
@@ -226,7 +134,6 @@
   port: 443
   group: "remastered"
   kind: "Battle.net v1 Remastered Service"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/40/nydus-dns"
 
 - id: "bnetdocs-61"
@@ -235,7 +142,6 @@
   port: 1119
   group: "bnet2"
   kind: "Battle.net v2 Game Service"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/61/game-service-europe-dns"
 
 - id: "bnetdocs-131"
@@ -244,7 +150,6 @@
   port: 1119
   group: "bnet2"
   kind: "Battle.net v2 Game Service"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/131/game-service-region-agnostic-dns"
   added_by: "Caaaaarrrrlll"
 
@@ -254,7 +159,6 @@
   port: 1119
   group: "bnet2"
   kind: "Battle.net v2 Game Service"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/63/game-service-south-korea-dns"
 
 - id: "bnetdocs-65"
@@ -263,7 +167,6 @@
   port: 1119
   group: "bnet2"
   kind: "Battle.net v2 Game Service"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/65/game-service-united-states-dns"
 
 - id: "bnetdocs-59"
@@ -272,7 +175,6 @@
   port: 3724
   group: "bnet2"
   kind: "Battle.net v2 Logon Service"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/59/iir-dns"
 
 - id: "bnetdocs-74"
@@ -281,7 +183,6 @@
   port: 1119
   group: "bnet2"
   kind: "Battle.net v2 Patch Service"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/74/patch-service-china-dns"
 
 - id: "bnetdocs-75"
@@ -290,7 +191,6 @@
   port: 1119
   group: "bnet2"
   kind: "Battle.net v2 Patch Service"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/75/patch-service-europe-dns"
 
 - id: "bnetdocs-77"
@@ -299,7 +199,6 @@
   port: 1119
   group: "bnet2"
   kind: "Battle.net v2 Patch Service"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/77/patch-service-south-korea-dns"
 
 - id: "bnetdocs-78"
@@ -308,7 +207,6 @@
   port: 1119
   group: "bnet2"
   kind: "Battle.net v2 Patch Service"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/78/patch-service-taiwan-dns"
 
 - id: "bnetdocs-79"
@@ -317,45 +215,4 @@
   port: 1119
   group: "bnet2"
   kind: "Battle.net v2 Patch Service"
-  check: "tcp"
   bnetdocs: "https://bnetdocs.org/server/79/patch-service-united-states-dns"
-
-- id: "bnetdocs-124"
-  name: "Davnit.net"
-  address: "davnit.net"
-  port: 443
-  group: "websites"
-  kind: "Other Website Service"
-  check: "http"
-  bnetdocs: "https://bnetdocs.org/server/124/davnit-net"
-  added_by: "Davnit"
-
-- id: "bnetdocs-128"
-  name: "Keep the Battle.net Pride Alive!"
-  address: "ktbpa.com"
-  port: 443
-  group: "websites"
-  kind: "Other Website Service"
-  check: "http"
-  bnetdocs: "https://bnetdocs.org/server/128/keep-the-battle-net-pride-alive"
-  added_by: "Caaaaarrrrlll"
-
-- id: "bnetdocs-129"
-  name: "www.StealthBot.net (HTTP)"
-  address: "www.stealthbot.net"
-  port: 80
-  group: "websites"
-  kind: "Other Website Service"
-  check: "http"
-  bnetdocs: "https://bnetdocs.org/server/129/www-stealthbot-net-http"
-  added_by: "Caaaaarrrrlll"
-
-- id: "bnetdocs-130"
-  name: "www.StealthBot.net (HTTPS)"
-  address: "www.stealthbot.net"
-  port: 443
-  group: "websites"
-  kind: "Other Website Service"
-  check: "http"
-  bnetdocs: "https://bnetdocs.org/server/130/www-stealthbot-net-https"
-  added_by: "Caaaaarrrrlll"

@@ -19,30 +19,6 @@
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
-  "bnetdocs-100": {
-   "last_online": "2026-09-16T20:58:42+00:00",
-   "latency_ms": 847,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-101": {
-   "last_online": "2026-09-16T20:58:42+00:00",
-   "latency_ms": 371,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-102": {
-   "last_online": "2026-09-16T20:58:42+00:00",
-   "latency_ms": 322,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-103": {
-   "last_online": "2026-09-16T20:58:42+00:00",
-   "latency_ms": 270,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
   "bnetdocs-105": {
    "last_online": "2026-09-16T20:58:42+00:00",
    "latency_ms": 117,
@@ -82,42 +58,6 @@
   "bnetdocs-112": {
    "last_online": "2026-09-16T20:58:42+00:00",
    "latency_ms": 835,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-124": {
-   "last_online": "2026-09-16T20:58:42+00:00",
-   "latency_ms": 629,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-126": {
-   "last_online": "2026-09-16T20:58:42+00:00",
-   "latency_ms": 438,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-127": {
-   "last_online": "2026-09-16T20:58:42+00:00",
-   "latency_ms": 428,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-128": {
-   "last_online": "2026-09-16T20:58:42+00:00",
-   "latency_ms": 763,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-129": {
-   "last_online": "2026-09-16T20:58:42+00:00",
-   "latency_ms": 244,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-130": {
-   "last_online": "2026-09-16T20:58:42+00:00",
-   "latency_ms": 277,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
@@ -214,18 +154,6 @@
   "bnetdocs-97": {
    "last_online": "2026-09-16T20:58:42+00:00",
    "latency_ms": 92,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-98": {
-   "last_online": "2026-09-16T20:58:42+00:00",
-   "latency_ms": 1990,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-99": {
-   "last_online": "2026-09-16T20:58:42+00:00",
-   "latency_ms": 690,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   }
