@@ -20,9 +20,10 @@
 
 - name: "BNUBot"
   authors: ["BNU-Camel"]
-  platforms: [Windows]
+  platforms: [Windows(v1) macOS(v2), BeOS(v2), Linux(v2)]
   functions: [chat, moderation, clan, trivia, scripting]
   notes: "Versions 1 and 2 both have clan management and trivia. The archive has version 1."
+  source: "https://github.com/scottanderson/bnubot2"
   archive:
     - "bots/Classic Battle.net/Win/BNUBot1.1.34b3.exe"
     - "bots/Classic Battle.net/Win/BNUBot1.1.34b4.exe"
@@ -41,11 +42,10 @@
   functions: [chat, moderation, clan, trivia]
   download: "https://github.com/tagban/invigoration/releases/latest"
   source: "https://github.com/tagban/invigoration"
-  notes: "Version 1 (Visual Basic 6, Windows) is a chat bot. Version 2, a C# port for Windows and macOS, adds moderation, clan management and trivia."
+  notes: "Version 1 (Visual Basic 6, Windows) is a chat bot. Version 2, a C# port for Windows, Linux, and macOS, adds moderation, clan management and trivia."
   archive:
     - "bots/Classic Battle.net/Win/Invigoration 1.2.9.zip"
     - "bots/Classic Battle.net/source/Invigoration Source 1.2.9.zip"
-    - "bots/Classic Battle.net/source/invigoration-1.4x.zip"
 
 - name: "JavaOp"
   authors: ["joe[x86]", "iago"]
