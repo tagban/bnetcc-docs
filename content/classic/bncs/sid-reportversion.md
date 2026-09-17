@@ -9,8 +9,8 @@ status: "Historical. Newer games use `SID_AUTH_CHECK` for the same job."
 summary: "Finishes the version check in the older logon: the client reports its EXE hash, and the server accepts or rejects it."
 c2s:
   fields:
-    - { type: "DWORD", name: "Platform code", confidence: verified }
-    - { type: "DWORD", name: "Product code", confidence: verified }
+    - { type: "DWORD", name: "Platform code", notes: "Sent backwards, like every four-character code: `IX86` is `68XI`.", confidence: verified }
+    - { type: "DWORD", name: "Product code", notes: "Sent backwards: `W2BN` is `NB2W`.", confidence: verified }
     - { type: "UINT32", name: "Version byte", confidence: verified }
     - { type: "UINT32", name: "EXE version", confidence: verified }
     - { type: "UINT32", name: "EXE hash", notes: "The result of running the formula from `SID_STARTVERSIONING`.", confidence: verified }

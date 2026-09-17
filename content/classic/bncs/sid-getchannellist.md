@@ -8,7 +8,7 @@ products: [STAR, SEXP, JSTR, SSHR, W2BN, DRTL, DSHR, D2DV, D2XP, WAR3, W3XP]
 summary: "Asks for the list of public channels shown in the client's channel picker."
 c2s:
   fields:
-    - { type: "DWORD", name: "Product code", confidence: single }
+    - { type: "DWORD", name: "Product code", notes: "Sent backwards: `STAR` is `RATS`.", confidence: single }
 s2c:
   fields:
     - { type: "STRINGLIST", name: "Channel names", notes: "Ends with an empty string.", confidence: verified }

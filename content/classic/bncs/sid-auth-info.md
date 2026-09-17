@@ -10,10 +10,10 @@ c2s:
   when: "The first message a client sends after the `0x01` protocol byte."
   fields:
     - { type: "UINT32", name: "Protocol ID", notes: "`0`.", confidence: single }
-    - { type: "DWORD", name: "Platform code", notes: "`IX86` for Windows. Four-character codes appear reversed on the wire.", confidence: verified }
-    - { type: "DWORD", name: "Product code", notes: "The game, such as `STAR` or `W3XP`.", confidence: verified }
+    - { type: "DWORD", name: "Platform code", notes: "`IX86` for Windows, sent backwards as `68XI`. See [game and platform codes](/classic/connecting/#game-and-platform-codes).", confidence: verified }
+    - { type: "DWORD", name: "Product code", notes: "The game, such as `STAR` or `W3XP`, sent backwards: `RATS`, `PX3W`.", confidence: verified }
     - { type: "UINT32", name: "Version byte", notes: "Changes with each game patch. The server uses it to choose which version-check files apply.", confidence: verified }
-    - { type: "UINT32", name: "Product language", confidence: single }
+    - { type: "UINT32", name: "Product language", notes: "A four-character code such as `enUS`, also sent backwards (`SUne`).", confidence: single }
     - { type: "UINT32", name: "Local IP address", notes: "The client's address as it sees it, which may be a private address behind NAT.", confidence: single }
     - { type: "UINT32", name: "Time zone bias", notes: "Minutes from UTC.", confidence: single }
     - { type: "UINT32", name: "Locale ID", notes: "A Windows locale ID.", confidence: single }

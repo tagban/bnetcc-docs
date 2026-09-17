@@ -9,8 +9,8 @@ status: "Historical. Newer games use `SID_AUTH_INFO` for the same job."
 summary: "Starts the version check in the older logon: the client names its game, and the server says which check to run."
 c2s:
   fields:
-    - { type: "DWORD", name: "Platform code", notes: "`IX86` for Windows.", confidence: verified }
-    - { type: "DWORD", name: "Product code", notes: "For example `DRTL` or `W2BN`.", confidence: verified }
+    - { type: "DWORD", name: "Platform code", notes: "`IX86` for Windows, sent backwards as `68XI`. See [game and platform codes](/classic/connecting/#game-and-platform-codes).", confidence: verified }
+    - { type: "DWORD", name: "Product code", notes: "For example `DRTL` or `W2BN`, sent backwards: `LTRD`, `NB2W`.", confidence: verified }
     - { type: "UINT32", name: "Version byte", confidence: verified }
     - { type: "UINT32", name: "Unused", notes: "`0`.", confidence: verified }
 s2c:

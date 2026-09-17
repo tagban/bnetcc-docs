@@ -16,7 +16,7 @@ s2c:
         - { type: "STRING", name: "Account name", confidence: single }
         - { type: "UINT8", name: "Status", notes: "Flags: `0x01` mutual, `0x02` do not disturb, `0x04` away.", confidence: single }
         - { type: "UINT8", name: "Location", notes: "`0x00` offline, `0x01` not in chat, `0x02` in chat, `0x03` public game, `0x04` private game, `0x05` private game with a mutual friend.", confidence: single }
-        - { type: "DWORD", name: "Product code", notes: "`0` when offline.", confidence: single }
+        - { type: "DWORD", name: "Product code", notes: "The friend's game, sent backwards (`W3XP` is `PX3W`). `0` when offline.", confidence: single }
         - { type: "STRING", name: "Location name", notes: "The channel or game, when relevant.", confidence: single }
 sources:
   - name: "Command Center: WARCRAFT3.md"

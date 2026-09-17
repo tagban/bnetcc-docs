@@ -8,8 +8,8 @@ products: [STAR, SEXP, JSTR, SSHR, W2BN, DRTL, DSHR, D2DV, D2XP, WAR3, W3XP]
 summary: "Asks which advertisement banner to show. Clients repeat it about every 15 seconds."
 c2s:
   fields:
-    - { type: "DWORD", name: "Platform code", confidence: verified }
-    - { type: "DWORD", name: "Product code", confidence: verified }
+    - { type: "DWORD", name: "Platform code", notes: "Sent backwards: `IX86` is `68XI`.", confidence: verified }
+    - { type: "DWORD", name: "Product code", notes: "Sent backwards: `D2XP` is `PX2D`.", confidence: verified }
     - { type: "UINT32", name: "Last banner shown", notes: "Its ad ID.", confidence: verified }
     - { type: "UINT32", name: "Current time", confidence: verified }
 s2c:
