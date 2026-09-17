@@ -17,6 +17,7 @@ New here? Read [How to read these pages](/how-to-read/).
 These pages are written from scratch and checked against real clients wherever possible. Every fact is marked with how sure we are of it. Research from [BNETDocs](https://bnetdocs.org/) and other projects is credited to the people who did it. See [Credits](/credits/).
 
 This site documents protocols for education and preservation. It never hosts game files, version-check files, CD keys or client modifications. Battle.net, Diablo, StarCraft and Warcraft are trademarks or registered trademarks of Blizzard Entertainment, Inc. This site is not affiliated with, endorsed by or sponsored by Blizzard.
+test
 
 ## Helping out
 
