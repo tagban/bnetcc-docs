@@ -47,7 +47,7 @@
     - "bots/Classic Battle.net/source/invigoration-1.4x.zip"
 
 - name: "JavaOp"
-  authors: ["joe[x86]", "iago[x86]"]
+  authors: ["joe[x86]", "iago"]
   platforms: [Windows, macOS]
   functions: [chat, moderation, scripting]
   site: "https://www.javaop.com/"
