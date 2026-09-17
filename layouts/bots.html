@@ -10,13 +10,18 @@
 {{ with .Params.summary }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
 {{ .Content }}
 
+{{- /* Functions no listed bot has yet get no filter button or explanation. */}}
+{{- $used := slice }}
+{{- range $functions }}
+  {{- $key := .key }}{{ $n := 0 }}
+  {{- range $shown }}{{ if in .functions $key }}{{ $n = add $n 1 }}{{ end }}{{ end }}
+  {{- if $n }}{{ $used = $used | append (merge . (dict "count" $n)) }}{{ end }}
+{{- end }}
 <div id="bot-filters" class="bot-filters" hidden>
   <span class="label">Show:</span>
   <button type="button" data-function="" class="active">All <small>{{ len $shown }}</small></button>
-  {{- range $functions }}
-    {{- $key := .key }}{{ $n := 0 }}
-    {{- range $shown }}{{ if in .functions $key }}{{ $n = add $n 1 }}{{ end }}{{ end }}
-  <button type="button" data-function="{{ .key }}" title="{{ .meaning }}">{{ .label }} <small>{{ $n }}</small></button>
+  {{- range $used }}
+  <button type="button" data-function="{{ .key }}" title="{{ .meaning }}">{{ .label }} <small>{{ .count }}</small></button>
   {{- end }}
 </div>
 
@@ -59,7 +64,7 @@
 <table class="wikitable">
   <thead><tr><th>Function</th><th>Meaning</th></tr></thead>
   <tbody>
-  {{- range $functions }}
+  {{- range $used }}
   <tr><td>{{ .label }}</td><td>{{ .meaning }}</td></tr>
   {{- end }}
   </tbody>
