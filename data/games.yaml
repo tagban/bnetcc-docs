@@ -4,3 +4,10 @@
 - { key: "warcraft-ii", name: "Warcraft II: Battle.net Edition", products: [W2BN] }
 - { key: "diablo-ii", name: "Diablo II", products: [D2DV, D2XP] }
 - { key: "warcraft-iii", name: "Warcraft III", products: [WAR3, W3XP] }
+- { key: "starcraft-ii", name: "Starcraft 2", products: [SC2] }
+- { key: "starcraft-r", name: "StarCraft: Remastered", products: [SCR] }
+- { key: "diablo-ii-r", name: "Diablo II: Remastered", products: [D2R] }
+- { key: "warcraft-iii-r", name: "Warcraft III: Reforged", products: [W3R] }
+- { key: "world-of-warcraft", name: "World of Warcraft", products: [WOW] }
+- { key: "world-of-starcraft", name: "World of StarCraft", products: [WOS] }
+- { key: "warcraft-ii-r", name: "Warcraft II Remastered", products: [W2R] }
