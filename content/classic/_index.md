@@ -10,6 +10,7 @@ Classic Battle.net is the service Blizzard launched with *Diablo* in 1997 and us
 - [BNCS messages](/classic/bncs/): the main client-to-server protocol, one page per message.
 - [MCP messages](/classic/mcp/): the *Diablo II* closed realm.
 - [NLS](/classic/nls/): *Warcraft III*'s password system.
+- [Version checking](/classic/versioning/): CheckRevision, Lockdown, hash files, BNLS and JBLS, and why Warden can be ignored.
 - [Connection sequences](/classic/sequences/): the order messages are exchanged for each game, from connecting to sitting in a chat channel.
 
 ## Historical

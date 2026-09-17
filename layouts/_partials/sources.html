@@ -1,8 +1,10 @@
 {{- /* Sources we used, plus credit to the BNETDocs authors who documented this message first. */ -}}
 {{- $page := . }}
 {{- $bnetdocs := index hugo.Data.bnetdocs.packets .Title }}
+{{- /* Overview pages name the messages they draw on with bnetdocs_packets. */}}
+{{- $bdpackets := slice }}{{ range $n := .Params.bnetdocs_packets }}{{ with index hugo.Data.bnetdocs.packets $n }}{{ $bdpackets = $bdpackets | append (dict "name" $n "entries" .) }}{{ end }}{{ end }}
 {{- $bddocs := slice }}{{ range .Params.bnetdocs_documents }}{{ with index hugo.Data.bnetdocs.documents (string .) }}{{ $bddocs = $bddocs | append . }}{{ end }}{{ end }}
-{{- if or .Params.sources $bnetdocs $bddocs }}
+{{- if or .Params.sources $bnetdocs $bddocs $bdpackets }}
 <h2 id="sources">Sources and credits</h2>
 <ul class="sources">
   {{- range .Params.sources }}
@@ -14,6 +16,14 @@
     {{- else }} written by the original <a href="{{ hugo.Data.bnetdocs.credits_page }}">BNETDocs contributors</a>
     {{- end }}{{ with .edits }}, and edited {{ . }} {{ cond (eq . 1) "time" "times" }} since{{ end }}.</li>
   {{- end }}
+  {{- range $bdpackets }}{{ $name := .name }}
+    {{- range $dir, $e := .entries }}
+  <li>BNETDocs, <a href="{{ $e.url }}">{{ $name }} ({{ index (dict "c2s" "client to server" "s2c" "server to client" "p2p" "peer to peer") $dir }})</a>:
+    {{- with $e.author }} documented by <a href="{{ .url }}">{{ .name }}</a>
+    {{- else }} documented by the original <a href="{{ hugo.Data.bnetdocs.credits_page }}">BNETDocs contributors</a>
+    {{- end }}{{ with $e.edits }}, and edited {{ . }} {{ cond (eq . 1) "time" "times" }} since{{ end }}.</li>
+    {{- end }}
+  {{- end }}
   {{- range $dir, $e := $bnetdocs }}
   <li>BNETDocs, <a href="{{ $e.url }}">{{ $page.Title }} ({{ index (dict "c2s" "client to server" "s2c" "server to client" "p2p" "peer to peer") $dir }})</a>:
     {{- with $e.author }} documented by <a href="{{ .url }}">{{ .name }}</a>
@@ -21,7 +31,7 @@
     {{- end }}{{ with $e.edits }}, and edited {{ . }} {{ cond (eq . 1) "time" "times" }} since{{ end }}.</li>
   {{- end }}
 </ul>
-{{- if or $bnetdocs $bddocs }}
+{{- if or $bnetdocs $bddocs $bdpackets }}
 <p class="note">This page is written in our own words. BNETDocs is credited for its research; none of its text is copied. See <a href="/credits/">Credits</a>.</p>
 {{- end }}
 {{- end }}
