@@ -30,7 +30,7 @@ disableHugoGeneratorInject = true
   repo = "tagban/bnetcc-docs"
   branch = "main"
   # Discord editor address (edit.bnet.cc). Leave empty until it is set up.
-  editorURL = ""
+  editorURL = "https://edit.bnet.cc/edit.php"
   discordInvite = "https://discord.gg/dR4djHweh3"
   footer = "Documenting Battle.net protocols for education and preservation. Not affiliated with, endorsed by or sponsored by Blizzard Entertainment."
   stylesheets = ["/css/wiki.css", "/css/site.css"]
