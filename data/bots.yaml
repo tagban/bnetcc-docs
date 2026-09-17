@@ -52,7 +52,8 @@
   platforms: [Windows, macOS]
   functions: [chat, moderation, clan, scripting]
   site: "https://www.javaop.com/"
-  notes: "Written in Java. Its Warcraft III clan plug-in accepts and declines invitations."
+  notes: "Requies Java 8, one of the earlier cross platform bots, maintained by joe[x86]"
+  source: "https://github.com/wjlafrance/javaop2"
   archive:
     - "bots/Classic Battle.net/Mac/JavaOp 2.1.3 r69.zip"
     - "bots/Classic Battle.net/Mac/JavaOp2.zip"
