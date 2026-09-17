@@ -94,7 +94,7 @@
   purposes: [Chat]
   status: works
   site: "https://superioritybot.com/"
-  notes: "The BNET.cc archive files the 0.1.9 Mac build under Modern Battle.net. The two Windows builds there may date from the Superiority.NET era."
+  notes: "Every version of Superiority, including Superiority.NET below, is by Warrior. The BNET.cc archive files the 0.1.9 Mac build under Modern Battle.net."
   archive:
     - "bots/Modern Battle.net/Mac/Superiority-0.1.9-universal.dmg"
     - "bots/Classic Battle.net/Win/Superiority.zip"
@@ -153,9 +153,10 @@
     - "bots/Classic Battle.net/Mac/KaneBot Generation 3 Carbon.sit"
 
 - name: "KB2005"
+  authors: ["tA-Kane"]
   platforms: ["Classic Mac OS", "Mac OS X"]
   status: legacy
-  notes: "In the BNET.cc archive with a Classic build, a Carbon fix and source code. Who wrote it and what it does still need filling in."
+  notes: "By the author of KaneBot. In the BNET.cc archive with a Classic build, a Carbon fix and source code. What it does still needs filling in."
   archive:
     - "bots/Classic Battle.net/Mac/KB2005Classic.sit"
     - "bots/Classic Battle.net/Mac/KB2005_CarbonFix.zip"
