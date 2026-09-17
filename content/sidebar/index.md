@@ -10,6 +10,7 @@ build:
 - [Overview](/classic/)
 - [Connecting](/classic/connecting/)
 - [BNCS messages](/classic/bncs/)
+- [MCP messages (Diablo II realm)](/classic/mcp/)
 - [Connection sequences](/classic/sequences/)
 - [Chat gateway (telnet)](/classic/chat-gateway/)
 

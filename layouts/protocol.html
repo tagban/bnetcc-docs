@@ -1,17 +1,19 @@
 {{ define "main" }}
 {{- $packets := sort (where .RegularPages "Layout" "packet") "Params.message_id" }}
 {{- $sequences := where site.RegularPages "Layout" "sequence" }}
+{{- $games := hugo.Data.games }}
+{{- with .Params.games }}{{ $only := . }}{{ $games = slice }}{{ range hugo.Data.games }}{{ if in $only .key }}{{ $games = $games | append . }}{{ end }}{{ end }}{{ end }}
 <div data-pagefind-body>
 <h1 class="title">{{ .Title }}</h1>
 {{ .Content }}
 
 <p class="jump">Jump to: <a href="#all">All messages</a>
-{{- range hugo.Data.games }} · <a href="#{{ .key }}">{{ .name }}</a>{{ end }}</p>
+{{- range $games }} · <a href="#{{ .key }}">{{ .name }}</a>{{ end }}</p>
 
 <h2 id="all">All messages</h2>
 {{ partial "message-table.html" (dict "pages" $packets "products" true) }}
 
-{{- range hugo.Data.games }}
+{{- range $games }}
   {{- $game := . }}
   {{- $mine := slice }}
   {{- range $packets }}{{ if intersect .Params.products $game.products }}{{ $mine = $mine | append . }}{{ end }}{{ end }}

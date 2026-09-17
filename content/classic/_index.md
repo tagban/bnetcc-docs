@@ -8,6 +8,7 @@ Classic Battle.net is the service Blizzard launched with *Diablo* in 1997 and us
 
 - [Connecting to a Classic server](/classic/connecting/): ports, the first byte a client sends, how messages are framed, and the data types every message uses.
 - [BNCS messages](/classic/bncs/): the main client-to-server protocol, one page per message.
+- [MCP messages](/classic/mcp/): the *Diablo II* closed realm.
 - [Connection sequences](/classic/sequences/): the order messages are exchanged for each game, from connecting to sitting in a chat channel.
 
 ## Historical

@@ -9,6 +9,7 @@ Unless a step says otherwise, the order follows what official clients were obser
 ## Newer logon (`SID_AUTH_INFO`)
 
 - [StarCraft and Brood War](/classic/sequences/starcraft-logon/)
+- [Diablo II: closed realm](/classic/sequences/diablo-ii-realm-logon/)
 
 ## Older logon (`SID_STARTVERSIONING`)
 
