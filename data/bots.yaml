@@ -145,19 +145,13 @@
 
 - name: "KaneBot"
   authors: ["tA-Kane"]
-  platforms: ["Classic Mac OS"]
+  platforms: ["Classic Mac OS", "Mac OS X (Carbon)"]
   purposes: [Chat]
   status: legacy
+  notes: "Two generations in the archive: Generation 3, and KaneBot 2005 (KB2005), which includes its source code."
   archive:
     - "bots/Classic Battle.net/Mac/KaneBot Generation3Classic.sit"
     - "bots/Classic Battle.net/Mac/KaneBot Generation 3 Carbon.sit"
-
-- name: "KB2005"
-  authors: ["tA-Kane"]
-  platforms: ["Classic Mac OS", "Mac OS X"]
-  status: legacy
-  notes: "By the author of KaneBot. In the BNET.cc archive with a Classic build, a Carbon fix and source code. What it does still needs filling in."
-  archive:
     - "bots/Classic Battle.net/Mac/KB2005Classic.sit"
     - "bots/Classic Battle.net/Mac/KB2005_CarbonFix.zip"
     - "bots/Classic Battle.net/Mac/KB2005Source.sit"
