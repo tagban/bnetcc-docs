@@ -21,7 +21,8 @@
 - name: "BNUBot"
   authors: ["BNU-Camel"]
   platforms: [Windows]
-  functions: [chat]
+  functions: [chat, moderation, clan, trivia]
+  notes: "Versions 1 and 2 both have clan management and trivia. The archive has version 1."
   archive:
     - "bots/Classic Battle.net/Win/BNUBot1.1.34b3.exe"
     - "bots/Classic Battle.net/Win/BNUBot1.1.34b4.exe"
