@@ -10,6 +10,7 @@ Unless a step says otherwise, the order follows what official clients were obser
 
 - [StarCraft and Brood War](/classic/sequences/starcraft-logon/)
 - [Diablo II: closed realm](/classic/sequences/diablo-ii-realm-logon/)
+- [Warcraft III](/classic/sequences/warcraft-iii-logon/)
 
 ## Older logon (`SID_STARTVERSIONING`)
 

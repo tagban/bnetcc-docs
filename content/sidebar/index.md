@@ -12,6 +12,7 @@ build:
 - [BNCS messages](/classic/bncs/)
 - [MCP messages (Diablo II realm)](/classic/mcp/)
 - [Connection sequences](/classic/sequences/)
+- [NLS (Warcraft III logon)](/classic/nls/)
 - [Chat gateway (telnet)](/classic/chat-gateway/)
 
 ### Battle.net 2.0
