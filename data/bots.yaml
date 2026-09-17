@@ -37,10 +37,10 @@
 - name: "Invigoration"
   authors: ["Tagban"]
   platforms: [Windows, Linux, macOS]
-  functions: [chat, moderation]
+  functions: [chat, moderation, clan, trivia]
   download: "https://github.com/tagban/invigoration/releases/latest"
   source: "https://github.com/tagban/invigoration"
-  notes: "Version 2 is a C# port of the original Visual Basic 6 bot, for Windows and macOS. The 1.x releases are Windows-only."
+  notes: "Version 1 (Visual Basic 6, Windows) is a chat bot. Version 2, a C# port for Windows and macOS, adds moderation, clan management and trivia."
   archive:
     - "bots/Classic Battle.net/Win/Invigoration 1.2.9.zip"
     - "bots/Classic Battle.net/source/Invigoration Source 1.2.9.zip"
