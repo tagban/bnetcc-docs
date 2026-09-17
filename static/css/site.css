@@ -115,3 +115,9 @@ h1.title .message-id { padding: 0; font-size: .75em; color: #00c0ff; background:
 
 .srv-name a, .srv-name a:visited { color: #ffac04; }
 .srv-name a:hover { color: #ffffff; }
+
+/* Bots list */
+table.bots td { vertical-align: top; }
+table.bots ul.archive { margin: 0.2em 0 0 1.1em; padding: 0; font-size: 0.9em; }
+table.bots small { color: #aaa; }
+.muted { color: #888; }

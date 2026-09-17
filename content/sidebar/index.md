@@ -25,10 +25,14 @@ build:
 - [Front messages](/bnet2/front-messages/)
 - [Sunken records](/bnet2/sunken/)
 
+### History
+
+- [Bots](/history/bots/)
+
 ### Coming soon
 
 - Battle.net App
-- History and bots
+- Battle.net history
 
 ### This site
 

@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div data-pagefind-body>
+<h1 class="title">{{ .Title }}</h1>
+{{ with .Params.summary }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
+{{ .Content }}
+{{- $archive := "https://bnet.cc/download.php?f=" }}
+{{- range $status := slice "works" "legacy" }}
+{{- $bots := sort (where hugo.Data.bots "status" $status) "name" }}
+<h2 id="{{ $status }}">{{ cond (eq $status "works") "Still working" "Legacy" }} <small>({{ len $bots }})</small></h2>
+<p>{{ cond (eq $status "works") "Listed by BNETDocs as still connecting to Blizzard's Classic servers, fully or in part." "Listed by BNETDocs as no longer working on Blizzard's Classic servers." }}</p>
+<div class="table-wrap">
+<table class="wikitable bots">
+  <thead><tr><th>Bot</th><th>Made by</th><th>Runs on</th><th>Used for</th><th>Links and versions</th></tr></thead>
+  <tbody>
+  {{- range $bots }}
+  <tr id="{{ .name | urlize }}">
+    <td><strong>{{ .name }}</strong>{{ with .games }} {{ partial "products.html" . }}{{ end }}{{ with .notes }}<br><small>{{ . | markdownify }}</small>{{ end }}</td>
+    <td>{{ with .authors }}{{ delimit . ", " }}{{ else }}<span class="muted">unknown</span>{{ end }}</td>
+    <td>{{ delimit .platforms ", " }}</td>
+    <td>{{ with .purposes }}{{ delimit . ", " }}{{ else }}<span class="muted">unknown</span>{{ end }}</td>
+    <td>
+      {{- $links := slice }}
+      {{- with .site }}{{ $links = $links | append (printf "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">Website</a>" .) }}{{ end }}
+      {{- with .source }}{{ $links = $links | append (printf "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">Source code</a>" .) }}{{ end }}
+      {{- with .releases }}{{ $links = $links | append (printf "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">Releases</a>" .) }}{{ end }}
+      {{- delimit $links " · " | safeHTML }}
+      {{- with .archive }}
+      <br><small>BNET.cc archive ({{ len . }} {{ cond (eq (len .) 1) "file" "files" }}):</small>
+      <ul class="archive">
+        {{- range . }}<li><a href="{{ $archive }}{{ . | urlquery }}">{{ path.Base . }}</a></li>{{ end }}
+      </ul>
+      {{- end }}
+    </td>
+  </tr>
+  {{- end }}
+  </tbody>
+</table>
+</div>
+{{- end }}
+</div>
+{{ partial "sources.html" . }}
+{{ partial "categories.html" . }}
+{{ partial "pageinfo.html" . }}
+{{ end }}

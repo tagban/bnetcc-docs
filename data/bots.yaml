@@ -1,0 +1,233 @@
+# Bots for Battle.net. Purposes use the categories on the "Bots" page.
+# status: works = still connects to Classic servers today (fully or partly); legacy = doesn't.
+# archive: files in the BNET.cc Files archive (paths under https://bnet.cc/files.php).
+# Add a bot: copy an entry, fill in what you know, leave the rest out.
+
+- name: "A&O"
+  platforms: [Windows]
+  purposes: [Chat, Moderation]
+  status: works
+
+- name: "BNRBot"
+  authors: ["Caaaaarrrrlll"]
+  platforms: [Windows, "Linux (Wine)"]
+  purposes: [Chat]
+  status: works
+  source: "https://github.com/carlbennett/BNRBot"
+
+- name: "FooLOps"
+  authors: ["AngelicKing"]
+  platforms: [Windows]
+  purposes: [Chat, Extendable, Moderation]
+  status: works
+  archive:
+    - "bots/Classic Battle.net/Win/FoolOps_RC4_Full_Install.zip"
+
+- name: "GHost++"
+  authors: ["uakfdotb"]
+  platforms: [Windows, Linux]
+  purposes: [Host]
+  status: works
+  games: [WAR3, W3XP]
+  source: "https://github.com/uakfdotb/ghostpp"
+
+- name: "Invigoration"
+  authors: ["Tagban"]
+  platforms: [Windows, Linux, macOS]
+  purposes: [Chat, Moderation]
+  status: works
+  source: "https://github.com/tagban/invigoration"
+  releases: "https://github.com/tagban/invigoration/releases"
+  notes: "Version 2 is a C# port of the original Visual Basic 6 bot, for Windows and macOS. The 1.x releases are Windows-only."
+  archive:
+    - "bots/Classic Battle.net/Win/Invigoration 1.2.9.zip"
+    - "bots/Classic Battle.net/source/Invigoration Source 1.2.9.zip"
+    - "bots/Classic Battle.net/source/invigoration-1.4x.zip"
+
+- name: "Knight"
+  platforms: [Windows]
+  purposes: [Chat, Moderation]
+  status: works
+  archive:
+    - "bots/Classic Battle.net/Win/Knight-1.3.1.zip"
+
+- name: "l2uthless Chat"
+  authors: ["l2k-Shadow"]
+  platforms: [Windows]
+  purposes: [Chat, Moderation]
+  status: works
+
+- name: "l2uthless Ops"
+  authors: ["l2k-Shadow"]
+  platforms: [Windows]
+  purposes: [Chat, Moderation]
+  status: works
+  archive:
+    - "bots/Classic Battle.net/Win/l2uthless Ops v2.13c.zip"
+
+- name: "NeglectedFury (nF)"
+  authors: ["Fleet-"]
+  platforms: [Windows]
+  purposes: [Chat, Moderation]
+  status: works
+
+- name: "SphtBot"
+  authors: ["Spht"]
+  platforms: [Windows]
+  purposes: [Chat, Extendable]
+  status: works
+  site: "https://davnit.net/islanti/readme.html"
+  archive:
+    - "bots/Classic Battle.net/Win/SphtBotv3.zip"
+
+- name: "StealthBot"
+  authors: ["Stealth"]
+  platforms: [Windows]
+  purposes: [Chat, Extendable, Moderation]
+  status: works
+  source: "https://github.com/stealthbot/StealthBot"
+  notes: "Written in Visual Basic 6."
+
+- name: "Superiority"
+  authors: ["Warrior"]
+  platforms: [Windows, Linux, macOS]
+  purposes: [Chat]
+  status: works
+  site: "https://superioritybot.com/"
+  notes: "The BNET.cc archive files the 0.1.9 Mac build under Modern Battle.net. The two Windows builds there may date from the Superiority.NET era."
+  archive:
+    - "bots/Modern Battle.net/Mac/Superiority-0.1.9-universal.dmg"
+    - "bots/Classic Battle.net/Win/Superiority.zip"
+    - "bots/Classic Battle.net/Win/Superiority Beta 3.zip"
+
+- name: "Asgard"
+  authors: ["Mike@USWest"]
+  platforms: [Windows]
+  purposes: [Chat, Moderation]
+  status: legacy
+
+- name: "BNUBot"
+  authors: ["BNU-Camel"]
+  platforms: [Windows]
+  purposes: [Chat]
+  status: legacy
+  archive:
+    - "bots/Classic Battle.net/Win/BNUBot1.1.34b3.exe"
+    - "bots/Classic Battle.net/Win/BNUBot1.1.34b4.exe"
+
+- name: "emChat"
+  authors: ["Victim"]
+  platforms: ["Android 2.1"]
+  purposes: [Chat]
+  status: legacy
+
+- name: "Entelechy"
+  authors: ["RealityRipple"]
+  platforms: [Windows]
+  purposes: [Chat, Moderation]
+  status: legacy
+
+- name: "Forsaken Ops"
+  platforms: [Windows]
+  purposes: [Chat, Moderation]
+  status: legacy
+
+- name: "JavaOp"
+  authors: ["iago"]
+  platforms: [Windows, macOS]
+  purposes: [Chat, Extendable, Moderation]
+  status: legacy
+  site: "https://www.javaop.com/"
+  notes: "Written in Java. The BNET.cc archive keeps it with the Mac bots."
+  archive:
+    - "bots/Classic Battle.net/Mac/JavaOp 2.1.3 r69.zip"
+    - "bots/Classic Battle.net/Mac/JavaOp2.zip"
+
+- name: "KaneBot"
+  authors: ["tA-Kane"]
+  platforms: ["Classic Mac OS"]
+  purposes: [Chat]
+  status: legacy
+  archive:
+    - "bots/Classic Battle.net/Mac/KaneBot Generation3Classic.sit"
+    - "bots/Classic Battle.net/Mac/KaneBot Generation 3 Carbon.sit"
+
+- name: "KB2005"
+  platforms: ["Classic Mac OS", "Mac OS X"]
+  status: legacy
+  notes: "In the BNET.cc archive with a Classic build, a Carbon fix and source code. Who wrote it and what it does still need filling in."
+  archive:
+    - "bots/Classic Battle.net/Mac/KB2005Classic.sit"
+    - "bots/Classic Battle.net/Mac/KB2005_CarbonFix.zip"
+    - "bots/Classic Battle.net/Mac/KB2005Source.sit"
+
+- name: "KlevnBot"
+  platforms: ["Classic Mac OS", "Mac OS X"]
+  purposes: [Chat]
+  status: legacy
+  archive:
+    - "bots/Classic Battle.net/Mac/Klevn Bot.sit"
+    - "bots/Classic Battle.net/Mac/Klevnbot_X_beta4.2.1.dmg"
+
+- name: "MacBattleChat"
+  platforms: ["Classic Mac OS"]
+  purposes: [Chat]
+  status: legacy
+  archive:
+    - "bots/Classic Battle.net/Mac/MacBattleChat1.0.hqx"
+
+- name: "MacBinaryBot"
+  platforms: ["Classic Mac OS"]
+  purposes: [Chat, Moderation]
+  status: legacy
+
+- name: "Maelstrom"
+  authors: ["Vector"]
+  platforms: [Windows]
+  purposes: [Checker]
+  status: legacy
+
+- name: "MirageBot"
+  authors: ["Chriso"]
+  platforms: [Windows]
+  purposes: [Chat, Extendable, Moderation]
+  status: legacy
+  archive:
+    - "bots/Classic Battle.net/Win/MirageBot_11.0.2041.public.exe"
+    - "bots/Classic Battle.net/Win/MirageBot.X.2041.Public(FINAL)-portable.zip"
+
+- name: "Revelation"
+  platforms: [Windows]
+  purposes: [Chat]
+  status: legacy
+
+- name: "RippleChatBot"
+  authors: ["RealityRipple"]
+  platforms: [Windows]
+  purposes: [Chat, Moderation]
+  status: legacy
+  archive:
+    - "bots/Classic Battle.net/Win/RippleChatBot.zip"
+
+- name: "SCGP"
+  authors: ["Ringo"]
+  platforms: [Windows]
+  purposes: [Chat, Host]
+  status: legacy
+
+- name: "Simplicity"
+  platforms: [Windows]
+  purposes: [Chat]
+  status: legacy
+
+- name: "Spiritual Bot"
+  authors: ["Victim"]
+  platforms: [Windows]
+  purposes: [Chat, Extendable, Moderation]
+  status: legacy
+
+- name: "Superiority.NET"
+  authors: ["Warrior"]
+  platforms: [Windows]
+  purposes: [Chat]
+  status: legacy
