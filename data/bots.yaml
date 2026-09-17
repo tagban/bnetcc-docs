@@ -123,22 +123,23 @@
     - "bots/Classic Battle.net/Win/SphtBotv3.zip"
 
 - name: "StealthBot"
-  authors: ["Stealth"]
+  authors: ["Stealth", "Davnit"]
   platforms: [Windows]
   functions: [chat, moderation, clan, trivia, scripting]
   download: "https://github.com/stealthbot/StealthBot/releases/latest"
   source: "https://github.com/stealthbot/StealthBot"
+  site: "https://www.stealthbot.net"
   notes: "Written in Visual Basic 6. Trivia comes from a script."
 
 - name: "Superiority"
   authors: ["Warrior"]
-  platforms: [Windows, macOS]
-  functions: [chat]
+  platforms: [Windows, macOS, Linux]
+  functions: [chat, game]
   download: "https://superioritybot.com/"
-  notes: "Every version is by Warrior: Superiority.NET on Classic Battle.net, through to today's native client for StarCraft II, StarCraft: Remastered and Warcraft III."
+  notes: "Superiority.NET on Classic Battle.net, through to today's native client for StarCraft II, StarCraft: Remastered and Warcraft III."
   archive:
-    - "bots/Modern Battle.net/Mac/Superiority-0.1.9-universal.dmg"
-    - "bots/Classic Battle.net/Win/Superiority.zip"
+    - "bots/Modern Battle.net/Mac/Superiority-0.1.9-universal.dmg" (Old)
+    - "bots/Classic Battle.net/Win/Superiority.zip" (Windows)
     - "bots/Classic Battle.net/Win/Superiority Beta 3.zip"
 
 # ---------------------------------------------------------------------------
