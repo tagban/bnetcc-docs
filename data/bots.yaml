@@ -14,14 +14,14 @@
 - name: "BNRBot"
   authors: ["Caaaaarrrrlll"]
   platforms: [Windows, "Linux (Wine)"]
-  functions: [chat]
+  functions: [chat, clan]
   download: "https://github.com/carlbennett/BNRBot/releases/latest"
   source: "https://github.com/carlbennett/BNRBot"
 
 - name: "BNUBot"
   authors: ["BNU-Camel"]
   platforms: [Windows]
-  functions: [chat, moderation, clan, trivia]
+  functions: [chat, moderation, clan, trivia, scripting]
   notes: "Versions 1 and 2 both have clan management and trivia. The archive has version 1."
   archive:
     - "bots/Classic Battle.net/Win/BNUBot1.1.34b3.exe"
@@ -30,7 +30,8 @@
 - name: "FooLOps"
   authors: ["AngelicKing"]
   platforms: [Windows]
-  functions: [chat, moderation, scripting]
+  functions: [chat, moderation, clan, trivia, scripting]
+  notes: "Trivia comes from a plug-in."
   archive:
     - "bots/Classic Battle.net/Win/FoolOps_RC4_Full_Install.zip"
 
@@ -49,9 +50,9 @@
 - name: "JavaOp"
   authors: ["joe[x86]", "iago"]
   platforms: [Windows, macOS]
-  functions: [chat, moderation, scripting]
+  functions: [chat, moderation, clan, scripting]
   site: "https://www.javaop.com/"
-  notes: "Written in Java."
+  notes: "Written in Java. Its Warcraft III clan plug-in accepts and declines invitations."
   archive:
     - "bots/Classic Battle.net/Mac/JavaOp 2.1.3 r69.zip"
     - "bots/Classic Battle.net/Mac/JavaOp2.zip"
@@ -59,8 +60,8 @@
 - name: "KaneBot"
   authors: ["tA-Kane"]
   platforms: ["Classic Mac OS", "Mac OS X (Carbon)"]
-  functions: [chat]
-  notes: "Two generations in the archive: Generation 3, and KaneBot 2005 (KB2005), which includes its source code."
+  functions: [chat, moderation, load]
+  notes: "Two generations in the archive: Generation 3, and KaneBot 2005 (KB2005), which includes its source code. Moderation and loading (several connections at once) date from KaneBot 1.0."
   archive:
     - "bots/Classic Battle.net/Mac/KaneBot Generation3Classic.sit"
     - "bots/Classic Battle.net/Mac/KaneBot Generation 3 Carbon.sit"
@@ -70,13 +71,14 @@
 
 - name: "Knight"
   platforms: [Windows]
-  functions: [chat, moderation]
+  functions: [moderation, clan]
+  notes: "An ops bot: its chat window only shows users added to the bot."
   archive:
     - "bots/Classic Battle.net/Win/Knight-1.3.1.zip"
 
 - name: "KlevnBot"
   platforms: ["Classic Mac OS", "Mac OS X"]
-  functions: [chat]
+  functions: [chat, clan]
   archive:
     - "bots/Classic Battle.net/Mac/Klevn Bot.sit"
     - "bots/Classic Battle.net/Mac/Klevnbot_X_beta4.2.1.dmg"
@@ -84,7 +86,7 @@
 - name: "l2uthless Ops"
   authors: ["l2k-Shadow"]
   platforms: [Windows]
-  functions: [chat, moderation]
+  functions: [chat, moderation, clan]
   archive:
     - "bots/Classic Battle.net/Win/l2uthless Ops v2.13c.zip"
 
@@ -97,7 +99,7 @@
 - name: "MirageBot"
   authors: ["Chriso"]
   platforms: [Windows]
-  functions: [chat, moderation, scripting]
+  functions: [chat, moderation, clan, scripting]
   archive:
     - "bots/Classic Battle.net/Win/MirageBot_11.0.2041.public.exe"
     - "bots/Classic Battle.net/Win/MirageBot.X.2041.Public(FINAL)-portable.zip"
@@ -105,14 +107,16 @@
 - name: "RippleChatBot"
   authors: ["RealityRipple"]
   platforms: [Windows]
-  functions: [chat, moderation]
+  functions: [chat, clan, scripting]
+  notes: "Kicks and bans are manual; it has no automatic channel protection."
   archive:
     - "bots/Classic Battle.net/Win/RippleChatBot.zip"
 
 - name: "SphtBot"
   authors: ["Spht"]
   platforms: [Windows]
-  functions: [chat, scripting]
+  functions: [chat, moderation, game, clan, trivia, scripting]
+  notes: "Moderation, trivia and clan management come from its plug-ins. It can create and join Diablo II realm games."
   site: "https://davnit.net/islanti/readme.html"
   archive:
     - "bots/Classic Battle.net/Win/SphtBotv3.zip"
@@ -120,10 +124,10 @@
 - name: "StealthBot"
   authors: ["Stealth"]
   platforms: [Windows]
-  functions: [chat, moderation, scripting]
+  functions: [chat, moderation, clan, trivia, scripting]
   download: "https://github.com/stealthbot/StealthBot/releases/latest"
   source: "https://github.com/stealthbot/StealthBot"
-  notes: "Written in Visual Basic 6."
+  notes: "Written in Visual Basic 6. Trivia comes from a script."
 
 - name: "Superiority"
   authors: ["Warrior"]
