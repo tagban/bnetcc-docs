@@ -1,0 +1,29 @@
+# Function tags for the Bots page, in the order the filter buttons appear.
+# To tag a bot, add these keys to its "functions" list in data/bots.yaml.
+- key: chat
+  label: "Chat"
+  meaning: "A chat window: the channel's messages, a box to type in, and the users in the channel."
+- key: moderation
+  label: "Moderation"
+  meaning: "Protects a channel automatically: safe lists and ban lists, kicking or banning on join or on words."
+- key: game
+  label: "Game"
+  meaning: "Hosts, advertises, joins or plays games."
+- key: clan
+  label: "Clan management"
+  meaning: "Manages a clan: members, ranks and invitations."
+- key: trivia
+  label: "Trivia"
+  meaning: "Runs trivia or quiz games in a channel."
+- key: scripting
+  label: "Scripting"
+  meaning: "Users can add features with plug-ins or scripts."
+- key: spam
+  label: "Spam"
+  meaning: "Repeats advertisements or announcements."
+- key: flood
+  label: "Flood"
+  meaning: "Sends messages or whispers in bulk to flood a channel or a user. Used in channel wars."
+- key: load
+  label: "Load"
+  meaning: "Opens many connections at once to fill a channel. Used in channel wars."

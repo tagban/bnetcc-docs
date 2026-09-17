@@ -121,3 +121,10 @@ table.bots td { vertical-align: top; }
 table.bots ul.archive { margin: 0.2em 0 0 1.1em; padding: 0; font-size: 0.9em; }
 table.bots small { color: #aaa; }
 .muted { color: #888; }
+.bot-filters { margin: 1em 0 0.6em; line-height: 2.2; }
+.bot-filters .label { color: #aaa; margin-right: 0.3em; }
+.bot-filters button { font: inherit; font-size: 0.9em; color: #ddd; background: #111; border: 1px solid #444; border-radius: 3px; padding: 0.15em 0.6em; margin: 0 0.2em 0.2em 0; cursor: pointer; }
+.bot-filters button small { color: #888; }
+.bot-filters button:hover { border-color: #00C0FF; }
+.bot-filters button.active { color: #00C0FF; border-color: #00C0FF; background: #062331; }
+table.bots .fn { display: inline-block; font-size: 0.85em; border: 1px solid #444; border-radius: 3px; padding: 0 0.4em; margin: 0 0.15em 0.2em 0; white-space: nowrap; }

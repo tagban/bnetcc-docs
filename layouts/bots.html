@@ -1,31 +1,48 @@
 {{ define "main" }}
+{{- $archive := "https://bnet.cc/download.php?f=" }}
+{{- $functions := hugo.Data.bot_functions }}
+{{- /* Only bots with something to download are listed. */}}
+{{- $shown := slice }}
+{{- range hugo.Data.bots }}{{ if or .archive .download }}{{ $shown = $shown | append (merge . (dict "sortkey" (lower .name))) }}{{ end }}{{ end }}
+{{- $shown = sort $shown "sortkey" }}
 <div data-pagefind-body>
 <h1 class="title">{{ .Title }}</h1>
 {{ with .Params.summary }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
 {{ .Content }}
-{{- $archive := "https://bnet.cc/download.php?f=" }}
-{{- range $status := slice "works" "legacy" }}
-{{- $bots := sort (where hugo.Data.bots "status" $status) "name" }}
-<h2 id="{{ $status }}">{{ cond (eq $status "works") "Still working" "Legacy" }} <small>({{ len $bots }})</small></h2>
-<p>{{ cond (eq $status "works") "Listed by BNETDocs as still connecting to Blizzard's Classic servers, fully or in part." "Listed by BNETDocs as no longer working on Blizzard's Classic servers." }}</p>
+
+<div id="bot-filters" class="bot-filters" hidden>
+  <span class="label">Show:</span>
+  <button type="button" data-function="" class="active">All <small>{{ len $shown }}</small></button>
+  {{- range $functions }}
+    {{- $key := .key }}{{ $n := 0 }}
+    {{- range $shown }}{{ if in .functions $key }}{{ $n = add $n 1 }}{{ end }}{{ end }}
+  <button type="button" data-function="{{ .key }}" title="{{ .meaning }}">{{ .label }} <small>{{ $n }}</small></button>
+  {{- end }}
+</div>
+
 <div class="table-wrap">
-<table class="wikitable bots">
-  <thead><tr><th>Bot</th><th>Made by</th><th>Runs on</th><th>Used for</th><th>Links and versions</th></tr></thead>
+<table id="bot-table" class="wikitable bots">
+  <thead><tr><th>Bot</th><th>Made by</th><th>Runs on</th><th>Functions</th><th>Downloads</th></tr></thead>
   <tbody>
-  {{- range $bots }}
-  <tr id="{{ .name | urlize }}">
-    <td><strong>{{ .name }}</strong>{{ with .games }} {{ partial "products.html" . }}{{ end }}{{ with .notes }}<br><small>{{ . | markdownify }}</small>{{ end }}</td>
+  {{- range $shown }}
+  {{- $bot := . }}
+  <tr id="{{ .name | urlize }}" data-functions="{{ delimit (.functions | default slice) " " }}">
+    <td><strong>{{ .name }}</strong>{{ with .notes }}<br><small>{{ . | markdownify }}</small>{{ end }}</td>
     <td>{{ with .authors }}{{ delimit . ", " }}{{ else }}<span class="muted">unknown</span>{{ end }}</td>
     <td>{{ delimit .platforms ", " }}</td>
-    <td>{{ with .purposes }}{{ delimit . ", " }}{{ else }}<span class="muted">unknown</span>{{ end }}</td>
+    <td>
+      {{- $tags := slice }}
+      {{- range $functions }}{{ if in $bot.functions .key }}{{ $tags = $tags | append (printf "<span class=\"fn\" title=\"%s\">%s</span>" .meaning .label) }}{{ end }}{{ end }}
+      {{- with $tags }}{{ delimit . " " | safeHTML }}{{ else }}<span class="muted">not tagged yet</span>{{ end }}
+    </td>
     <td>
       {{- $links := slice }}
+      {{- with .download }}{{ $links = $links | append (printf "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">Current release</a>" .) }}{{ end }}
       {{- with .site }}{{ $links = $links | append (printf "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">Website</a>" .) }}{{ end }}
       {{- with .source }}{{ $links = $links | append (printf "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">Source code</a>" .) }}{{ end }}
-      {{- with .releases }}{{ $links = $links | append (printf "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">Releases</a>" .) }}{{ end }}
       {{- delimit $links " · " | safeHTML }}
       {{- with .archive }}
-      <br><small>BNET.cc archive ({{ len . }} {{ cond (eq (len .) 1) "file" "files" }}):</small>
+      {{- if $links }}<br>{{ end }}<small>BNET.cc archive:</small>
       <ul class="archive">
         {{- range . }}<li><a href="{{ $archive }}{{ . | urlquery }}">{{ path.Base . }}</a></li>{{ end }}
       </ul>
@@ -36,8 +53,58 @@
   </tbody>
 </table>
 </div>
-{{- end }}
+<p id="bot-empty" class="note" hidden>No bots are tagged with that function yet. Know one? <a href="https://discord.gg/dR4djHweh3">Tell us on Discord</a>.</p>
+
+<h2 id="functions">What the functions mean</h2>
+<table class="wikitable">
+  <thead><tr><th>Function</th><th>Meaning</th></tr></thead>
+  <tbody>
+  {{- range $functions }}
+  <tr><td>{{ .label }}</td><td>{{ .meaning }}</td></tr>
+  {{- end }}
+  </tbody>
+</table>
 </div>
+<script>
+(function () {
+  var bar = document.getElementById('bot-filters');
+  var table = document.getElementById('bot-table');
+  var empty = document.getElementById('bot-empty');
+  if (!bar || !table || !table.tBodies) return;
+  var rows = table.tBodies[0].rows;
+  var buttons = bar.getElementsByTagName('button');
+  function apply(key) {
+    var shown = 0, i;
+    for (i = 0; i < rows.length; i++) {
+      var fns = ' ' + (rows[i].getAttribute('data-functions') || '') + ' ';
+      var on = !key || fns.indexOf(' ' + key + ' ') >= 0;
+      rows[i].style.display = on ? '' : 'none';
+      if (on) shown++;
+    }
+    for (i = 0; i < buttons.length; i++) {
+      buttons[i].className = buttons[i].getAttribute('data-function') === key ? 'active' : '';
+    }
+    table.style.display = shown ? '' : 'none';
+    if (empty) empty.hidden = shown > 0;
+  }
+  function fromHash() {
+    var m = /^#function=([a-z]+)$/.exec(window.location.hash);
+    return m ? m[1] : '';
+  }
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].onclick = function () {
+      var key = this.getAttribute('data-function');
+      apply(key);
+      var hash = key ? '#function=' + key : ' ';
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState(null, '', key ? hash : window.location.pathname);
+      }
+    };
+  }
+  bar.hidden = false;
+  apply(fromHash());
+})();
+</script>
 {{ partial "sources.html" . }}
 {{ partial "categories.html" . }}
 {{ partial "pageinfo.html" . }}
