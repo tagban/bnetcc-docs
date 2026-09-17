@@ -10,6 +10,8 @@ How Battle.net works on the wire: how game clients connect, what each message co
 | **[Battle.net 2.0](/bnet2/)** | The modern-era service. Currently covers *StarCraft II*: signing in through Front, then its native Sunken services. |
 | **Battle.net App** *(coming)* | The desktop app framework: sign-in, the local agent, and how games launch through it. |
 
+Also here: [Guides](/guides/) for players, such as [connecting a game to BNET.cc](/guides/connect-to-bnet-cc/), and [History](/history/), starting with a [list of bots](/history/bots/).
+
 New here? Read [How to read these pages](/how-to-read/).
 
 ## About this site
@@ -20,4 +22,4 @@ This site documents protocols for education and preservation. It never hosts gam
 
 ## Helping out
 
-Every page has an **Edit on GitHub** link. Your change arrives as a pull request and appears here once it's approved.
+Every page has an **Edit on GitHub** link, and an **Edit with Discord** link for contributors on the [BNET.cc Discord](https://discord.gg/dR4djHweh3). Either way, your change arrives as a pull request and appears here once it's approved.

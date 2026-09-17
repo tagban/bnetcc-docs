@@ -26,7 +26,9 @@ When you confirm something marked ⚠️ or 🛑, please update the page and say
 
 ## What this site never hosts
 
-This site documents protocols. It never hosts or links to game files, version-check (hash) files, CD keys, client modifications, or ways around anti-cheat. Pages explain how those things work, not where to get them.
+This site documents protocols. It never hosts or links to game files, version-check (hash) files, CD keys, patches that get a game past a server's security checks (such as Warcraft III's server signature), or ways around anti-cheat. Pages explain how those things work, not where to get them.
+
+Guides may link to open-source projects that only improve how a game runs, such as display wrappers, and to bots in the BNET.cc archive.
 
 ## Sources and credit
 

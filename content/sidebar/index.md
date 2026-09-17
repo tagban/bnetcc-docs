@@ -25,6 +25,11 @@ build:
 - [Front messages](/bnet2/front-messages/)
 - [Sunken records](/bnet2/sunken/)
 
+### Guides
+
+- [Connect to BNET.cc](/guides/connect-to-bnet-cc/)
+- [Diablo II on modern displays](/guides/diablo-ii-display/)
+
 ### History
 
 - [Bots](/history/bots/)
