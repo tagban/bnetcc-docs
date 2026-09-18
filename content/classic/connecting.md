@@ -89,7 +89,7 @@ The same rule applies to the product language in `SID_AUTH_INFO` (`enUS` is sent
 
 **Where codes appear forwards or backwards as text:**
 
-- A user's **statstring** in chat events starts with the game code **backwards**, as text: `RATS`, `NB2W`, `PX3W`. ✅
+- A user's **statstring** in chat events starts with the game code **backwards**, as text: `RATS`, `NB2W`, `PX3W`. ✅ A *Diablo II* statstring must also have the right shape, or it crashes other *Diablo II* clients: see [SID_CHATEVENT](/classic/bncs/sid-chatevent/).
 - The [chat gateway](/classic/chat-gateway/) writes codes **forwards** (`STAR`). ✅
 
 ## Text encoding and limits

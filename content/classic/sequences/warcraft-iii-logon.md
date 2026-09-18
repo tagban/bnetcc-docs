@@ -41,10 +41,15 @@ sources:
   - name: "Command Center: WARCRAFT3-FIELD-NOTES.md"
     url: "https://github.com/tagban/bnet_command_center/blob/master/docs/WARCRAFT3-FIELD-NOTES.md"
     note: "observed from a real Warcraft III: The Frozen Throne 1.27b client on September 11, 2026"
+  - name: "wc3-classic-revival, by ValeenMar"
+    url: "https://github.com/ValeenMar/Warcraft"
+    note: "a PvPGN server log of a 1.27a client's `SID_AUTH_INFO`, showing version byte `0x1B`"
 ---
 
 **Only NLS works.** An unmodified *Warcraft III* won't use the older X-SHA-1 logon: if the server offers logon type `0x00`, the client disconnects before the version check.
 
 **The server signature.** Under NLS, *Warcraft III* checks the 128-byte signature in `SID_AUTH_INFO` against a key built into the game. No server other than Blizzard's can produce a valid one, so connecting to any other server requires a client modification that skips the check. This site doesn't host or link one. The server simply has to include the 128 bytes; zeros are fine.
+
+**1.27a sends the same version byte as 1.27b.** Both send `0x1B` in `SID_AUTH_INFO`, so a server can't tell them apart at that point. They differ in the EXE version in `SID_AUTH_CHECK`. ⚠️ From another project's server log; not yet tested with a 1.27a client here.
 
 **If the client disconnects right after logging on** ("connection to Battle.net has been lost"), check that the `SID_AUTH_ACCOUNTLOGONPROOF` reply is exactly 24 bytes.

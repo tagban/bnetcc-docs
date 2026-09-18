@@ -51,6 +51,24 @@ sources:
     url: "https://github.com/tagban/bnet_command_center/blob/master/crates/bnetcc-proto/src/chat.rs"
   - name: "Command Center: PROTOCOL-NOTES.md"
     url: "https://github.com/tagban/bnet_command_center/blob/master/docs/PROTOCOL-NOTES.md"
+  - name: "Command Center: DIABLO2.md §6"
+    url: "https://github.com/tagban/bnet_command_center/blob/master/docs/DIABLO2.md"
+    note: "a real Diablo II 1.14d client crashed by a statstring with no commas on September 18, 2026, and the client code that explains it"
 ---
 
 **Relaying chat text.** A server must strip control characters from text before relaying it. A carriage return or line feed inside chat text makes real clients misbehave, and real Battle.net disconnected and briefly banned the sender.
+
+**A bad *Diablo II* statstring crashes every *Diablo II* client in the channel.** A *Diablo II* 1.14d client reads the statstring of every other user it's told about, not only its own. If a statstring starts with a backwards *Diablo II* code (`VD2D`, `PX2D`, or the Japanese `TS2D`) and anything follows the code, the client copies the next two comma-separated fields into fixed-size memory. It stops only at a comma: it never checks for the end of the text or the size of the memory. With fewer than two commas, the copy runs on and overwrites the client's list of channel users, and the client crashes. The generic `PX2D 0 0 0 0 0 0 0 0 PX2D` form that other games use has no commas and does exactly that. ✅
+
+Only two forms are safe, and they're the two the client itself produces: ⚠️
+
+| Form | Statstring |
+|---|---|
+| No character | Just the code, such as `PX2D`, with nothing after it |
+| A character | The code, the realm, a comma, the character's name, a comma, then the character's portrait: `PX2DRealm,Name,…` |
+
+Three more limits in the same code: ⚠️
+
+- The client only reads the statstring of some users. It skips users with flags `0x01`, `0x04` or `0x08` (and a few others), but not channel operators (`0x02`). So a bad statstring seems to crash on some users and not others; the flags are a red herring.
+- `EID_USERFLAGS` runs the same code. It has to carry the user's full statstring: an empty one blanks their portrait.
+- The client copies each **username** into a 50-byte field without checking its length. A name longer than 49 bytes overwrites the client's memory.
