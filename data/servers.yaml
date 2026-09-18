@@ -25,7 +25,7 @@
   group: "classic-community"
 
 - id: "bnetdocs-4"
-  name: "Asia / Kalimdor (DNS) (Old)"
+  name: "Asia"
   address: "asia.battle.net"
   port: 6112
   group: "classic-blizzard"
@@ -33,7 +33,7 @@
   bnetdocs: "https://bnetdocs.org/server/4/asia-kalimdor-dns-old"
 
 - id: "bnetdocs-3"
-  name: "Europe / Northrend (DNS) (Old)"
+  name: "Europe"
   address: "europe.battle.net"
   port: 6112
   group: "classic-blizzard"
@@ -41,23 +41,15 @@
   bnetdocs: "https://bnetdocs.org/server/3/europe-northrend-dns-old"
 
 - id: "bnetdocs-2"
-  name: "U.S. East / Azeroth (DNS) (Old)"
+  name: "U.S. East"
   address: "useast.battle.net"
   port: 6112
   group: "classic-blizzard"
   kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
   bnetdocs: "https://bnetdocs.org/server/2/u-s-east-azeroth-dns-old"
 
-- id: "bnetdocs-1"
-  name: "U.S. West / Exodus (DNS) (Old)"
-  address: "exodus.battle.net"
-  port: 6112
-  group: "classic-blizzard"
-  kind: "Battle.net v1 Game Client Service (BNCS) / Blizzard Classic"
-  bnetdocs: "https://bnetdocs.org/server/1/u-s-west-exodus-dns-old"
-
 - id: "bnetdocs-0"
-  name: "U.S. West / Lordaeron (DNS) (Old)"
+  name: "U.S. West"
   address: "uswest.battle.net"
   port: 6112
   group: "classic-blizzard"
@@ -65,7 +57,7 @@
   bnetdocs: "https://bnetdocs.org/server/0/u-s-west-lordaeron-dns-old"
 
 - id: "bnetdocs-97"
-  name: "Good Old Games (DNS)"
+  name: "Good Old Games (BlizzApproved)"
   address: "connect-forever.classic.blizzard.com"
   port: 6112
   group: "classic-blizzard"
