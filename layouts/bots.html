@@ -49,7 +49,7 @@
       {{- with .archive }}
       {{- if $links }}<br>{{ end }}<small>BNET.cc archive:</small>
       <ul class="archive">
-        {{- range . }}<li><a href="{{ $archive }}{{ . | urlquery }}">{{ path.Base . }}</a></li>{{ end }}
+        {{- range . }}{{ $file := . }}{{ $label := "" }}{{ if reflect.IsMap . }}{{ $file = .file }}{{ $label = .label }}{{ end }}<li><a href="{{ $archive }}{{ $file | urlquery }}">{{ path.Base $file }}</a>{{ with $label }} ({{ . }}){{ end }}</li>{{ end }}
       </ul>
       {{- end }}
     </td>

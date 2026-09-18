@@ -8,7 +8,9 @@
 # download                   the project's current release page
 # source                     source code
 # site                       project website (when it isn't the download page)
-# archive                    files in the BNET.cc Files archive (paths under bnet.cc/downloads)
+# archive                    files in the BNET.cc Files archive (paths under bnet.cc/downloads).
+#                            To show a note after a file, write it as
+#                            { file: "bots/…/Bot.zip", label: "Windows" }  →  Bot.zip (Windows)
 # notes                      one or two sentences
 
 - name: "BNRBot"
@@ -20,7 +22,7 @@
 
 - name: "BNUBot"
   authors: ["BNU-Camel"]
-  platforms: [Windows(v1) macOS(v2), BeOS(v2), Linux(v2)]
+  platforms: [Windows(v1), macOS(v2), BeOS(v2), Linux(v2)]
   functions: [chat, moderation, clan, trivia, scripting]
   notes: "Versions 1 and 2 both have clan management and trivia. The archive has version 1."
   source: "https://github.com/scottanderson/bnubot2"
@@ -138,8 +140,8 @@
   download: "https://superioritybot.com/"
   notes: "Superiority.NET on Classic Battle.net, through to today's native client for StarCraft II, StarCraft: Remastered and Warcraft III."
   archive:
-    - "bots/Modern Battle.net/Mac/Superiority-0.1.9-universal.dmg" (Old)
-    - "bots/Classic Battle.net/Win/Superiority.zip" (Windows)
+    - { file: "bots/Modern Battle.net/Mac/Superiority-0.1.9-universal.dmg", label: "Old" }
+    - { file: "bots/Classic Battle.net/Win/Superiority.zip", label: "Windows" }
     - "bots/Classic Battle.net/Win/Superiority Beta 3.zip"
 
 # ---------------------------------------------------------------------------
