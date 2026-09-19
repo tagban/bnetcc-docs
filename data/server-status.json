@@ -1,171 +1,165 @@
 {
- "checked": "2026-09-18T11:21:55+00:00",
+ "checked": "2026-09-19T11:05:46+00:00",
  "servers": {
   "bnet-cc-us": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 234,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 133,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "bnetdocs-0": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 113,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-1": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 114,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 143,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "bnetdocs-105": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 268,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 154,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "bnetdocs-106": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 289,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 143,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "bnetdocs-107": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 139,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 67,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "bnetdocs-109": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 62,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 53,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "bnetdocs-110": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 214,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-111": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 211,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-112": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 889,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-131": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 118,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-19": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 73,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-2": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 318,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-3": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 200,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-4": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 217,
-   "online": true,
-   "since": "2026-09-16T20:58:42+00:00"
-  },
-  "bnetdocs-40": {
-   "last_online": "2026-09-18T11:21:55+00:00",
+   "last_online": "2026-09-19T11:05:46+00:00",
    "latency_ms": 135,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
+  "bnetdocs-111": {
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 217,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-112": {
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 646,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-131": {
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 337,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-19": {
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 167,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-2": {
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 180,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-3": {
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 215,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-4": {
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 508,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
+  "bnetdocs-40": {
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 54,
+   "online": true,
+   "since": "2026-09-16T20:58:42+00:00"
+  },
   "bnetdocs-59": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 78,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 122,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "bnetdocs-61": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 194,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 176,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "bnetdocs-63": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 512,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 282,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "bnetdocs-65": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 75,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 147,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "bnetdocs-74": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 297,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 273,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "bnetdocs-75": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 488,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 402,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "bnetdocs-77": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 172,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 285,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "bnetdocs-78": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 173,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 189,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "bnetdocs-79": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 144,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 326,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "bnetdocs-97": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 130,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 125,
    "online": true,
    "since": "2026-09-16T20:58:42+00:00"
   },
   "war-pianka-io": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 271,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 216,
    "online": true,
    "since": "2026-09-16T21:28:09+00:00"
   },
   "war2-ru": {
-   "last_online": "2026-09-18T11:21:55+00:00",
-   "latency_ms": 537,
+   "last_online": "2026-09-19T11:05:46+00:00",
+   "latency_ms": 317,
    "online": true,
    "since": "2026-09-16T21:28:09+00:00"
   }
