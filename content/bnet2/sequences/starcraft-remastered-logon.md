@@ -280,7 +280,11 @@ A normal startup, from the socket opening to LegacyChat.Connect's reply, took ab
 **Straight after another SC:R session on the same account ends, a new one can stall.** AuthSession succeeds, then GetToons is never answered, and the 6-second limit closes the socket. ✅ Confirmed live
 
 - It happened when connecting right after a sign-in that only listed characters and then closed.
-- A retry 5 seconds later stalled the same way. One about 50 seconds later went through. Invigoration now retries after 30 seconds, then 60.
+- A retry 5 seconds later stalled the same way. One about 50 seconds later went through.
+- It also happened once with no SC:R session on the account in the previous hour, and a retry 10 seconds later went through. So a recent session isn't the only cause. ✅ Confirmed live
+- Invigoration retries every 10 seconds, up to six times. A connect that stalls once is typically in chat about 20 seconds after starting.
+
+**Leave properly.** Before closing, Invigoration sends Aurora's ConnectionService **RequestDisconnect** (method 7, body `{"error_code": 0}`, no reply), as a Battle.net client does when it logs out, and LegacyChat's Disconnect on the classic socket. Whether that shortens the stall for the next session isn't confirmed. ⚠️
 - The likely cause is that Battle.net still treats the account's last SC:R session as live. ⚠️ Inferred. It suggests **one SC:R session per account at a time**, so two gateways at once on one account probably won't work. That hasn't been tested. 🛑
 
 **An SC:R session and a StarCraft II session on one account at once do work.** ✅ Confirmed live

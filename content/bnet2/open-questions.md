@@ -45,12 +45,16 @@ These are the gaps found while building native StarCraft II and SC:R chat on 202
 - **Two sessions at once on one account**, such as U.S. West and U.S. East together. Probably not possible. ⚠️ Inferred
 - **The server calls during startup** with unknown hashes, listed on [signing in](/bnet2/sequences/starcraft-remastered-logon/#other-calls-during-startup). 🛑
 - **What AuthSession's server proof proves.** 🛑
-- **Friend invitations**, and the FriendUpdated fields thought to be away, busy and activity. ⚠️ Inferred
+- **The FriendUpdated fields thought to be away, busy and activity.** ⚠️ Inferred
+- **Friend requests:** sending one and having it accepted is ✅ confirmed. Accepting, declining and **RemoveFriend** haven't been tried live, and neither has SendInvitationByToon (its ID isn't found). What SendInvitation's reply `"us"` means for other regions is unknown. See [invitations](/bnet2/scr-messages/#invitations). 🛑
+- **WhisperEchoReceived** didn't arrive for whispers a session sent itself. Does it arrive for ones sent from the game or the Battle.net app? And what's in SendWhisper's short reply? See [Battle.net whispers](/bnet2/scr-messages/#aurorachat-battlenet-whispers). 🛑
+- **The startup stall** also happened once with no recent session. What causes it, and whether RequestDisconnect helps. See [the stall](/bnet2/sequences/starcraft-remastered-logon/#the-stall-after-a-recent-session). 🛑
 - **Whether a client that owns only the original StarCraft shows `STAR`** in the member list. 🛑
 
 ## StarCraft II records
 
-- **Friends command 28**, probably a pending friend invitation. See [friends](/bnet2/sc2-friends/#friends-28-probably-friendinvitationadded). 🛑
+- **Friend invitations on SC2:** Friends 28 is a pending invitation, but its full layout, and the records that send, accept or decline one, aren't known. See [friends](/bnet2/sc2-friends/#friends-28-friendinvitationaddednotify). 🛑
+- **Whispering a friend by presence or account** hasn't been confirmed live, nor whether an account whisper reaches someone outside SC2. See [whispering a friend](/bnet2/sc2-friends/#whispering-a-friend). 🛑
 - **Chat command 20**, seen once. It carried a character's name and code; it isn't decoded. 🛑
 - **The body of ConnectionService method 4** that came with the 3025 refusal. See [friends](/bnet2/sc2-friends/#the-battlenet-friends-service-is-closed). 🛑
 

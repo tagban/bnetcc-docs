@@ -254,7 +254,7 @@ SC:R is in **one channel at a time**. Joining another takes you out of the curre
 | Attribute | Value | |
 |---|---|---|
 | `program_id` | The classic product code, in normal reading order: `SEXP`, `W2BN` and `DRTL` were seen | ✅ Confirmed live |
-| `battle_tag` | The member's BattleTag | ✅ Confirmed live |
+| `battle_tag` | The member's BattleTag, which is what a [friend request](/bnet2/scr-messages/#invitations) needs | ✅ Confirmed live |
 
 - **Diablo II members carry no `program_id` at all.** No code means Diablo II. Whether they're on Lord of Destruction isn't said. ✅ Confirmed live
 - **SC:R players showed `SEXP`.** Whether one who owns only the original shows `STAR` isn't known. 🛑
@@ -264,6 +264,8 @@ SC:R is in **one channel at a time**. Joining another takes you out of the curre
 ## Your own lines
 
 **Battle.net doesn't echo your own channel messages or whispers back to you.** Show them yourself when you send them. ✅ Confirmed live
+
+**Whispering a BattleTag** isn't a LegacyChat whisper. A Battle.net whisper goes to an account through AuroraChat, and reaches a friend in any game, the Battle.net app or on mobile. See [Battle.net whispers](/bnet2/scr-messages/#aurorachat-battlenet-whispers). ✅ Confirmed live
 
 ## Slash commands
 

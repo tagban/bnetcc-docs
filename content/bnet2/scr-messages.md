@@ -9,13 +9,18 @@ sources:
   - name: "sc1-research, by ncarrillo (MIT)"
     url: "https://github.com/ncarrillo/sc1-research"
     note: "the classic connection, and the first method names"
+  - name: "Superiority, by ncarrillo (MIT)"
+    url: "https://github.com/ncarrillo/superiority"
+    note: "WhisperEchoReceived, and account whispers' field types"
   - name: "novares"
     note: "early captures of the classic connection"
+  - name: "Invigoration"
+    note: "confirmed live, 2026-09-24: CreateToon, Battle.net whispers, and a friend request sent and accepted"
 ---
 
 StarCraft: Remastered's classic connection carries protobuf RPC (see [StarCraft: Remastered chat](/bnet2/scr-chat/#classic-connection-framing) for the framing and scrambling). Each call names a **service** and a **method** by 32-bit ID.
 
-**Where these come from.** The IDs and message layouts on this page were read from the game's own client library, `libClientSdk.dylib` (macOS, build of 2026-08-04). Its registration code stores each method's ID with `mov dword [rbp-0x154], imm32` just before building the method's name, and every message class's serializer writes its field tags as constants. Every layout below that we could check against a live session matched. Status markers:
+**Where these come from.** The IDs and message layouts on this page were read from the game's own client library, `libClientSdk.dylib` (macOS, build of 2026-08-04). Its registration code stores each method's ID with `mov dword [rbp-0x154], imm32` (bytes `C7 85 AC FE FF FF` and the ID), next to the code that builds the method's name. For a name of up to 15 characters, which fits inside the string object, the ID comes just **before** the name. For a longer one, which needs its own buffer, it comes just **after**: that's how AcceptInvitation, DeclineInvitation and WhisperEchoReceived were found. Every message class's serializer writes its field tags as constants. Every layout below that we could check against a live session matched. Status markers:
 
 - ✅ **Confirmed live**: used against Battle.net by Invigoration on 2026-09-24.
 - 📖 **From the client**: read from the library's code. The field numbers and types are exact; a field's *meaning* is inferred from how the client fills it, and is said so where it matters.
@@ -62,11 +67,14 @@ The IDs aren't FNV-1a, FNV-1, CRC-32, CRC-32C, Jenkins one-at-a-time or Murmur3 
 | LegacyFriends | Connected | `0xDADDB5B7` | Server → Client | ✅ arrives |
 | LegacyFriends | Disconnected | `0xA0E4A7AB` | Server → Client | 📖 |
 | LegacyFriends | FriendUpdated | `0xB8A4E3FB` | Server → Client | 📖 |
-| AuroraChat | SendWhisper | `0x6251CCD8` | Client → Server | 📖 |
+| AuroraChat | SendWhisper | `0x6251CCD8` | Client → Server | ✅ |
 | AuroraChat | WhisperReceived | `0x7255E575` | Server → Client | 📖 |
+| AuroraChat | WhisperEchoReceived | `0x82B844A8` | Server → Client | 📖 |
 | AuroraChat | StartTypingUser | `0x162162E4` | Client → Server | 📖 |
 | AuroraChat | StopTypingUser | `0xEAB58590` | Client → Server | 📖 |
-| AuroraFriends | SendInvitation | `0xF7C61139` | Client → Server | 📖 |
+| AuroraFriends | SendInvitation | `0xF7C61139` | Client → Server | ✅ |
+| AuroraFriends | AcceptInvitation | `0xF7E2F4AB` | Client → Server | 📖 |
+| AuroraFriends | DeclineInvitation | `0xE10265CB` | Client → Server | 📖 |
 | AuroraFriends | RemoveFriend | `0xCA10E52C` | Client → Server | 📖 |
 | AuroraFriends | FriendUpdated | `0xEC7E2FD1` | Server → Client | ✅ |
 | AuroraFriends | InvitationUpdated | `0x4A8E2E5E` | Server → Client | ✅ arrives |
@@ -134,7 +142,20 @@ These are **Battle.net whispers**, addressed to an account rather than a charact
 | 1 | Recipient's account ID | **fixed32** (tag `0x0D`) |
 | 2 | Text | string |
 
+✅ Confirmed live: a whisper sent this way to a friend was delivered, and Battle.net answered the call with a short reply whose contents aren't known. The client's own parser refuses a varint in field 1, so it has to be fixed32.
+
+Worked example: `hi` to account `0x01020304`.
+
+```
+0D 04 03 02 01   field 1, fixed32 0x01020304 (little-endian)
+12 02 68 69      field 2, "hi"
+```
+
 **WhisperReceived** (server → client) has the same shape, with the sender's account ID in field 1. 📖
+
+**WhisperEchoReceived** (server → client, `0x82B844A8`) has the same shape too, with the **recipient's** account ID: Battle.net's copy of a whisper this account sent. 📖 From the client and Superiority. In a live session, no echo arrived for the whispers that session sent itself, so show your own whispers when you send them, and treat an echo as one sent from somewhere else (the game, the Battle.net app) unless it matches one you just sent. ⚠️
+
+Name the other side from the friends list: the account ID in field 1 is the one [FriendUpdated](#friendupdated-server--client) carries.
 
 The account ID is a plain 32-bit number (the same one [FriendUpdated](#friendupdated-server--client) carries in field 1), not an `EntityId` pair.
 
@@ -166,13 +187,27 @@ Sent once per friend at sign-in, and again when one changes. ✅
 
 | Method | Request | Notes |
 |---|---|---|
-| SendInvitation | `{1: BattleTag}` | 📖 The response carries one string, meaning unknown. |
-| SendInvitationByToon | `{1: character name, 2: gateway (uint64)}` | 📖 |
-| AcceptInvitation | `{1: invitation ID (uint64)}` | 📖 |
-| DeclineInvitation | `{1: invitation ID (uint64)}` | 📖 |
+| SendInvitation `0xF7C61139` | `{1: BattleTag}` | ✅ Confirmed live. The response is `{1: string}`; it was `"us"` for a U.S. account, so probably the region. |
+| SendInvitationByToon | `{1: character name, 2: gateway (uint64)}` | 📖 ID not found yet. |
+| AcceptInvitation `0xF7E2F4AB` | `{1: invitation ID (uint64)}` | 📖 |
+| DeclineInvitation `0xE10265CB` | `{1: invitation ID (uint64)}` | 📖 |
 | RemoveFriend | `{1: account ID (uint32, varint)}` | 📖 Unlike whispers, a plain varint. |
 
-**InvitationUpdated** (server → client, `0x4A8E2E5E`): `{1: InvitationInfo {1: invitation ID (uint64), 2: BattleTag}, 2: removed (bool)}`. ✅ Arrives when someone sends you a request, and again with `2: true` once it's gone.
+**InvitationUpdated** (server → client, `0x4A8E2E5E`): `{1: InvitationInfo {1: invitation ID (uint64), 2: BattleTag}, 2: removed (bool)}`. ✅ Arrives when someone sends you a request, and again with `2: true` once it's gone. Answer it with its invitation ID.
+
+**What the sender sees.** ✅ Confirmed live: after SendInvitation, no InvitationUpdated came to the sending session. When the other person accepted, about 8 seconds later, FriendUpdated arrived for the new friend, so the friends list changed on its own. There's no need to poll: Battle.net pushes every friends-list change.
+
+**RemoveFriend** hasn't been tried live. The FriendUpdated that follows it is expected to carry `2: 1` (removed). ⚠️ Inferred
+
+Worked examples:
+
+```
+SendInvitation "A#1234":  0A 06 41 23 31 32 33 34
+RemoveFriend account 42:  08 2A
+AcceptInvitation 300:     08 AC 02
+InvitationUpdated, 300 from "A#1234", removed:
+                          0A 0B  08 AC 02  12 06 41 23 31 32 33 34   10 01
+```
 
 ## LegacyFriends: the classic `/f` list
 

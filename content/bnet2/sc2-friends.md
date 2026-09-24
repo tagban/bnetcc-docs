@@ -2,11 +2,11 @@
 title: "StarCraft II friends"
 categories: ["Battle.net 2.0"]
 products: [S2]
-summary: "The friends list on Sunken, asking for a friend's characters, the unknown Friends command 28, and why the Battle.net friends service is closed to the game."
+summary: "The friends list on Sunken, asking for a friend's characters, whispering a friend, friend invitations, and why the Battle.net friends service is closed to the game."
 sources:
   - name: "Superiority, by ncarrillo (MIT)"
     url: "https://github.com/ncarrillo/superiority"
-    note: "the FriendsListNotify5 and ToonsOfFriends decoders, and ToonsOfFriendsRequest"
+    note: "the FriendsListNotify5 and ToonsOfFriends decoders, ToonsOfFriendsRequest, whisper targets, and the names of Friends 27 to 29"
   - name: "novares"
     note: "independent source for the layouts of Friends 6 and 30"
   - name: "Invigoration"
@@ -115,7 +115,19 @@ ca fe ba be 00 00 00 00 12 34 56 78     profile address
 
 Built here from the layout. The first 12 bytes match Superiority's retail example, which has the same region, program and realm.
 
-## Friends 28: probably FriendInvitationAdded
+## Whispering a friend
+
+A friend doesn't need to be found by character name. The chat whisper record (Chat 19, see [the chat page](/bnet2/sunken-chat/#records-the-client-sends)) takes other kinds of target, and Superiority whispers a friend by, in order of preference:
+
+1. **their presence ID** (target type 0), when their presence has been seen,
+2. **their SC2 character name** (type 1), from [ToonsOfFriends](#toonsoffriends), when there's no presence,
+3. **their account ID** (type 3), as a last resort.
+
+⚠️ Single source (Superiority). Invigoration sends type 0, or type 3 without a presence, for a friend named in its Friends tab; delivery that way hasn't been confirmed live yet.
+
+A **Battle.net whisper** in the Battle.net app's sense (to an account, reaching the friend in any game) is what StarCraft: Remastered sends with [AuroraChat](/bnet2/scr-messages/#aurorachat-battlenet-whispers). Whether SC2's account target reaches someone who isn't in SC2 isn't known. 🛑
+
+## Friends 28: FriendInvitationAddedNotify
 
 **Battle.net sent a Friends command 28 record at sign-in, unprompted.** Its layout isn't known, so a decoder that stops on unknown records stops here. 🛑
 
@@ -126,7 +138,11 @@ What was seen, in a 44-byte record: ✅ Confirmed live
 - Then a byte-aligned length, and **a BattleTag** in UTF-8: another player's, not the account's own.
 - Then 27 bytes that aren't decoded. They probably include IDs and a time. ⚠️ Inferred
 
-The same record came in four sign-ins in a row, then stopped coming in later sessions the same day. **It's most likely a pending friend invitation, sent at each sign-in until it's answered or withdrawn:** Battle.net's name for such a record is FriendInvitationAdded. ⚠️ Inferred, not confirmed. How to accept or decline an invitation is 🛑 unknown.
+The same record came in four sign-ins in a row, then stopped coming in later sessions the same day: **a pending friend invitation, sent at each sign-in until it's answered or withdrawn.**
+
+**Superiority names it `FriendInvitationAddedNotify`**, and describes a `FriendInvitation` as five optional fields, then the inviter's BattleTag (length-prefixed), then their account ID, a role, and when it was created. ⚠️ Single source (Superiority), and it fits what was seen above.
+
+How an SC2 client accepts or declines one is 🛑 unknown. It's the same Battle.net invitation StarCraft: Remastered sees, so an SC:R session on the account can answer it with [AcceptInvitation or DeclineInvitation](/bnet2/scr-messages/#invitations).
 
 Invigoration drops the rest of the bytes it has buffered when it meets this record. That's only safe when it's the last record in the read; a full decoder would need its layout.
 
@@ -134,6 +150,8 @@ Invigoration drops the rest of the bytes it has buffered when it meets this reco
 
 | Command | Record | Notes |
 |---|---|---|
+| 27 | SendInvitationResult | The answer to sending a friend invitation. The record that sends one isn't known. ⚠️ Name from Superiority |
+| 29 | FriendInvitationRemovedNotify | An invitation was answered or withdrawn. ⚠️ Name from Superiority; layout unknown |
 | 31 | AccountBlockNotify | The blocked-accounts list. Layout on [the chat page](/bnet2/sunken-chat/#friends-records). |
 | 33 | ToonBlockNotify | The blocked-characters list. Each entry is the add/remove bit **first**, then region `u(8)`, program `u(32)`, realm `u(32)` and name `blob(7, 2)`. ⚠️ Single source: the one live record, which was cut short, reads cleanly this way |
 

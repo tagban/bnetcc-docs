@@ -9,6 +9,9 @@ sources:
   - name: "SC2Docs, by Warrior"
     url: "https://superiority-sc2docs.pages.dev/"
     note: "independent source for the bit order, the route and the RC4 switch"
+  - name: "Superiority, by ncarrillo (MIT)"
+    url: "https://github.com/ncarrillo/superiority"
+    note: "the whisper record's other target types"
 ---
 
 Unless a line says otherwise, everything on this page comes from novares and is ⚠️ single source. Lines marked ✅ agree with [SC2Docs](https://superiority-sc2docs.pages.dev/) as well. The byte examples were rebuilt here from the rules on this page and matched the source's bytes exactly.
@@ -69,6 +72,9 @@ Each record starts with its **route**: command (6 bits), a service flag of 1 (1 
 |---|---|---|
 | Channel message | 5 / 11 | `blob(10, text, 0)`, channel index (3 bits) |
 | Whisper to a character | 5 / 19 | target type `1` (3), region (8), program `0x5332` `S2` (32), the character's realm (32), `blob(7, name, 2)`, `blob(10, text, 0)` |
+| Whisper to a presence | 5 / 19 | target type `0` (3), presence ID (32), `blob(10, text, 0)` ⚠️ Superiority |
+| Whisper to an account | 5 / 19 | target type `3` (3), account ID (32), `blob(10, text, 0)` ⚠️ Superiority |
+| Whisper to a character handle | 5 / 19 | target type `5` (3), program (32), region (8), realm (32), character ID (64), `blob(10, text, 0)` ⚠️ Superiority |
 | Public channel list | 5 / 21 | nothing |
 | Join a public channel | 5 / 0 | type `2` (2), locale `0x656E5553` `enUS` (32), channel ID (16), a new join token (32) |
 | Ping | 1 / 10 | present `1` (1), timestamp high 32 bits, timestamp low 32 bits |
