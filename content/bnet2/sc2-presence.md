@@ -6,11 +6,11 @@ summary: "The Sunken presence records, the fields they carry, how a friend or ch
 sources:
   - name: "Superiority, by ncarrillo (MIT)"
     url: "https://github.com/ncarrillo/superiority"
-    note: "the presence decoders, the avatar, profile, character, account and status fields, and the status rules"
+    note: "the presence decoders, the avatar, profile, character, account, clan tag and status fields, and the status rules"
   - name: "novares"
     note: "independent source for the bit layouts of Presence 0 and 1"
   - name: "Invigoration"
-    note: "confirmed live, 2026-09-24: the field table, the game account, BattleTag and game-account name fields, and friends coming online"
+    note: "confirmed live, 2026-09-24: the field table, the game account, BattleTag, game-account name and clan tag fields, and friends coming online"
 ---
 
 **Presence is how StarCraft II learns who is online, and what they're doing.** It arrives on [Sunken](/bnet2/sunken/) in the Presence slot (4), alongside chat. The bit layouts of every presence record are on [StarCraft II chat on Sunken](/bnet2/sunken-chat/#presence-records). This page explains the two that carry values.
@@ -71,7 +71,7 @@ One live session announced **69 fields**. Their handles fall in blocks: `0x10001
 | `0x10020` | 1 | 11 | 0 or 1 | Away | ⚠️ Superiority |
 | `0x10022` | 1 | 11 | 0 or 1 | Busy | ⚠️ Superiority |
 | `0x50002` | 1 | 11 | 0 or 1 | In a game | ⚠️ Superiority |
-| `0x50004` | varies | 13 | | Probably the clan tag | ⚠️ Inferred |
+| `0x50004` | varies | 13 | pair count u8, odd-byte flag u8 (0 or 1), then `2 × pairs + flag` bytes of UTF-8 | **Clan tag**, without the `<` `>` | ✅ Confirmed live |
 
 **The program in `0x10018` is a FourCC, big-endian and padded with zeros at the front.** So a player in SC:R reads `00 00 53 31` (`S1`), Diablo IV reads `00 46 65 6E` (`Fen`) and the Battle.net mobile app reads `42 53 41 70` (`BSAp`). ✅ Confirmed live. **This is how a StarCraft II client can show which game a friend is in.**
 
@@ -82,6 +82,14 @@ Example values, for account 12345678 playing StarCraft II as `Raynor#1234`:
 | `0x10005` | `00 bc 61 4e` |
 | `0x10018` | `01 00 00 53 32 00 bc 61 4e` |
 | `0x1001E` | `0b 52 61 79 6e 6f 72 23 31 32 33 34` |
+
+**The clan tag's length is split oddly:** the first byte counts **pairs** of bytes and the second says whether one more follows. Superiority's retail example, `BURNIN` (6 bytes, so 3 pairs and no odd byte):
+
+```
+03 00 42 55 52 4E 49 4E
+```
+
+A 5-byte tag such as `RAYNR` would be `02 01` then the 5 bytes. ⚠️ The odd case is built from the rule, not seen. StarCraft II shows the tag before the name, as `<BURNIN> Name`, and doesn't show the name's `#123` code in chat.
 
 **No field carries league, MMR, wins or achievements.** 🛑 See [Open questions](/bnet2/open-questions/).
 
