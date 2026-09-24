@@ -13,3 +13,6 @@ WAR3: { name: "Warcraft III: Reign of Chaos", era: classic, icon: "https://bnet.
 W3XP: { name: "Warcraft III: The Frozen Throne", era: classic, icon: "https://bnet.cc/icons/W3XP.png" }
 CHAT: { name: "Chat gateway (telnet)", era: classic, icon: "https://bnet.cc/icons/CHAT.png" }
 S2: { name: "StarCraft II", era: bnet2 }
+S1: { name: "StarCraft: Remastered", era: bnet2 }
+OSI: { name: "Diablo II: Resurrected", era: bnet2 }
+Fen: { name: "Diablo IV", era: bnet2 }

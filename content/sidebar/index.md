@@ -21,9 +21,18 @@ build:
 
 - [Overview](/bnet2/)
 - [StarCraft II: signing in](/bnet2/sequences/starcraft-ii-logon/)
+- [StarCraft: Remastered: signing in](/bnet2/sequences/starcraft-remastered-logon/)
 - [Front RPC](/bnet2/front/)
 - [Front messages](/bnet2/front-messages/)
 - [Sunken records](/bnet2/sunken/)
+- [StarCraft II chat](/bnet2/sunken-chat/)
+- [StarCraft: Remastered chat](/bnet2/scr-chat/)
+- [StarCraft: Remastered messages](/bnet2/scr-messages/)
+- [D2R and D4 chat](/bnet2/d2r-d4-chat/)
+- [StarCraft II presence](/bnet2/sc2-presence/)
+- [StarCraft II friends](/bnet2/sc2-friends/)
+- [StarCraft II profiles](/bnet2/sc2-profiles/)
+- [Open questions](/bnet2/open-questions/)
 
 ### Guides
 

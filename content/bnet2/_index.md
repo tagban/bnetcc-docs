@@ -9,7 +9,11 @@ sources:
 
 Battle.net 2.0 is the service behind *StarCraft II* and the Blizzard games that followed it. It replaced Classic Battle.net's single binary protocol with protobuf RPC over encrypted connections.
 
-This section currently covers **StarCraft II**, which uses two connections:
+This section covers **StarCraft II** sign-in in depth, and chat for **StarCraft II**, **StarCraft: Remastered**, **Diablo II: Resurrected** and **Diablo IV**.
+
+It also covers **StarCraft: Remastered** sign-in, and **StarCraft II** presence, friends and profiles.
+
+StarCraft II uses two connections:
 
 | Connection | What it does | Format |
 |---|---|---|
@@ -22,5 +26,27 @@ This section currently covers **StarCraft II**, which uses two connections:
 - [Front RPC](/bnet2/front/): how Front messages are framed and routed.
 - [Front messages](/bnet2/front-messages/): the protobuf messages used while signing in.
 - [Sunken records](/bnet2/sunken/): how Sunken packs each record into bits.
+- [StarCraft: Remastered: signing in](/bnet2/sequences/starcraft-remastered-logon/): Aurora, the classic server, the key-folded seed and the startup calls.
+- [StarCraft: Remastered messages](/bnet2/scr-messages/): every classic service and method, with IDs and layouts: characters (including creating one), whispers, friends and stats.
+
+## Chat, once signed in
+
+| Game | Page | Carried on |
+|---|---|---|
+| StarCraft II | [StarCraft II chat on Sunken](/bnet2/sunken-chat/) | Bit-packed Sunken records |
+| StarCraft: Remastered | [StarCraft: Remastered chat](/bnet2/scr-chat/) | LegacyChat RPC on a scrambled WebSocket |
+| Diablo II: Resurrected, Diablo IV | [D2R and D4 chat](/bnet2/d2r-d4-chat/) | Front RPC, `ChannelService` and friends |
+
+## StarCraft II: people
+
+| Page | Covers |
+|---|---|
+| [StarCraft II presence](/bnet2/sc2-presence/) | Who is online, away, busy or in a game, and which game they're in |
+| [StarCraft II friends](/bnet2/sc2-friends/) | The friends list, a friend's characters, and why Battle.net's friends service is closed to the game |
+| [StarCraft II profiles and portraits](/bnet2/sc2-profiles/) | Profile reads, the portrait and other cosmetics, and the portrait sheets |
+
+## Still unknown
+
+[Open questions](/bnet2/open-questions/) lists what isn't known yet: SC2 ladder data, emoticons, badges, other regions and more.
 
 **Signing in always requires a real Battle.net account.** Front hands account challenges, such as multi-factor authentication, to Blizzard's own web sign-in. There is no way around it, and these pages describe the protocol, not ways to avoid it.

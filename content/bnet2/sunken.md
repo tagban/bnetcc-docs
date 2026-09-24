@@ -70,3 +70,5 @@ The client sends Chat command 2, `LeaveRequest`, for channel 6. It's two bytes: 
 | Byte 1, bits 6–7 | 2 | 00 | Padding to the byte boundary |
 
 Route (11 bits) + payload (3 bits) + padding (2 bits) = 16 bits = 2 bytes.
+
+For the records a chat client sends and receives, and the layouts of the other records that arrive alongside them, see [StarCraft II chat on Sunken](/bnet2/sunken-chat/).
