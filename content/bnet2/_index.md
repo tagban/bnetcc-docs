@@ -11,7 +11,7 @@ Battle.net 2.0 is the service behind *StarCraft II* and the Blizzard games that 
 
 This section covers **StarCraft II** sign-in in depth, and chat for **StarCraft II**, **StarCraft: Remastered**, **Diablo II: Resurrected** and **Diablo IV**.
 
-It also covers **StarCraft: Remastered** sign-in, and **StarCraft II** presence, friends and profiles.
+It also covers **StarCraft: Remastered** sign-in and stats, and **StarCraft II** presence, friends, profiles and clans.
 
 StarCraft II uses two connections:
 
@@ -43,7 +43,8 @@ StarCraft II uses two connections:
 |---|---|
 | [StarCraft II presence](/bnet2/sc2-presence/) | Who is online, away, busy or in a game, and which game they're in |
 | [StarCraft II friends](/bnet2/sc2-friends/) | The friends list, a friend's characters, and why Battle.net's friends service is closed to the game |
-| [StarCraft II profiles and portraits](/bnet2/sc2-profiles/) | Profile reads, the portrait and other cosmetics, and the portrait sheets |
+| [StarCraft II profiles and portraits](/bnet2/sc2-profiles/) | Profile reads, the portrait and other cosmetics, the portrait sheets, name lookups, what can be changed, and where ladder data lives |
+| [StarCraft II clans and groups](/bnet2/sc2-clubs/) | A character's clans and groups, member lists and ranks, live changes, descriptions, clan chat, and creating and managing a clan |
 
 ## Still unknown
 

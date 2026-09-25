@@ -68,6 +68,10 @@ Each record starts with its **route**: command (6 bits), a service flag of 1 (1 
 
 ## Records the client sends
 
+**A message or whisper holds at most 255 characters and 1,020 UTF-8 bytes** (the `blob(10, text, 0)` below). A longer one can't be encoded; cut it or split it before sending. ✅ Confirmed live
+
+**StarCraft II chat has no slash commands.** Whatever a client handles itself is up to it: a whisper is its own record, and there's no emote record, so Invigoration sends `/me text` as `*text*`. Anything else starting with `/` is simply posted as chat. ✅ Confirmed live
+
 | Record | Slot / command | Payload, in order |
 |---|---|---|
 | Channel message | 5 / 11 | `blob(10, text, 0)`, channel index (3 bits) |
@@ -77,6 +81,7 @@ Each record starts with its **route**: command (6 bits), a service flag of 1 (1 
 | Whisper to a character handle | 5 / 19 | target type `5` (3), program (32), region (8), realm (32), character ID (64), `blob(10, text, 0)` ⚠️ Superiority |
 | Public channel list | 5 / 21 | nothing |
 | Join a public channel | 5 / 0 | type `2` (2), locale `0x656E5553` `enUS` (32), channel ID (16), a new join token (32) |
+| Join a club's chat | 5 / 0 | type `3` (2), `0` (16), club ID (32), a new join token (32). See [clans and groups](/bnet2/sc2-clubs/#clan-chat) ✅ |
 | Ping | 1 / 10 | present `1` (1), timestamp high 32 bits, timestamp low 32 bits |
 | Pong | 1 / 12 | the ping's present bit and timestamp, copied |
 
@@ -281,8 +286,7 @@ A **friendship update** is `op u(2)`:
 | Cache 9 | `u(6)` entries of: `skip(23)`, align, handle `raw(40)`, published `s(32)`. Then token `u(32)`, total `u(16)`, offset `u(16)`, align |
 | Party 0 | `fixed(18)`, align |
 | Profile 4 | `u(2)`, `blob(6)`, `addr`, align |
-| S2 maps 50 | `fixed(38)`, align |
-| S2 maps 57 | `blob(13)`, `blob(13)`, `u(32)`, `u(32)`, `s(32)`, `s(32)`, `s(32)`, align |
+| S2 maps 49, 50, 57 and the other club records | Slot 13 is the **club** service. Command 50 is a list, not a fixed 38 bytes. Every layout is on [clans and groups](/bnet2/sc2-clubs/) ✅ |
 | S2 master 27 | Current season (below) |
 
 **Current season (S2 master 27):**

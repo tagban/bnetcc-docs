@@ -32,6 +32,7 @@ build:
 - [StarCraft II presence](/bnet2/sc2-presence/)
 - [StarCraft II friends](/bnet2/sc2-friends/)
 - [StarCraft II profiles](/bnet2/sc2-profiles/)
+- [StarCraft II clans and groups](/bnet2/sc2-clubs/)
 - [Open questions](/bnet2/open-questions/)
 
 ### Guides

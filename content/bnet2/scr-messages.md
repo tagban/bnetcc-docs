@@ -80,7 +80,7 @@ The IDs aren't FNV-1a, FNV-1, CRC-32, CRC-32C, Jenkins one-at-a-time or Murmur3 
 | AuroraFriends | InvitationUpdated | `0x4A8E2E5E` | Server → Client | ✅ arrives |
 | ToonProfile | GetAvatar | `0x464D320D` | Client → Server | 📖 |
 | ToonProfile | AvatarUpdated | `0x6F3EE514` | Server → Client | 📖 |
-| ToonProfile | GetStats | `0x81F5E3C9` | Client → Server | 📖 |
+| ToonProfile | GetStats | `0x81F5E3C9` | Client → Server | ✅ |
 
 LegacyChat's other callbacks (channel messages, whispers, emotes, notices) are listed on [StarCraft: Remastered chat](/bnet2/scr-chat/#legacychat-receiving). AuroraChat methods `0xF90D37BF` and `0x8ECE5580` arrive at sign-in with body `{1: 0}`; their names weren't found.
 
@@ -224,21 +224,57 @@ This is the classic Battle.net friends list, by character name, separate from Ba
 
 ### GetStats
 
-| Request # | Field | Type | Meaning |
+A character's stats: wins, losses and the rest. This is the call behind the game's own `/stats` command, and it works from any SC:R session for any character. ✅ Confirmed live
+
+| Request # | Field | Type | What the game sends |
 |---|---|---|---|
-| 1 | Program | uint32 | A short code such as `S1` packed into a number; sent only when given |
-| 2 | Gateway | uint64 | Probably the gateway; sent only when not 0 |
-| 3 | Character name | string | **Required**; an empty name is refused |
-| 4 | Stat filter | string | A regular expression over stat names; the client defaults to `.*` |
-| 5 | | uint32 | Unknown |
+| 1 | Program | uint32 | **Nothing.** The field exists (a FourCC packed big-endian), but the game leaves it out |
+| 2 | Gateway | uint64 | The character's gateway, e.g. 10 |
+| 3 | Character name | string | **Required** |
+| 4 | Stat filter | string | `.*`, a regular expression over stat names |
+| 5 | | uint32 | `0xFFFFFFFF` |
+
+**Send exactly those values.** ✅ Confirmed live:
+- With a program (`SEXP` or `STAR`), Battle.net answers at once, but always with no stats.
+- With no program but field 5 set to 0, it doesn't answer at all.
+
+The values were found by running the game's one GetStats call. `STAR` versus `SEXP` only decides which logo the game shows. 📖
+
+Worked example: `Raynor` on U.S. West.
+
+```
+10 0A                    field 2: gateway 10
+1A 06 52 61 79 6E 6F 72  field 3: "Raynor"
+22 02 2E 2A              field 4: ".*"
+28 FF FF FF FF 0F        field 5: 0xFFFFFFFF
+```
 
 | Response # | Field | Type |
 |---|---|---|
 | 1 | Stats | repeated `Stat {1: name (string), 2: value (uint64), 3: uint32}` |
-| 2 | | uint32 |
+| 2 | | uint32: 20 in every reply seen, meaning unknown |
 
-The game names stats such as `legacy_wins`, `legacy_losses`, `legacy_disconnects`, `mm_wins`, `games_played`, `play_time` and `score_overall`, with `_sum` forms. 📖 This is likely what the in-game `/stats` command shows. Not yet tried live.
+A live reply for a character with only classic games: ✅
+
+```
+legacy_disconnects          0
+legacy_wins                 879
+legacy_losses               0
+legacy_toon_creation_time   131200371947981198   a Windows FILETIME: 4 October 2016
+```
+
+A character with nothing recorded gets a reply with no `Stat` entries.
+
+**Stat names the game knows:** 📖
+- **Record:** `wins`, `losses`, `draws`, `disconnects`, plus ranked (`mm_wins`…) and classic (`legacy_wins`…) versions of each.
+- **Activity:** `games_played`, `play_time`, `APM`.
+- **Scores:** `score_overall`, `units_score`, `structures_score`, `resources_score`.
+- **Unit, structure and resource counts:** `units_produced`, `units_killed`, `structures_razed`, `resources_spent` and so on.
+
+A name can end in `_sum`, or carry `$SEASONID$` for per-season stats. The game groups them as overall, this season, all seasons and custom games.
 
 ### GetAvatar and AvatarUpdated
 
 **GetAvatar** takes `{1: program (uint32), 2: gateway (uint64), 3: character name}`. **AvatarUpdated** (server → client) has the same three fields plus `4: string`. 📖
+
+**ToonProfile has only these three methods.** There's no way to set an avatar, a profile or stats: avatars are assigned by Battle.net, and SC:R has no classic profile fields (`profile\description`, `profile\location`…) at all. 📖

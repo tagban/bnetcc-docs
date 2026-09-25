@@ -2,18 +2,20 @@
 title: "StarCraft II profiles and portraits"
 categories: ["Battle.net 2.0"]
 products: [S2]
-summary: "Reading a player's profile on Sunken, finding the portrait in it, and turning a portrait ID into a cell on one of 17 portrait sheets."
+summary: "Reading a player's profile on Sunken, finding the portrait in it, turning a portrait ID into a cell on one of 17 portrait sheets, looking up character names, and what a client can change."
 sources:
   - name: "Superiority, by ncarrillo (MIT)"
     url: "https://github.com/ncarrillo/superiority"
     note: "the profile read request and response, the PORT value, the portrait catalog, the sheet layout and the rate limits"
+  - name: "StarCraft II 5.0.16.97563"
+    note: "the Profile and Toon command lists, the name lookup, the ladder commands and the write requests, from the client's own code"
   - name: "Invigoration"
-    note: "confirmed live, 2026-09-24: profile reads, the block format and the other cosmetic keys"
+    note: "confirmed live, 2026-09-24/25: profile reads, the block format, the other cosmetic keys and name lookups"
 ---
 
 **Every StarCraft II player shows a portrait.** A chat client finds it in one of two places: in the player's [presence](/bnet2/sc2-presence/), or by reading their profile. The profile read is a [Sunken](/bnet2/sunken/) record on the Profile slot (14).
 
-Marks on this page: ✅ **confirmed live** (Invigoration, 2026-09-24), ⚠️ from **one source** (named) or **inferred**, 🛑 **unknown**. The notation (`u(n)`, `blob`, `opt`) is the one on [the chat page](/bnet2/sunken-chat/#notation).
+Marks on this page: ✅ **confirmed live** (Invigoration, 2026-09-24/25), ⚠️ from **one source** (named) or **inferred**, 📖 **from the client** (the game's own code, not tried live), 🛑 **unknown**. The notation (`u(n)`, `blob`, `opt`) is the one on [the chat page](/bnet2/sunken-chat/#notation).
 
 ## Where a portrait comes from
 
@@ -168,3 +170,72 @@ Superiority limits profile reads like this, and Invigoration does the same. ⚠�
 - **Only read what you'll show:** chat members with no `0x10013`, and friends.
 
 Invigoration also gives up on a read that's had no answer after 30 seconds, so a lost answer can't hold a slot forever. How strict Battle.net itself is isn't known. 🛑
+
+## Profile commands
+
+The Profile slot's full command list, from the game's `CommandID` enum: 📖
+
+| Cmd | Name | Notes |
+|---|---|---|
+| 0 | Read | [above](#profile-read-the-request) ✅ |
+| 1 | AddressQuery | a player's profile address, from a presence ID, character name, account ID or handle |
+| 2 | ResolveToonHandleToName | [names for character handles](#names-for-character-handles) ✅ |
+| 3 | ResolveToonNameToHandle | the reverse |
+| 4 | SettingsAvailable | server → client: where the account's, game's and character's settings records are |
+| 5 | ChangeSettings | client → server: string settings |
+| 6 | S2SinglePlayerStatEvents | |
+| 7 | S2ChangeLeagueShowcase | which league badges the profile shows |
+| 8 | SendStatsUIEvent | |
+
+## Names for character handles
+
+Profile slot 14, command 2, both ways. Club member lists and some other records give characters as handles; this turns up to 32 of them into names. ✅ Confirmed live
+
+**Request:**
+
+```
+count   u(6)
+        then per character: program u(32), region u(8), realm u(32), ID u(64)
+align
+```
+
+**Reply** (a scrambled struct, see [clans and groups](/bnet2/sc2-clubs/#scrambled-structs)):
+
+```
+filler  15 bits
+count   u(6), then per character:
+  tag       opt: u(5) byte count, align, bytes     the clan tag
+  handle    program u(32), region u(8), realm u(32), ID u(64)
+  name      opt: region u(8), program u(32), realm u(32), u(7) byte count − 2, align, bytes
+  result    u(16)   0: found
+align
+```
+
+The name comes back with its code, e.g. `Raynor#123`, and the clan tag without brackets. ✅
+
+## Changing a profile
+
+**There's no general "write my profile" request.** 📖 What a client can change:
+
+| What | Where | Request |
+|---|---|---|
+| **Portrait** (and other unlockables) | Toon slot, command 11; the answer is command 12 | the unlockable's category (`PORT` for portraits), its ID (the number stored after `PORT`), the 40-byte handle of the unlock-definition file it comes from (one of those listed at sign-in), and a token |
+| **Motto** | Toon slot, command 9 | the text: u(12) byte count, align, bytes |
+| Account, game and character settings | Profile command 5 | a list of (index, text) pairs |
+| League showcase | Profile command 7 | up to 3 team profiles and ladder IDs |
+| Character name | Toon commands 14 and 16 | |
+
+Which unlock-definition file to name is the part to confirm before choosing a portrait live. 🛑
+
+## Wins, league and rank
+
+They aren't in the profile paths a chat client reads. They come from the **Ladder** service: 📖
+
+| Cmd | Name | Gives |
+|---|---|---|
+| 0 | GetAssignment | league (Bronze to Grandmaster), division, tier, and a scaled rating |
+| 9 | GetRankings | rank, and game data as key/value pairs: wins, losses, points |
+| 10 | GetMembers | a division's members |
+
+**Which Sunken slot the Ladder service is on isn't fixed in the client's code**: it's read from the service object at run time. It's probably one of the slots nothing else uses (2, 6, 7 or 9). One capture of the game opening a profile would settle it. 🛑
+

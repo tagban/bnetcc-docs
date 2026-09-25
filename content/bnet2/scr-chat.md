@@ -250,11 +250,12 @@ SC:R is in **one channel at a time**. Joining another takes you out of the curre
 | 1 | name | The character name |
 | 2 | flags | **2 = channel operator**, seen on a channel's owner. Only 0 and 2 have been seen. ✅ Confirmed live |
 | 3 | attribute | Repeated. Each is a name (field 1) and a value (field 2), both strings. |
+| 4 | ? | A small number, different for each member; it counted up (2 to 9) across one channel's list, so probably the order they joined in. ⚠️ Inferred |
 
 | Attribute | Value | |
 |---|---|---|
 | `program_id` | The classic product code, in normal reading order: `SEXP`, `W2BN` and `DRTL` were seen | ✅ Confirmed live |
-| `battle_tag` | The member's BattleTag, which is what a [friend request](/bnet2/scr-messages/#invitations) needs | ✅ Confirmed live |
+| `battle_tag` | The member's BattleTag, which is what a [friend request](/bnet2/scr-messages/#invitations) needs. **Present but empty** for members on the older classic games (Warcraft II, Diablo II). | ✅ Confirmed live |
 
 - **Diablo II members carry no `program_id` at all.** No code means Diablo II. Whether they're on Lord of Destruction isn't said. ✅ Confirmed live
 - **SC:R players showed `SEXP`.** Whether one who owns only the original shows `STAR` isn't known. 🛑
@@ -278,6 +279,25 @@ V(1, 9) + S(2, "kick") + S(3, "Raynor") + S(3, "spamming the channel")
 ```
 
 `/channel` this way is ✅ confirmed live. The same split for other commands (`/whois`, `/kick`, `/ban`, `/designate`) is how Invigoration sends them; ⚠️ single source (Invigoration). It matches the `whisper` and `channel` bodies above.
+
+### `/whois` and stuck logins
+
+`/whois Name` answers with one or two Information lines, or an Error: ✅ Confirmed live
+
+| Answer | Meaning |
+|---|---|
+| `Name is using Diablo II in a private channel.` | Online. A second line can follow, such as `Name is away (Idle for 10 hours, 23 minutes.)` |
+| `That user is not logged on.` (an Error) | Offline. The line doesn't repeat the name, so pair it with the `/whois` you just sent |
+
+**A member can be listed in a channel without being logged on.** A login caught by a server reset stays in the member list until the next reboot, while `/whois` reports it as not logged on. Nothing in its member record marks it: flags 0, an empty `battle_tag`, no `program_id`, which is exactly what a real Diablo II player looks like. `/whois` is the only way to tell. ✅ Confirmed live
+
+### `/stats`
+
+The game's `/stats` is its own: it calls [ToonProfile GetStats](/bnet2/scr-messages/#getstats) rather than sending a chat command. A client can do the same for any character. ✅ Confirmed live
+
+## Message length
+
+**Classic Battle.net takes at most 223 characters of chat text** ([SID_CHATCOMMAND](/classic/bncs/sid-chatcommand/)). SC:R's chat runs on the classic server, so Invigoration holds SC:R lines to the same 223. ⚠️ Inferred: what SC:R does with a longer line hasn't been tested.
 
 ## Friends
 

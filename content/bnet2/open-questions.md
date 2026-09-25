@@ -12,7 +12,7 @@ These are the gaps found while building native StarCraft II and SC:R chat on 202
 
 ## StarCraft II: wins, scores and ladder rank
 
-**Where a player's league, MMR, wins and ladder rank come from isn't known.** 🛑
+**They come from the Ladder service** (GetAssignment for league and rating, GetRankings for rank, wins and losses), but **which Sunken slot it's on isn't known**: the client reads it at run time. See [profiles](/bnet2/sc2-profiles/#wins-league-and-rank). 🛑
 
 - **Not in presence.** None of the 69 fields a live session announced carries them. See [presence](/bnet2/sc2-presence/#the-fields-that-matter). ✅ Confirmed live
 - **Not in profile path `[0x14]`.** It returns only cosmetics: the portrait and 121 other keys. See [profiles](/bnet2/sc2-profiles/#other-keys-in-the-block). ✅ Confirmed live
@@ -50,12 +50,18 @@ These are the gaps found while building native StarCraft II and SC:R chat on 202
 - **WhisperEchoReceived** didn't arrive for whispers a session sent itself. Does it arrive for ones sent from the game or the Battle.net app? And what's in SendWhisper's short reply? See [Battle.net whispers](/bnet2/scr-messages/#aurorachat-battlenet-whispers). 🛑
 - **The startup stall** also happened once with no recent session. What causes it, and whether RequestDisconnect helps. See [the stall](/bnet2/sequences/starcraft-remastered-logon/#the-stall-after-a-recent-session). 🛑
 - **Whether a client that owns only the original StarCraft shows `STAR`** in the member list. 🛑
+- ~~Stats~~: answered. [GetStats](/bnet2/scr-messages/#getstats) works when sent exactly as the game sends it, confirmed live on 2026-09-25. What its response field 2 (20 every time) means is still open. 🛑
+- **The chat line limit.** Classic Battle.net's 223 characters is assumed; what SC:R's server does with a longer line hasn't been tested. 🛑
+- **Member field 4**, thought to be the join order. ⚠️ Inferred
 
 ## StarCraft II records
 
 - **Friend invitations on SC2:** Friends 28 is a pending invitation, but its full layout, and the records that send, accept or decline one, aren't known. See [friends](/bnet2/sc2-friends/#friends-28-friendinvitationaddednotify). 🛑
 - **Whispering a friend by presence or account** hasn't been confirmed live, nor whether an account whisper reaches someone outside SC2. See [whispering a friend](/bnet2/sc2-friends/#whispering-a-friend). 🛑
 - **Chat command 20**, seen once. It carried a character's name and code; it isn't decoded. 🛑
+- **Clans:** every club record's layout is now known ([clans and groups](/bnet2/sc2-clubs/)), but creating a club, setting a rank, and changing a member or a club haven't been sent live. Open: which flag bit makes a club private, which ranks mean kick and leave, the reply to ClubSubscribe (none seen), and whether member statuses ever come up front or only as changes. 🛑
+- **The newer Toon-slot club commands** (CreateClubV2, SubscribeV2, Snapshot, Sync…) and when the client uses them instead of slot 13. 🛑
+- **Choosing a portrait live**: which unlock-definition file handle to send with the request. See [changing a profile](/bnet2/sc2-profiles/#changing-a-profile). 🛑
 - **The body of ConnectionService method 4** that came with the 3025 refusal. See [friends](/bnet2/sc2-friends/#the-battlenet-friends-service-is-closed). 🛑
 
 ## Saved sign-ins across games
