@@ -43,10 +43,13 @@ steps:
   - { from: server, packet: SID_ENTERCHAT, note: "Unique name `Character*Account`, and the character's portrait statstring.", confidence: verified }
   - { from: client, packet: SID_NEWS_INFO, confidence: verified }
   - { from: server, packet: SID_NEWS_INFO, confidence: verified }
-  - { from: client, packet: SID_JOINCHANNEL, note: "The *Diablo II* channel.", confidence: verified }
+  - { from: client, packet: SID_JOINCHANNEL, note: "The *Diablo II* channel, flags `0x05` for *Lord of Destruction* and `0x01` for the original game.", confidence: verified }
   - { from: server, packet: SID_CHATEVENT, confidence: verified }
   - { from: client, packet: SID_CHECKAD, note: "Repeated about every 15 seconds.", confidence: verified }
 sources:
+  - name: "D2-Native: logging on as 1.14d does"
+    url: "https://github.com/tagban/bnet_command_center/blob/master/docs/PROTOCOL-NOTES.md"
+    note: "values read from the retail 1.14d Game.exe while building the D2-Native client, October 2026"
   - name: "Command Center: DIABLO2.md"
     url: "https://github.com/tagban/bnet_command_center/blob/master/docs/DIABLO2.md"
     note: "observed from a real Diablo II: Lord of Destruction 1.14d client on September 13, 2026"
@@ -54,7 +57,11 @@ sources:
 
 **Going back to character select.** The client sends `SID_LEAVECHAT`, then `SID_QUERYREALMS2`, then `MCP_CHARLIST2` on the realm connection it already has open.
 
-**Creating and joining games** goes through the realm: `MCP_CREATEGAME`, then `MCP_JOINGAME`. On success the client closes the realm connection and connects to the game server on port 4000.
+**Creating and joining games** goes through the realm: `MCP_CREATEGAME`, then `MCP_JOINGAME`. On success the client closes the realm connection and connects to the game server on port 4000. ✅ `MCP_CREATEGAME`'s flags hold only the difficulty, shifted left by 12.
+
+**Coming back from a game.** ✅ The client sends a fresh `SID_LOGONREALMEX`, opens a new realm connection (`MCP_STARTUP`, then `MCP_CHARLOGON` for the same character), enters chat again and rejoins the channel it left with `SID_JOINCHANNEL` flags `0x02`. 1.14d sends no `SID_LEAVEGAME` after a realm game, and never answers the UDP test with `SID_UDPPINGRESPONSE`.
+
+**Counters the client keeps.** ✅ `SID_LOGONREALMEX`'s client token is a counter that starts at `1` and goes up by one each time. Realm requests carry request ids that start at `2`. `MCP_CHARLIST2` asks for 8 characters.
 
 **One port or two.** Official Battle.net ran the realm on separate hosts. A server can also accept both connections on port 6112, because the next byte after `0x01` tells them apart: a BNCS message starts with `FF`, while an MCP message starts with its length.
 

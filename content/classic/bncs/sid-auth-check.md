@@ -45,6 +45,8 @@ sources:
     note: "request layout captured from a real client on September 9, 2026"
 ---
 
-**Where the CD-key block goes.** The per-key block comes **before** the EXE information string. This order was confirmed from a real client's single-key logon. The two-key layout used by expansions follows the same pattern but hasn't been captured yet.
+**Where the CD-key block goes.** The per-key block comes **before** the EXE information string. This order was confirmed from a real client's single-key logon, and ✅ *Lord of Destruction* 1.14d's two-key message is built the same way (read from its `Game.exe`): the base game's key block, then the expansion's, then the EXE information and the owner.
+
+**The key hash.** ✅ For a 16-character key it is X-SHA-1 over 24 bytes: client token, server token, product value, public value, a zero, and the private value. For a 26-character key it is standard SHA-1 over 26 bytes of the same values, the private value taking ten bytes.
 
 **Recognising a key.** Because the key hash changes every session, a server that wants to allow only one session per CD key has to compare the product and public values instead.
